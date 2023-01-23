@@ -1,0 +1,42 @@
+table tbody tr td:nth-child(2) {
+  padding-left: 15px;
+}
+
+table tbody tr td:first-child b {
+  color: #3a4d63;
+}
+
+.position-title {
+  font-size: 16px;
+  font-style: normal;
+}
+
+.company-title {
+  margin-top: 5px;
+}
+
+.company-title a {
+  color: #333;
+}
+
+.project-info {
+  font-style: normal;
+  color: #3a4d63;
+}
+
+.roles-and-responsibilities-title {
+  font-weight: bold;
+  font-style: normal;
+  text-decoration: underline;
+  color: #3a4d63;
+}
+
+ul.roles li {
+  font-style: normal;
+}
+
+.wrapper {
+  float: left;
+  width: 100%;
+  margin-bottom: 5px;
+}
