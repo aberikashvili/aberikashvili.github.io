@@ -134,7 +134,7 @@ const DUMMY_DATA = {
             new SkillItemEntry('', 'Swagger'),
             new SkillItemEntry('fa fa-database', 'PostgreSQL'),
             new SkillItemEntry('', 'RabbiqMQ'),
-            new SkillItemEntry('', 'Angular'),
+            new SkillItemEntry('fab fa-angular', 'Angular'),
             new SkillItemEntry('', 'Firebase')
           ]
         )
