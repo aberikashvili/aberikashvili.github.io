@@ -47,3 +47,7 @@ span.tag {
   margin-top: 4px;
   margin-right: 4px;
 }
+
+.no-wrap {
+  white-space: nowrap;
+}

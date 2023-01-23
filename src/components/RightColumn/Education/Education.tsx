@@ -8,7 +8,7 @@ const Education = () => {
         <table>
           <tbody>
             <tr>
-              <td valign="top" nowrap="true">
+              <td valign="top" className="no-wrap">
                 <b>2015 - 2017</b>
               </td>
               <td valign="top">
@@ -22,7 +22,7 @@ const Education = () => {
         <table>
           <tbody>
             <tr>
-              <td valign="top" nowrap="true">
+              <td valign="top" className="no-wrap">
                 <b>2010 - 2014</b>
               </td>
               <td valign="top">
