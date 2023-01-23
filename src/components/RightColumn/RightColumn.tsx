@@ -1,4 +1,5 @@
 import Column from '../Column/Column';
+import Education from './Education/Education';
 
 import './RightCOlumn.css';
 import Summary from './Summary/Summary';
@@ -9,6 +10,7 @@ const RightColumn = () => {
     <Column classNames="Column-Right">
       <Summary />
       <WorkHistory />
+      <Education />
     </Column>
   );
 };

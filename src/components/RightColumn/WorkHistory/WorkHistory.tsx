@@ -10,7 +10,7 @@ const WorkHistory = () => {
         <table>
           <tbody>
             <tr>
-              <td valign="top" nowrap="true">
+              <td valign="top" className="no-wrap">
                 <b>Dec 2022 - Jan 2023</b>
               </td>
               <td valign="top">
@@ -61,7 +61,7 @@ const WorkHistory = () => {
         <table>
           <tbody>
             <tr>
-              <td valign="top" nowrap="true">
+              <td valign="top" className="no-wrap">
                 <b>Apr 2021 - Dec 2022</b>
               </td>
               <td valign="top">
@@ -126,7 +126,7 @@ const WorkHistory = () => {
         <table>
           <tbody>
             <tr>
-              <td valign="top" nowrap="true">
+              <td valign="top" className="no-wrap">
                 <b>Sep 2017 - Apr 2021</b>
               </td>
               <td valign="top">
@@ -356,7 +356,7 @@ const WorkHistory = () => {
         <table>
           <tbody>
             <tr>
-              <td valign="top" nowrap="true">
+              <td valign="top" className="no-wrap">
                 <b>Jun 2016 - Aug 2017</b>
               </td>
               <td valign="top">
@@ -402,7 +402,7 @@ const WorkHistory = () => {
         <table>
           <tbody>
             <tr>
-              <td valign="top" nowrap="true">
+              <td valign="top" className="no-wrap">
                 <b>Sep 2013 - Jun 2016</b>
               </td>
               <td valign="top">
@@ -453,7 +453,7 @@ const WorkHistory = () => {
         <table>
           <tbody>
             <tr>
-              <td valign="top" nowrap="true">
+              <td valign="top" className="no-wrap">
                 <b>Jun 2011 - Sep 2013</b>
               </td>
               <td valign="top">
