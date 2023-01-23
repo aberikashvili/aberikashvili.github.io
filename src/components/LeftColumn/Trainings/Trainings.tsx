@@ -1,10 +1,14 @@
 import Fieldset from '../../Fieldset/Fieldset';
 import Row from '../../Row/Row';
 
-const Trainings = () => (
+const Trainings = ({ trainings }: { trainings: string[] }) => (
   <Row>
     <Fieldset legend="Trainings & Certificates">
-      <span className="tag">Web application security - attack and defense</span>
+      {trainings.map((training) => (
+        <span key={training} className="tag">
+          {training}
+        </span>
+      ))}
     </Fieldset>
   </Row>
 );

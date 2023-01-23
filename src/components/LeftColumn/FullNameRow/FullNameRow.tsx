@@ -1,10 +1,10 @@
 import Row from '../../Row/Row';
 import './FullNameRow.css';
 
-const FullNameRow = () => {
+const FullNameRow = ({ fullName }: { fullName: string }) => {
   return (
     <Row idAttr="full-name-row">
-      <h4 className="full-name">Arkadi Berikashvili</h4>
+      <h4 className="full-name">{fullName}</h4>
     </Row>
   );
 };

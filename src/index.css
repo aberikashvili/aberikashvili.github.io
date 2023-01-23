@@ -48,6 +48,10 @@ span.tag {
   margin-right: 4px;
 }
 
+span.tag i {
+  padding-right: 4px;
+}
+
 .no-wrap {
   white-space: nowrap;
 }

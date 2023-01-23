@@ -1,19 +1,16 @@
+import SkillItemEntry from '../../../models/SkillItemEntry';
 import Fieldset from '../../Fieldset/Fieldset';
 import Row from '../../Row/Row';
 
-const OperationSystems = () => {
+const OperationSystems = ({ opSystems }: { opSystems: SkillItemEntry[] }) => {
   return (
     <Row>
       <Fieldset legend="OS">
-        <span className="tag">
-          <i className="fab fa-apple"></i> MacOS
-        </span>
-        <span className="tag">
-          <i className="fab fa-windows"></i> Windows
-        </span>
-        <span className="tag">
-          <i className="fab fa-linux"></i> Linux
-        </span>
+        {opSystems.map((os) => (
+          <span key={os.title} className="tag">
+            <i className={os.icon}></i> {os.title}
+          </span>
+        ))}
       </Fieldset>
     </Row>
   );

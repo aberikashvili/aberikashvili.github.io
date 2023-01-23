@@ -1,12 +1,15 @@
+import SkillItemEntry from '../../../models/SkillItemEntry';
 import Fieldset from '../../Fieldset/Fieldset';
 import Row from '../../Row/Row';
 
-const Languages = () => (
+const Languages = ({ languages }: { languages: string[] }) => (
   <Row>
     <Fieldset legend="Languages">
-      <span className="tag">English</span>
-      <span className="tag">Georgian</span>
-      <span className="tag">Russian</span>
+      {languages.map((lang) => (
+        <span key={lang} className="tag">
+          {lang}
+        </span>
+      ))}
     </Fieldset>
   </Row>
 );
