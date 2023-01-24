@@ -21,6 +21,7 @@ const WorkHistoryItem = ({ work }: { work: WorkHistoryItemEntry }) => {
                 position={work.position}
                 routine={work.routine}
                 project={project}
+                hideCompanytitle={i > 0}
               />
             </tr>
           ))}

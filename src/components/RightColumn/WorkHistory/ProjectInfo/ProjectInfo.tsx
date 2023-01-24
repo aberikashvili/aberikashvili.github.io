@@ -5,25 +5,31 @@ const ProjectInfo = ({
   companyWebsite,
   company,
   routine,
-  project
+  project,
+  hideCompanytitle = false
 }: {
   position: string;
   companyWebsite: string;
   company: string;
   routine: string;
   project: ProjectItemEntry;
+  hideCompanytitle: boolean;
 }) => {
   return (
     <>
       <td valign="top">
-        <div className="position-title">{position}</div>
-        <div className="company-title">
-          At{' '}
-          <a href={companyWebsite} target="blank">
-            {company}
-          </a>{' '}
-          ({routine})
-        </div>
+        {!hideCompanytitle && (
+          <>
+            <div className="position-title">{position}</div>
+            <div className="company-title">
+              At{' '}
+              <a href={companyWebsite} target="blank">
+                {company}
+              </a>{' '}
+              ({routine})
+            </div>
+          </>
+        )}
         <p className="project-info">
           <b>Project(s): </b>
           {project.titles.map((title) => (
