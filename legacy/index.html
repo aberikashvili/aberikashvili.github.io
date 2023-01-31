@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CV</title>
+	<!-- Font Awesome 4 -->
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
+	<!-- Font Awesome 5 -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script>
+		window.onload = function () {
+			const hash = window.location.hash;
+
+			if (hash === '#nopic') {
+				hidePic();
+			}
+		};
+
+		function hidePic() {
+			const imageRow = document.getElementById('image-row');
+			imageRow.classList = `${imageRow.classList} hidden`;
+
+			adjustFullNameRow();
+			adjustTechStackRow();
+		}
+
+		function adjustFullNameRow() {
+			const fullNameRow = document.getElementById('full-name-row');
+			fullNameRow.classList = `${fullNameRow.classList} pt-50px`;
+		}
+
+		function adjustTechStackRow() {
+			const techStackRow = document.getElementById('tech-stack-row');
+			techStackRow.classList = `${techStackRow.classList} pb-50px`;
+		}
+	</script>
+</head>
+<body>
+	<div class="page">
+		<div class="col col-left">
+			<div id="image-row" class="row">
+				<div class="img-outer">
+					<img src="./DSC_4440.jpg" class="img-circle" />
+				</div>
+			</div>
+			<div id="full-name-row" class="row">
+				<h4 class="full-name">Arkadi Berikashvili</h4>
+			</div>
+			<div id="tech-stack-row" class="row">
+				<h4 class="role">Full-Stack Developer / Software Engineer</h4>
+			</div>
+			<div class="row">
+				<fieldset class="personal-info">
+					<legend>Personal Info</legend>
+					<div class="wrapper">
+						<i class="fa fa-map-marker-alt"></i> Tbilisi, Georgia
+					</div>
+					<div class="wrapper">
+						<i class="fa fa-home"></i> Didi Digomi, Giorgi Brtskinvale Street #48
+					</div>
+					<div class="wrapper">
+						<i class="fa fa-baby"></i> 4 November, 1990
+					</div>
+					<div class="wrapper">
+						<i class="fab fa-skype"></i>
+						<a href="skype:superhornet111?call">superhornet111</a>
+					</div>
+					<div class="wrapper">
+						<i class="fa fa-mobile"></i> + 995 598 677 567
+					</div>
+					<div class="wrapper">
+						<i class="fa fa-envelope"></i>
+						<a href="mailto:arkadi.berikashvili90@gmail.com">arkadi.berikashvili90@gmail.com</a>
+					</div>
+					<div class="wrapper">
+						<i class="fab fa-linkedin"></i>
+						<a href="https://www.linkedin.com/in/arkadi-berikashvili-7496516b/" target="top">https://www.linkedin.com/in/arkadi-berikashvili-7496516b/</a>
+					</div>
+					<div class="wrapper">
+						<i class="fa fa-globe"></i>
+						<a href="http://arca-d.pro/" target="top">Personal website</a>
+					</div>
+				</fieldset>
+			</div>
+			<div class="row">
+				<fieldset class="personal-info">
+					<legend>Primary Skills</legend>
+					<span class="tag">
+						<i class="fab fa-angular"></i> Angular 14</span>
+					<span class="tag">TypeScript</span>
+					<span class="tag">
+						<i class="fab fa-js"></i> Javascript</span>
+					<span class="tag">
+						<i class="fab fa-angular"></i> Angular Material</span>
+					<span class="tag">
+						<i class="fab fa-angular"></i> NX</span>
+					<span class="tag">RxJs</span>
+					<span class="tag">
+						<i class="fab fa-react"></i> React Native</span>
+					<span class="tag">
+						<i class="fab fa-react"></i> React</span>
+					<span class="tag">
+						<i class="fab fa-react"></i> Redux</span>
+					<span class="tag">Jest</span>
+					<span class="tag">Karma</span>
+					<span class="tag">Jasmine</span>
+					<span class="tag">agGrid</span>
+					<span class="tag">
+						<i class="fab fa-angular"></i> NGXS</span>
+					<span class="tag">
+						<i class="fab fa-angular"></i> NGRX Store</span>
+					<span class="tag">
+						<i class="fab fa-node"></i> NodeJs</span>
+					<span class="tag">
+						<i class="fab fa-node"></i> NestJs</span>
+					<span class="tag">
+						<i class="fab fa-sass"></i> SCSS</span>
+					<span class="tag">Unit Testing</span>
+					<span class="tag">
+						<i class="fab fa-github"></i> Git</span>
+					<span class="tag">
+						<i class="fab fa-jira"></i> Jira</span>
+					<span class="tag">
+						<i class="fab fa-angular"></i> Angular E2E Testing</span>
+					<span class="tag">
+						<i class="fab fa-angular"></i> AngularJs</span>
+					<span class="tag">
+						<i class="fab fa-twitter"></i> Twitter Bootstrap</span>
+					<span class="tag">
+						<i class="fab fa-js"></i> jQuery</span>
+					<span class="tag">Swagger</span>
+					<span class="tag">
+						<i class="fab fa-windows"></i> .Net / .Net Core</span>
+					<span class="tag">C#</span>
+					<span class="tag">EF Core 2</span>
+					<span class="tag">
+						<i class="fab fa-windows"></i> Asp.Net / Asp.Net core 2</span>
+					<span class="tag">ADO.NET</span>
+					<span class="tag">Web Api / REST Api</span>
+					<span class="tag">
+						<i class="fab fa-docker"></i> Docker</span>
+					<span class="tag">
+						<i class="fab fa-jenkins"></i> CI / CD</span>
+					<span class="tag">
+						<i class="fab fa-github"></i> Github</span>
+					<span class="tag">
+						<i class="fab fa-bitbucket"></i> BitBucket</span>
+					<span class="tag">
+						<i class="fab fa-database"></i> MySql</span>
+					<span class="tag">
+						<i class="fab fa-jenkins"></i> Jenkins</span>
+				</fieldset>
+			</div>
+			<div class="row">
+				<fieldset class="personal-info">
+					<legend>Secondary Skills</legend>
+					<span class="tag">
+						<i class="fab fa-windows"></i> Ms Sql Server</span>
+					<span class="tag">NoSql</span>
+					<span class="tag">
+						<i class="fab fa-amazon"></i> AWS IAM</span>
+					<span class="tag">
+						<i class="fab fa-amazon"></i> AWS EC2</span>
+					<span class="tag">
+						<i class="fab fa-amazon"></i> AWS S3</span>
+					<span class="tag">
+						<i class="fab fa-amazon"></i> AWS Route53</span>
+					<span class="tag">Protractor</span>
+					<span class="tag">
+						<i class="fab fa-firefox"></i> Browserstack</span>
+					<span class="tag">Postman</span>
+					<span class="tag">Fiddler</span>
+					<span class="tag">Integration Testing</span>
+					<span class="tag">
+						<i class="fab fa-php"></i> PHP</span>
+					<span class="tag">Agile / Scrum Methodology</span>
+					<span class="tag">
+						<i class="fab fa-database"></i> T-SQL</span>
+					<span class="tag">
+						<i class="fab fa-windows"></i> Team Fundation Server</span>
+					<span class="tag">YAML</span>
+					<span class="tag">XML</span>
+					<span class="tag">Domain Driven Design</span>
+					<span class="tag">Redis</span>
+					<span class="tag">RabbitMQ</span>
+					<span class="tag">Nginx</span>
+					<span class="tag">ExtJs</span>
+				</fieldset>
+			</div>
+			<div class="row">
+				<fieldset class="personal-info">
+					<legend>OS</legend>
+					<span class="tag">
+						<i class="fab fa-apple"></i> MacOS</span>
+					<span class="tag">
+						<i class="fab fa-windows"></i> Windows</span>
+					<span class="tag">
+						<i class="fab fa-linux"></i> Linux</span>
+				</fieldset>
+			</div>
+			<div class="row">
+				<fieldset class="personal-info">
+					<legend>Languages</legend>
+					<span class="tag">English</span>
+					<span class="tag">Georgian</span>
+					<span class="tag">Russian</span>
+				</fieldset>
+			</div>
+			<div class="row">
+				<fieldset class="personal-info">
+					<legend>Trainings &amp; Certificates</legend>
+					<span class="tag">Web application security - attack and defense</span>
+				</fieldset>
+			</div>
+		</div>
+		<div class="col col-right">
+			<div class="row">
+				<fieldset class="summary">
+					<legend>Summary</legend>
+					<p>Software Developer with thorough hands-on experience in web based applications, desktop applications, database development
+						and architectural solutions, also experienced in building and stabilizing high performance applications.</p>
+					<p>Supportive and enthusiastic team player dedicated streamlining processes and effectively resolving project issues. Willing
+						to take ownership of core components</p>
+				</fieldset>
+			</div>
+			<div class="row">
+				<fieldset>
+					<legend>Work History</legend>
+					<table>
+						<tbody>
+							<tr>
+								<td valign="top" nowrap="true">
+									<b>Dec 2022 - Jan 2023</b>
+								</td>
+								<td valign="top">
+									<div class="position-title">Full-Stack Engineer (Angular, NestJs)</div>
+									<div class="company-title">
+										At <a href="https://upwork.com/" target="blank">Upwork.com</a> (Remote)
+									</div>
+									<p class="project-info">
+										<b>Project(s): </b>
+										<span class="tag">Auth Microservice</span>
+									</p>
+									<p>
+										<div class="roles-and-responsibilities-title">Roles &amp; Responsibilities:</div>
+										<ul class="roles">
+											<li>To implement NestJs microservice for auth</li>
+											<li>To implement JWT authentication using HTTP Api</li>
+											<li>To implement Swagger UI</li>
+											<li>To implement token invalidation functionality using RabbitMQ</li>
+											<li>To setup Mikro-Orm entities and Migrations with PostgreSQL</li>
+											<li>To integrate Angular + Firebase app with auth microservice (HTTP + RabbitMQ)</li>
+										</ul>
+									</p>
+									<p class="project-info">
+										<b>Stack:</b>
+										<span class="tag">Nest.js</span>
+										<span class="tag">Mikro-orm</span>
+										<span class="tag">passport</span>
+										<span class="tag">JWT</span>
+										<span class="tag">Swagger</span>
+										<span class="tag">PostgreSQL</span>
+										<span class="tag">RabbitMQ</span>
+										<span class="tag">Angular</span>
+										<span class="tag">Firebase</span>
+									</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<hr>
+					<table>
+						<tbody>
+							<tr>
+								<td valign="top" nowrap="true">
+									<b>Apr 2021 - Dec 2022</b>
+								</td>
+								<td valign="top">
+									<div class="position-title">Software Engineer (Angular)</div>
+									<div class="company-title">
+										At <a href="https://valor-software.com/" target="blank">Valor Software</a> (Remote)
+									</div>
+									<p class="project-info">
+										<b>Project(s): </b>
+										<span class="tag">StudyTube/ultra</span>
+										<span class="tag">StudyTube/LMS</span>
+									</p>
+									<p>
+										<div class="roles-and-responsibilities-title">Roles &amp; Responsibilities:</div>
+										<ul class="roles">
+											<li>To implement separated reusable components in ultra library according to new design. Ultra library is private component library, based on angular</li>
+											<li>To re-implement LMS ui using new ultra library components. LMS is Learning Management System, web platform for online learning materials, like videos, documents etc.</li>
+											<li>To collaborate with StudyTube team</li>
+										</ul>
+									</p>
+									<!-- <p class="project-info">
+										<b>Stack:</b>
+										<span class="tag">Angular</span>
+										<span class="tag">NX</span>
+										<span class="tag">Angular Material</span>
+										<span class="tag">Scss</span>
+										<span class="tag">RxJs</span>
+										<span class="tag">Typescript</span>
+									</p> -->
+								</td>
+							</tr>
+							<tr>
+								<td valign="top"></td>
+								<td valign="top">
+									<p class="project-info">
+										<b>Project(s): </b>
+										<span class="tag">SAP/Fundamental-NGX</span>
+										<span class="tag">SAP/Fundamental-Styles</span>
+									</p>
+									<p>
+										<div class="roles-and-responsibilities-title">Roles &amp; Responsibilities:</div>
+										<ul class="roles">
+											<li>To Implement new features into Fundamental NGX / Styles library</li>
+											<li>To collaborate with external teams and fix defects they require</li>
+											<li>To Do the defect hunting and constantly figure out regressions, then fix them</li>
+											<li>To implement accessibility functionality</li>
+										</ul>
+									</p>
+									<!-- <p class="project-info">
+										<b>Stack:</b>
+										<span class="tag">Angular</span>
+										<span class="tag">NX</span>
+										<span class="tag">Angular Material</span>
+										<span class="tag">Scss</span>
+										<span class="tag">RxJs</span>
+										<span class="tag">Typescript</span>
+									</p> -->
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<hr>
+					<table>
+						<tbody>
+							<tr>
+								<td valign="top" nowrap="true">
+									<b>Sep 2017 - Apr 2021</b>
+								</td>
+								<td valign="top">
+									<div class="position-title">Software Engineer III</div>
+									<div class="company-title">
+										At <a href="https://crossover.com/" target="blank">Crossover</a> For Work (Remote)
+									</div>
+									<p class="project-info">
+										<b>Project(s): </b>
+										<!-- <span class="tag">Eng.Maintenance</span> -->
+										<span class="tag">Kayako Classic</span>
+									</p>
+									<p>
+										<div class="roles-and-responsibilities-title">Roles &amp; Responsibilities:</div>
+										<ul class="roles">
+											<li>To Do the defect RCA (Root Cause Analysis)</li>
+											<li>To Implement the fix of defect using PHP 7, MySQL, JS</li>
+											<li>To write automated E2E test for the fix using Gherkin</li>
+										</ul>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td valign="top"></td>
+								<td valign="top">
+									<p class="project-info">
+										<b>Project(s): </b>
+										<span class="tag">CX Monitor</span>
+										<!-- <span class="tag">Eng.Feature</span> -->
+									</p>
+									<p>
+										<div class="roles-and-responsibilities-title">Roles &amp; Responsibilities:</div>
+										<ul class="roles">
+											<li>To update legacy software UI components from Adobe Flash to Javascript (ReactJS)</li>
+											<li>To update legacy software UI charts from Adobe Flash to Fusion Charts (Js)</li>
+											<li>To update legacy software UI graphs from Adobe Flash to D3.js</li>
+											<li>To refactor old legacy Ext.js code, make it compatible with eslint rules</li>
+										</ul>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td valign="top"></td>
+								<td valign="top">
+									<p class="project-info">
+										<b>Project(s): </b>
+										<span class="tag">Acorn PA5G/AAA</span>
+										<!-- <span class="tag">Eng.Feature</span> -->
+									</p>
+									<p>
+										<div class="roles-and-responsibilities-title">Roles &amp; Responsibilities:</div>
+										<ul class="roles">
+											<li>To update legacy software UI from Microsoft Silverlight to Angular 8 / Material / Scss / NGXS</li>
+											<li>To update legacy software UI complex grid components from Silverlight to Ag-Grid</li>
+											<li>To make new angular software compatible with legacy .Net RIA Services api</li>
+											<li>To test Angular software with Karma / Jasmine</li>
+											<li>To do a regular code reviews for non angular expert team members PR's and coach them how to achieve better result</li>
+										</ul>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td valign="top"></td>
+								<td valign="top">
+									<p class="project-info">
+										<b>Project(s): </b>
+										<span class="tag">AES CIS</span>
+										<!-- <span class="tag">Eng.Feature</span> -->
+									</p>
+									<p>
+										<div class="roles-and-responsibilities-title">Roles &amp; Responsibilities:</div>
+										<ul class="roles">
+											<li>To update legacy software UI from CSS to SCSS</li>
+											<li>To update legacy software UI from HTML to HTML 5</li>
+											<li>To make old (only IE compatible) software, compatible with modern browsers (JS)</li>
+										</ul>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td valign="top"></td>
+								<td valign="top">
+									<p class="project-info">
+										<b>Project(s): </b>
+										<span class="tag">Volt Delta</span>
+										<!-- <span class="tag">Eng.Import</span> -->
+									</p>
+									<p>
+										<div class="roles-and-responsibilities-title">Roles &amp; Responsibilities:</div>
+										<ul class="roles">
+											<li>To migrate code from Dimmension to GitHub repositories</li>
+											<li>To prepare Development Environment on local machine &amp; Build</li>
+											<li>To prepare Development Environment in AWS EC2's &amp; Build</li>
+											<li>To migrate issues from Dimmensions to our Centralized Jira</li>
+											<li>To find out all dependencies &amp; Migrate</li>
+											<li>To prepare CI/CD pipelines in Jenkins</li>
+											<li>To review E2E TC's &amp; Scenarios for QA team</li>
+											<li>To fetch last code changes and prepare documents for Unit Testing team</li>
+											<li>To close the current defect backlog and deliver fixes for NodeJs services</li>
+											<li>To close the current test backlog and deliver automated tests for NodeJs services</li>
+											<li>To close the current feature backlog and deliver new features for NodeJs services</li>
+										</ul>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td valign="top"></td>
+								<td valign="top">
+									<p class="project-info">
+										<b>Project(s): </b>
+										<span class="tag">Mobilogy</span>
+										<!-- <span class="tag">Eng.Import</span>
+										<span class="tag">Eng.Maintenance</span> -->
+									</p>
+									<p>
+										<div class="roles-and-responsibilities-title">Roles &amp; Responsibilities:</div>
+										<ul class="roles">
+											<li>To inspect and investigate UI of the incoming projects</li>
+											<li>To prepare Development Environment on local machine &amp; Build</li>
+											<li>To prepare Development Environment in Cloud (DevSpaces, Docker) &amp; Build</li>
+											<li>To migrate Git repositories</li>
+											<li>To migrate issues from Jira TFS, Dimmension etc. to our Centralized Jira</li>
+											<li>To find out all dependencies &amp; Migrate</li>
+											<li>To prepare CI/CD pipelines in Jenkins</li>
+											<li>To close the current defect backlog and deliver fixes for NodeJs services</li>
+											<li>To close the current feature backlog and deliver new features for NodeJs services</li>
+										</ul>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td valign="top"></td>
+								<td valign="top">
+									<p class="project-info">
+										<b>Project(s): </b>
+										<span class="tag">CRM</span>
+										<!-- <span class="tag">Eng.Easier</span> -->
+									</p>
+									<p>
+										<div class="roles-and-responsibilities-title">Roles &amp; Responsibilities:</div>
+										<ul class="roles">
+											<li>To investigate legacy application and expose necessary Api endpoints</li>
+											<li>To reskin legacy CRM application UI using Angular 4</li>
+											<li>To write Unit Tests using Karma, Jasmine</li>
+											<li>To integrate Angular 4 UI with .Net Core based REST Api</li>
+											<li>To implement Swagger mocks</li>
+											<li>To write E2E Tests using Protractor</li>
+											<li>To run E2E Tests against several browsers using Browserstack</li>
+										</ul>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td valign="top"></td>
+								<td valign="top">
+									<p class="project-info">
+										<b>Project(s): </b>
+										<span class="tag">LyrisHQ / Campaign Manager</span>
+										<!-- <span class="tag">Eng.Easier</span> -->
+									</p>
+									<p>
+										<div class="roles-and-responsibilities-title">Roles &amp; Responsibilities:</div>
+										<ul class="roles">
+											<li>To investigate legacy application and expose necessary Api endpoints</li>
+											<li>To reskin legacy Lyris application UI using Angular 5</li>
+											<li>To write Unit Tests using Karma, Jasmine</li>
+											<li>To integrate Angular 5 UI with Java / Spring based REST Api</li>
+											<li>To write E2E Tests using Protractor</li>
+											<li>To run E2E Tests against several browsers using Browserstack</li>
+										</ul>
+									</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<hr />
+					<table>
+						<tbody>
+							<tr>
+								<td valign="top" nowrap="true">
+									<b>Jun 2016 - Aug 2017</b>
+								</td>
+								<td valign="top">
+									<div class="position-title">Senior Software Developer</div>
+									<div class="company-title">
+										At <a href="https://dev.gpndata.com/" target="blank">GPN DATA Group International</a> (On-Site)
+									</div>
+									<p class="project-info">
+										<b>Project(s): </b>
+										<span class="tag">PSP Gateway (Payment Service Provider Gateway)</span>
+									</p>
+									<p>
+										<div class="roles-and-responsibilities-title">Roles &amp; Responsibilities:</div>
+										<ul class="roles">
+											<li>To maintain legacy PSP application using PHP 7 &amp; MySQL</li>
+											<li>To develop internal softwares using .Net Core &amp; Angular 2</li>
+											<li>To integrate Banks into PSP system</li>
+											<li>To test and find out problems in PSP system if there's any</li>
+											<li>To simulate payment requests to each Bank for testing purpose</li>
+											<li>To integrate SEPAExpress (SEPA - Single Euro Payment Area) payment method into PSP system</li>
+											<li>To create validations for accepting Visa, MasterCard transactions and Bank transfers</li>
+											<li>To integrate external services like Ethoca into PSP system</li>
+											<li>To maintain anti Fraud logic of PSP system</li>
+										</ul>
+									</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<hr />
+					<table>
+						<tbody>
+							<tr>
+								<td valign="top" nowrap="true">
+									<b>Sep 2013 - Jun 2016</b>
+								</td>
+								<td valign="top">
+									<div class="position-title">Senior Software Developer</div>
+									<div class="company-title">
+										At <a href="https://steady-logic.com" target="blank">Steady Logic Llc</a> (On-Site)
+									</div>
+									<p class="project-info">
+										<b>Project(s): </b>
+										<span class="tag">Sportsbook</span>
+									</p>
+									<p>
+										<div class="roles-and-responsibilities-title">Roles &amp; Responsibilities:</div>
+										<ul class="roles">
+											<li>To create Sportsbook Administrative Tool's UI using AngularJs, later Angular 2</li>
+											<li>To implement Presentation Layer of Back-End using ASP.NET MVC</li>
+											<li>To implement WebSocket based modules for managing Live events of several sports: Soccer, basketball, Tennis etc.</li>
+											<li>To implement BLL (Business Logic Layer)</li>
+											<li>To implement DAL (Data Access Layer)</li>
+											<li>To implement Database Layer using Ms SQL Server, create stored procedures, functions etc.</li>
+											<li>To participate in planning of architecture design, changing design features and improve stability of software</li>
+											<li>To implement Micro Services using C# &amp; RabbitMQ</li>
+											<li>To implement Cache server using Redis</li>
+										</ul>
+									</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<hr />
+					<table>
+						<tbody>
+							<tr>
+								<td valign="top" nowrap="true">
+									<b>Jun 2011 - Sep 2013</b>
+								</td>
+								<td valign="top">
+									<div class="position-title">Web Developer</div>
+									<div class="company-title">
+										At <a href="https://solostudio.ge" target="blank">Solo Group Ltd</a> (On-Site)
+									</div>
+									<p class="project-info">
+										<b>Project(s): </b>
+										<span class="tag">Website Development</span>
+									</p>
+									<p>
+										<div class="roles-and-responsibilities-title">Roles &amp; Responsibilities:</div>
+										<ul class="roles">
+											<li>To create Web Site Markup using HTML 5 &amp; CSS 3</li>
+											<li>To create Web Site Front-End using Javascript, jQuery</li>
+											<li>To create Web Site Back-End using PHP 5 or ASP.NET MVC</li>
+											<li>To create Web Site Database using MySQL or Ms SQL Server </li>
+											<li>To create Web based software for Restaurants, Delivery companies etc using PHP 5 or ASP.NET, HTML 5, CSS 3, jQuery</li>
+										</ul>
+									</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</fieldset>
+			</div>
+			<div class="row">
+				<fieldset>
+					<legend>Education</legend>
+					<table>
+						<tbody>
+							<tr>
+								<td valign="top" nowrap="true">
+									<b>2015 - 2017</b>
+								</td>
+								<td valign="top">
+									<div class="position-title">Master of Computer Science</div>
+									<div class="company-title">University of Georgia (UG)</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<hr />
+					<table>
+						<tbody>
+							<tr>
+								<td valign="top" nowrap="true">
+									<b>2010 - 2014</b>
+								</td>
+								<td valign="top">
+									<div class="position-title">Bachelor of Computer Science</div>
+									<div class="company-title">Georgian Technical University (GTU)</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</fieldset>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

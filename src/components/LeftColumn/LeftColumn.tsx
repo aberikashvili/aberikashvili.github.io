@@ -32,7 +32,7 @@ const LeftColumn = () => {
         website={ctx.personalInfo.website}
       />
       <Skills title="Primary Skills" skills={ctx.primarySkills} />
-      <Skills title="Secondary Skills" skills={ctx.secondarySkills} />
+      <Skills title="Background" skills={ctx.secondarySkills} />
       <OperationSystems opSystems={ctx.operationSystems} />
       <Languages languages={ctx.languages} />
       <Trainings trainings={ctx.trainings} />

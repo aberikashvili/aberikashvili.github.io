@@ -48,7 +48,7 @@ const ProjectInfo = ({
         </p>
         {!!project.stack?.length && (
           <p className="project-info">
-            <b>Stack:</b>
+            <b>Stack: </b>
             {project.stack.map((stack, i) => (
               <span key={`stack-${i}`} className="tag">
                 <i className={stack.icon}></i>

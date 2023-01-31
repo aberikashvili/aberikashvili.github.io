@@ -182,7 +182,7 @@ const DUMMY_DATA = {
       2021,
       'Software Engineer III',
       'Remote',
-      'Crossover For Work (Remote)',
+      'Crossover For Work',
       'https://crossover.com/',
       [
         new ProjectItemEntry(
