@@ -119,6 +119,28 @@ const DUMMY_DATA = {
   ],
   workHistory: [
     new WorkHistoryItemEntry(
+      'Feb',
+      2023,
+      null,
+      null,
+      'Senior Angular Engineer',
+      'Remote',
+      'UpStack HQ',
+      'https://upstackhq.com',
+      [
+        new ProjectItemEntry(
+          ['Some Project'],
+          [
+            'Some responsibility',
+            'Another responsibility',
+            'And one more responsibility',
+            'Okay, the last responsibility'
+          ],
+          [new SkillItemEntry('fab fa-angular', 'Angular')]
+        )
+      ]
+    ),
+    new WorkHistoryItemEntry(
       'Dec',
       2022,
       'Jan',

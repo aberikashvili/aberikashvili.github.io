@@ -11,7 +11,8 @@ const WorkHistoryItem = ({ work }: { work: WorkHistoryItemEntry }) => {
               <td valign="top" className="no-wrap">
                 {i === 0 && (
                   <b>
-                    {work.fromMonth} {work.fromYear} - {work.toMonth} {work.toYear}
+                    {work.fromMonth} {work.fromYear} - {work.toMonth || 'To'}{' '}
+                    {work.toYear || 'Current'}
                   </b>
                 )}
               </td>
