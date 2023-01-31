@@ -55,8 +55,8 @@ const DUMMY_DATA = {
       new SkillItemEntry('fab fa-angular', 'Angular E2E Testing'),
       new SkillItemEntry('fab fa-angular', 'AngularJs'),
       new SkillItemEntry('fab fa-twitter', 'Twitter Bootstrap'),
-      new SkillItemEntry('fab fa-js', 'jQuery'),
       new SkillItemEntry('', 'Swagger'),
+      new SkillItemEntry('fab fa-jenkins', 'Jenkins'),
       new SkillItemEntry('fab fa-windows', '.Net / .Net Core'),
       new SkillItemEntry('', 'C#'),
       new SkillItemEntry('', 'EF Core 2'),
@@ -64,11 +64,10 @@ const DUMMY_DATA = {
       new SkillItemEntry('', 'ADO.NET'),
       new SkillItemEntry('', 'Web Api / REST Api'),
       new SkillItemEntry('fab fa-docker', 'Docker'),
+      new SkillItemEntry('fa fa-database', 'MySql'),
       new SkillItemEntry('fab fa-jenkins', 'CI / CD'),
       new SkillItemEntry('fab fa-github', 'Github'),
-      new SkillItemEntry('fab fa-bitbucket', 'BitBucket'),
-      new SkillItemEntry('fa fa-database', 'MySql'),
-      new SkillItemEntry('fab fa-jenkins', 'Jenkins')
+      new SkillItemEntry('fab fa-bitbucket', 'BitBucket')
     ],
     secondary: [
       new SkillItemEntry('fab fa-amazon', 'AWS Lambda'),
@@ -97,7 +96,8 @@ const DUMMY_DATA = {
       new SkillItemEntry('', 'Nginx'),
       new SkillItemEntry('fab fa-js', 'ExtJs'),
       new SkillItemEntry('fa fa-database', 'Ms Sql Server'),
-      new SkillItemEntry('', 'NoSql')
+      new SkillItemEntry('', 'NoSql'),
+      new SkillItemEntry('fab fa-js', 'jQuery')
     ],
     os: [
       new SkillItemEntry('fab fa-apple', 'MacOS'),
