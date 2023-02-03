@@ -79,6 +79,7 @@ const DUMMY_DATA = {
       new SkillItemEntry('fab fa-amazon', 'AWS S3'),
       new SkillItemEntry('fab fa-amazon', 'AWS Route53'),
       new SkillItemEntry('fab fa-amazon', 'AWS DynamoDB'),
+      new SkillItemEntry('fab fa-amazon', 'AWS CloudWatch'),
       new SkillItemEntry('', 'Protractor'),
       new SkillItemEntry('fab fa-firefox', 'Browserstack'),
       new SkillItemEntry('', 'Postman'),
