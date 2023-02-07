@@ -40,14 +40,14 @@ const ProjectInfo = ({
             </span>
           ))}
         </p>
-        <p>
+        <div>
           <div className="roles-and-responsibilities-title">Roles &amp; Responsibilities:</div>
           <ul className="roles">
             {project.responsibilities.map((resp, i) => (
               <li key={`resp-${i}`}>{resp}</li>
             ))}
           </ul>
-        </p>
+        </div>
         {!!project.stack?.length && (
           <p className="project-info">
             <b>Stack: </b>
