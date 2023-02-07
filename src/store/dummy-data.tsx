@@ -27,7 +27,12 @@ const DUMMY_DATA = {
       'https://www.linkedin.com/in/arkadi-berikashvili-7496516b/',
       'https://www.linkedin.com/in/arkadi-berikashvili-7496516b/'
     ),
-    website: new PersonalInfoItemEntry('fa fa-globe', 'Personal website', 'http://arca-d.pro/')
+    // website: new PersonalInfoItemEntry('fa fa-globe', 'Personal website', 'http://arca-d.pro/')
+    website: new PersonalInfoItemEntry(
+      'fab fa-medium',
+      '@arkadi.berikashvili',
+      'https://medium.com/@arkadi.berikashvili'
+    )
   },
   skills: {
     primary: [
