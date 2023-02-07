@@ -123,23 +123,52 @@ const DUMMY_DATA = {
       2023,
       null,
       null,
-      'Senior Angular Engineer',
+      'Senior Javascript Engineer',
       'Remote',
-      'UpStack HQ',
-      'https://upstackhq.com',
+      'Contract',
+      'Simplifield',
+      'https://simplifield.com',
       [
         new ProjectItemEntry(
-          ['Some Project'],
+          ['sf-frontend', 'sf-backend', 'sf-mobile'],
           [
             'Some responsibility',
             'Another responsibility',
             'And one more responsibility',
             'Okay, the last responsibility'
           ],
-          [new SkillItemEntry('fab fa-angular', 'Angular')]
+          [
+            new SkillItemEntry('fab fa-angular', 'Angular.js'),
+            new SkillItemEntry('fab fa-js', 'Javascript'),
+            new SkillItemEntry('fab fa-node', 'Node.js'),
+            new SkillItemEntry('fab fa-angular', 'Ionic')
+          ]
         )
       ]
     ),
+    // new WorkHistoryItemEntry(
+    //   'Feb',
+    //   2023,
+    //   null,
+    //   null,
+    //   'Senior Angular Engineer',
+    //   'Remote',
+    //   'Contract',
+    //   'UpStack HQ',
+    //   'https://upstackhq.com',
+    //   [
+    //     new ProjectItemEntry(
+    //       ['Some Project'],
+    //       [
+    //         'Some responsibility',
+    //         'Another responsibility',
+    //         'And one more responsibility',
+    //         'Okay, the last responsibility'
+    //       ],
+    //       [new SkillItemEntry('fab fa-angular', 'Angular')]
+    //     )
+    //   ]
+    // ),
     new WorkHistoryItemEntry(
       'Dec',
       2022,
