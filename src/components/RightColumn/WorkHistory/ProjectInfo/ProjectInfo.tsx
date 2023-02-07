@@ -5,6 +5,7 @@ const ProjectInfo = ({
   companyWebsite,
   company,
   routine,
+  workType,
   project,
   hideCompanytitle = false
 }: {
@@ -12,6 +13,7 @@ const ProjectInfo = ({
   companyWebsite: string;
   company: string;
   routine: string;
+  workType: string;
   project: ProjectItemEntry;
   hideCompanytitle: boolean;
 }) => {
@@ -26,7 +28,7 @@ const ProjectInfo = ({
               <a href={companyWebsite} target="blank">
                 {company}
               </a>{' '}
-              ({routine})
+              ({routine}, {workType})
             </div>
           </>
         )}

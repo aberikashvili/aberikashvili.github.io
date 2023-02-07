@@ -8,6 +8,7 @@ class WorkHistoryItemEntry {
     public toYear: number,
     public position: string,
     public routine: 'On-Site' | 'Remote' | 'Hybrid',
+    public workType: 'Employment' | 'Freelance' | 'Contract',
     public company: string,
     public companyWebsite: string,
     public projects: ProjectItemEntry[]

@@ -37,6 +37,10 @@ a {
   margin-bottom: 5px;
 }
 
+.wrapper i {
+  padding: 2px 5px 2px 0;
+}
+
 span.tag {
   /* background: #00cca1; */
   background: #00cc72;
