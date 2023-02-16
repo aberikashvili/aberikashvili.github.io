@@ -132,14 +132,15 @@ const DUMMY_DATA = {
         new ProjectItemEntry(
           ['sf-frontend', 'sf-backend', 'sf-mobile'],
           [
-            'Some responsibility',
-            'Another responsibility',
-            'And one more responsibility',
-            'Okay, the last responsibility'
+            'To implement new features to the frontend (AngularJs), following the design spec from Figma',
+            'To implement NodeJs / Typescript code for new frontend features',
+            'To provide bug fixes for sf-mobile (Ionic)',
+            'To participate in meetings to plan and discuss technical aspects of the current and future goals'
           ],
           [
             new SkillItemEntry('fab fa-angular', 'Angular.js'),
             new SkillItemEntry('fab fa-js', 'Javascript'),
+            new SkillItemEntry('', 'Typescript'),
             new SkillItemEntry('fab fa-node', 'Node.js'),
             new SkillItemEntry('fab fa-angular', 'Ionic')
           ]
@@ -176,7 +177,7 @@ const DUMMY_DATA = {
       2023,
       'Full-Stack Engineer (Angular, NestJs)',
       'Remote',
-      'Contract',
+      'Freelance',
       'Upwork.com',
       'https://upwork.com',
       [
