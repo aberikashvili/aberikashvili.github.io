@@ -1,4 +1,5 @@
 import ProjectItemEntry from '../../../../models/ProjectItemEntry';
+import Tag from '../../../shared/Tag/Tag';
 
 const ProjectInfo = ({
   position,
@@ -35,9 +36,7 @@ const ProjectInfo = ({
         <p className="project-info">
           <b>Project(s): </b>
           {project.titles.map((title) => (
-            <span key={title} className="tag">
-              {title}
-            </span>
+            <Tag key={title} title={title} />
           ))}
         </p>
         <div>
@@ -52,10 +51,7 @@ const ProjectInfo = ({
           <p className="project-info">
             <b>Stack: </b>
             {project.stack.map((stack, i) => (
-              <span key={`stack-${i}`} className="tag">
-                <i className={stack.icon}></i>
-                {stack.title}
-              </span>
+              <Tag key={`stack-${i}`} icon={stack.icon} title={stack.title} />
             ))}
           </p>
         )}

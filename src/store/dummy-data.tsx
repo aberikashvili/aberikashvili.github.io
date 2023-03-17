@@ -121,14 +121,27 @@ const DUMMY_DATA = {
     new WorkHistoryItemEntry(
       'Dec',
       2022,
-      'Jan',
+      'Feb',
       2023,
       'Full-Stack Engineer (Angular, NestJs)',
       'Remote',
-      'Contract',
+      'Freelance',
       'Upwork.com',
       'https://upwork.com',
       [
+        new ProjectItemEntry(
+          ['Setup Integration Tests'],
+          [
+            'To setup Jest integration tests for NX monorepo',
+            'To write integration test samples for NestJs projects',
+            'To write integration test samples for React projects'
+          ],
+          [
+            new SkillItemEntry('', 'NX'),
+            new SkillItemEntry('fab fa-react', 'React'),
+            new SkillItemEntry('fab fa-node', 'NestJs')
+          ]
+        ),
         new ProjectItemEntry(
           ['Auth Microservice'],
           [
@@ -137,7 +150,8 @@ const DUMMY_DATA = {
             'To implement Swagger UI',
             'To implement token invalidation functionality using RabbitMQ',
             'To setup Mikro-Orm entities and Migrations with PostgreSQL',
-            'To integrate Angular + Firebase app with auth microservice (HTTP + RabbitMQ)'
+            'To integrate React app with auth microservice (HTTP + RabbitMQ)',
+            'To integrate Angular + Firebase admin app with auth microservice (HTTP + RabbitMQ)'
           ],
           [
             new SkillItemEntry('fab fa-node', 'NestJs'),
@@ -148,6 +162,7 @@ const DUMMY_DATA = {
             new SkillItemEntry('fa fa-database', 'PostgreSQL'),
             new SkillItemEntry('', 'RabbiqMQ'),
             new SkillItemEntry('fab fa-angular', 'Angular'),
+            new SkillItemEntry('fab fa-react', 'React'),
             new SkillItemEntry('', 'Firebase')
           ]
         )
@@ -198,14 +213,15 @@ const DUMMY_DATA = {
           ['Kayako Classic'],
           [
             'To Do the defect RCA (Root Cause Analysis)',
-            'To Implement the fix of defect using PHP 7, MySQL, JS',
+            'To Implement the fix of defects using PHP 7, MySQL',
+            'To implement the fix of frontend defects using React, Javascript',
             'To write automated E2E test for the fix using Gherkin'
           ]
         ),
         new ProjectItemEntry(
           ['CX Monitor'],
           [
-            'To update legacy software UI components from Adobe Flash to Javascript (ReactJS)',
+            'To update legacy software UI components from Adobe Flash to Javascript / React',
             'To update legacy software UI charts from Adobe Flash to Fusion Charts (Js)',
             'To update legacy software UI graphs from Adobe Flash to D3.js',
             'To refactor old legacy Ext.js code, make it compatible with eslint rules'

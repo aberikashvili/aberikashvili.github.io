@@ -1,0 +1,14 @@
+span.tag {
+  /* background: #00cca1; */
+  background: #00cc72;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  display: -webkit-inline-box;
+  margin-top: 4px;
+  margin-right: 4px;
+}
+
+span.tag i {
+  padding-right: 4px;
+}

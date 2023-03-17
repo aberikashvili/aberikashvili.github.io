@@ -159,16 +159,6 @@ fieldset.summary p {
   margin-top: -30px;
 }
 
-span.tag {
-  /* background: #00cca1; */
-  background: #00cc72;
-  color: #fff;
-  padding: 5px;
-  border-radius: 5px;
-  display: -webkit-inline-box;
-  margin-top: 4px;
-}
-
 table tbody tr td:nth-child(2) {
   padding-left: 15px;
 }
