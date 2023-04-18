@@ -22,6 +22,11 @@ const DUMMY_DATA = {
       'arkadi.berikashvili90@gmail.com',
       'mailto:arkadi.berikashvili90@gmail.com'
     ),
+    github: new PersonalInfoItemEntry(
+      'fab fa-github',
+      '@aberikashvili',
+      'https://github.com/aberikashvili'
+    ),
     linkedin: new PersonalInfoItemEntry(
       'fab fa-linkedin',
       'https://www.linkedin.com/in/arkadi-berikashvili-7496516b/',
@@ -121,29 +126,32 @@ const DUMMY_DATA = {
     new WorkHistoryItemEntry(
       'Dec',
       2022,
-      'Feb',
-      2023,
-      'Full-Stack Engineer (Angular, NestJs)',
+      null,
+      null,
+      'Full-Stack Freelancer (Angular, NestJs, React, React Native, AWS)',
       'Remote',
       'Freelance',
       'Upwork.com',
       'https://upwork.com',
       [
         new ProjectItemEntry(
-          ['Setup Integration Tests'],
+          ['Foxtrail: Integration Test Environment Setup on NX monorepo'],
           [
             'To setup Jest integration tests for NX monorepo',
+            'To write script for E2E automation on Typescript',
             'To write integration test samples for NestJs projects',
             'To write integration test samples for React projects'
           ],
           [
             new SkillItemEntry('', 'NX'),
             new SkillItemEntry('fab fa-react', 'React'),
-            new SkillItemEntry('fab fa-node', 'NestJs')
+            new SkillItemEntry('fab fa-node', 'NestJs'),
+            new SkillItemEntry('fab fa-docker', 'Docker Compose'),
+            new SkillItemEntry('', 'Typescript')
           ]
         ),
         new ProjectItemEntry(
-          ['Auth Microservice'],
+          ['TRKR LLC: Auth Microservice'],
           [
             'To implement NestJs microservice for auth',
             'To implement JWT authentication using HTTP Api',

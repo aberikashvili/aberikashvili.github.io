@@ -4,8 +4,8 @@ class WorkHistoryItemEntry {
   constructor(
     public fromMonth: string,
     public fromYear: number,
-    public toMonth: string,
-    public toYear: number,
+    public toMonth: string | null,
+    public toYear: number | null,
     public position: string,
     public routine: 'On-Site' | 'Remote' | 'Hybrid',
     public workType: 'Employment' | 'Freelance' | 'Contract',

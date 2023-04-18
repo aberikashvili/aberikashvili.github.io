@@ -9,6 +9,7 @@ const PersonalInfo = ({
   skype,
   mobile,
   email,
+  github,
   linkedin,
   website
 }: {
@@ -18,6 +19,7 @@ const PersonalInfo = ({
   skype: PersonalInfoItemEntry;
   mobile: PersonalInfoItemEntry;
   email: PersonalInfoItemEntry;
+  github: PersonalInfoItemEntry;
   linkedin: PersonalInfoItemEntry;
   website: PersonalInfoItemEntry;
 }) => {
@@ -41,6 +43,12 @@ const PersonalInfo = ({
         </div>
         <div className="wrapper">
           <i className={email.icon}></i> <a href={email.uri}>{email.title}</a>
+        </div>
+        <div className="wrapper">
+          <i className={github.icon}></i>{' '}
+          <a href={github.uri} target="top">
+            {github.title}
+          </a>
         </div>
         <div className="wrapper">
           <i className={website.icon}></i>{' '}

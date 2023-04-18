@@ -28,6 +28,7 @@ const LeftColumn = () => {
         skype={ctx.personalInfo.skype}
         mobile={ctx.personalInfo.mobile}
         email={ctx.personalInfo.email}
+        github={ctx.personalInfo.github}
         linkedin={ctx.personalInfo.linkedin}
         website={ctx.personalInfo.website}
       />
