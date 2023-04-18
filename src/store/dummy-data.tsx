@@ -9,7 +9,7 @@ const DUMMY_DATA = {
   profile: {
     imageUri: IMAGE_BASE_64,
     fullName: 'Arkadi Berikashvili',
-    role: 'Full-Stack Developer / Software Engineer'
+    role: 'Full-Stack Developer / Software Architect'
   },
   personalInfo: {
     location: new PersonalInfoItemEntry('fa fa-map-marker-alt', 'Tbilisi, Georgia'),

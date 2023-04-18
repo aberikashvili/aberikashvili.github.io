@@ -8,6 +8,7 @@ class PersonalInfoEntry {
     public skype: PersonalInfoItemEntry,
     public mobile: PersonalInfoItemEntry,
     public email: PersonalInfoItemEntry,
+    public github: PersonalInfoItemEntry,
     public linkedin: PersonalInfoItemEntry,
     public website: PersonalInfoItemEntry
   ) {}
