@@ -7,7 +7,7 @@ class WorkHistoryItemEntry {
     public toMonth: string | null,
     public toYear: number | null,
     public position: string,
-    public routine: 'On-Site' | 'Remote' | 'Hybrid',
+    public routine: 'On-Site' | 'Remote' | 'Hybrid' | 'Remote Part-Time',
     public workType: 'Employment' | 'Freelance' | 'Contract',
     public company: string,
     public companyWebsite: string,

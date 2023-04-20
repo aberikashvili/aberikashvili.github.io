@@ -9,7 +9,7 @@ const DUMMY_DATA = {
   profile: {
     imageUri: IMAGE_BASE_64,
     fullName: 'Arkadi Berikashvili',
-    role: 'Full-Stack Developer / Software Architect'
+    role: 'Full-Stack Developer • Tech Lead • Software Architect'
   },
   personalInfo: {
     location: new PersonalInfoItemEntry('fa fa-map-marker-alt', 'Tbilisi, Georgia'),
@@ -123,6 +123,29 @@ const DUMMY_DATA = {
     'Supportive and enthusiastic team player dedicated streamlining processes and effectively resolving project issues. Willing to take ownership of core components'
   ],
   workHistory: [
+    new WorkHistoryItemEntry(
+      'Mar',
+      2023,
+      null,
+      null,
+      'Tech Lead (Angular, React Native)',
+      'Remote Part-Time',
+      'Contract',
+      'Digital Institute',
+      'https://digitalinstitute.ge',
+      [
+        new ProjectItemEntry(
+          ['thc-angular'],
+          [
+            'To setup github repositories and application architecture',
+            'To setup and configure CI/CD',
+            'To participate in the discussions with PMs in taking decisiions related to project planning and workflow',
+            'To perform code reviews',
+            'To assist Junior / Middle developers solving their obstacles'
+          ]
+        )
+      ]
+    ),
     new WorkHistoryItemEntry(
       'Dec',
       2022,
