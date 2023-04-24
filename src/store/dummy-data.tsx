@@ -131,8 +131,8 @@ const DUMMY_DATA = {
       'Tech Lead (Angular, React Native)',
       'Remote Part-Time',
       'Contract',
-      'Digital Institute',
-      'https://digitalinstitute.ge',
+      'Conceptdigital',
+      'https://www.conceptdigital.com/',
       [
         new ProjectItemEntry(
           ['thc-angular', 'cc-angular'],
