@@ -135,13 +135,22 @@ const DUMMY_DATA = {
       'https://digitalinstitute.ge',
       [
         new ProjectItemEntry(
-          ['thc-angular'],
+          ['thc-angular', 'cc-angular'],
           [
             'To setup github repositories and application architecture',
-            'To setup and configure CI/CD',
-            'To participate in the discussions with PMs in taking decisiions related to project planning and workflow',
+            'To setup and configure CI/CD on Netlify',
+            'To take technical decisions',
+            'To participate in the discussions related to project planning and workflow with PMs',
             'To perform code reviews',
-            'To assist Junior / Middle developers solving their obstacles'
+            'To assist Junior / Middle developers solving their obstacles',
+            'To share Best Practises, Clean Code and S.O.L.I.D priciples with team members'
+          ],
+          [
+            new SkillItemEntry('fab fa-angular', 'Angular'),
+            new SkillItemEntry('fab fa-react', 'React'),
+            new SkillItemEntry('fab fa-react', 'React Native'),
+            new SkillItemEntry('', 'Firebase'),
+            new SkillItemEntry('fab fa-github', 'Github')
           ]
         )
       ]
