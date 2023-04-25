@@ -6,6 +6,7 @@ import SkillItemEntry from '../models/SkillItemEntry';
 import WorkHistoryItemEntry from '../models/WorkHistoryItemEntry';
 
 import DUMMY_DATA from './dummy-data';
+import TrainCertEntry from '../models/TrainCertEntry';
 
 const ResumeContext = createContext({
   profile: {} as ProfileEntry,
@@ -14,7 +15,7 @@ const ResumeContext = createContext({
   secondarySkills: [] as SkillItemEntry[],
   operationSystems: [] as SkillItemEntry[],
   languages: [] as string[],
-  trainings: [] as string[],
+  trainings: [] as TrainCertEntry[],
   summary: [] as string[],
   workHistory: [] as WorkHistoryItemEntry[],
   education: [] as EducationItemEntry[]
