@@ -2,6 +2,7 @@ import EducationItemEntry from '../models/EducationItemEntry';
 import PersonalInfoItemEntry from '../models/PersonalInfoItemEntry';
 import ProjectItemEntry from '../models/ProjectItemEntry';
 import SkillItemEntry from '../models/SkillItemEntry';
+import TrainCertEntry from '../models/TrainCertEntry';
 import WorkHistoryItemEntry from '../models/WorkHistoryItemEntry';
 import IMAGE_BASE_64 from './image-base-64';
 
@@ -116,7 +117,23 @@ const DUMMY_DATA = {
       new SkillItemEntry('fab fa-linux', 'Linux')
     ],
     languages: ['English', 'Georgian', 'Russian'],
-    trainings: ['Web application security - attack and defense']
+    trainings: [
+      new TrainCertEntry(
+        'Preparing',
+        'AWS Certified Solutions Architect Associate (SAA-C03)',
+        'Online',
+        'fab fa-amazon'
+      ),
+      new TrainCertEntry(
+        'Done',
+        'Web application security - attack and defense',
+        {
+          country: 'Poland',
+          city: 'Warsaw'
+        },
+        'fab fa-linux'
+      )
+    ]
   },
   summary: [
     'Software Developer with thorough hands-on experience in web based applications, desktop applications, database development and architectural solutions, also experienced in building and stabilizing high performance applications.',
