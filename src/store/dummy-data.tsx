@@ -14,7 +14,7 @@ const DUMMY_DATA = {
   },
   personalInfo: {
     location: new PersonalInfoItemEntry('fa fa-map-marker-alt', 'Tbilisi, Georgia'),
-    address: new PersonalInfoItemEntry('fa fa-home', 'Didi Digomi, Giorgi Brtskinvale Street #48'),
+    address: new PersonalInfoItemEntry('fa fa-home', 'Didi Digomi, Giorgi Brtskinvale Street'),
     born: new PersonalInfoItemEntry('fa fa-baby', '4 November, 1990'),
     skype: new PersonalInfoItemEntry('fab fa-skype', 'superhornet111', 'skype:superhornet111?call'),
     mobile: new PersonalInfoItemEntry('fa fa-mobile', '+ 995 598 677 567'),
