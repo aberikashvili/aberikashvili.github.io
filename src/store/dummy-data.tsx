@@ -161,7 +161,7 @@ const DUMMY_DATA = {
             'To participate in the discussions related to project planning and workflow with PMs',
             'To perform code reviews',
             'To assist Junior / Middle developers solving their obstacles',
-            'To share Best Practises, Clean Code and S.O.L.I.D priciples with team members'
+            'To share Best Practises, Clean Code, K.I.S.S and S.O.L.I.D priciples with team members'
           ],
           [
             new SkillItemEntry('fab fa-angular', 'Angular'),
