@@ -7,7 +7,7 @@ import './Trainings.css';
 const Trainings = ({ trainings }: { trainings: TrainCertEntry[] }) => {
   let result = (
     <Row>
-      <Fieldset legend="Trainings & Certificates">
+      <Fieldset legend="Trainings & Certifications">
         {trainings.map(({ state, title, location, icon }) => {
           let locationFragment = (
             <>

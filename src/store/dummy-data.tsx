@@ -125,7 +125,7 @@ const DUMMY_DATA = {
         'fab fa-amazon'
       ),
       new TrainCertEntry(
-        'Done',
+        'Attended',
         'Web application security - attack and defense',
         {
           country: 'Poland',
@@ -136,8 +136,9 @@ const DUMMY_DATA = {
     ]
   },
   summary: [
-    'Software Developer with thorough hands-on experience in web based applications, desktop applications, database development and architectural solutions, also experienced in building and stabilizing high performance applications.',
-    'Supportive and enthusiastic team player dedicated streamlining processes and effectively resolving project issues. Willing to take ownership of core components'
+    'I have been involved in Software Development since 2011, with excellent knowledge of software development methodologies, frameworks, design patterns and SOLID principles, that include all phase of systems analysis and understanding of client business technologies and processes.',
+    'I have developed and maintained software for Healthcare, Fin-Tech, Energy Solutions, Betting Solutions, Educational, Data Analysis, SaaS industries.',
+    'I also posses excellent verbal and written communication skills and the ability to interact professionally with a diverse group, executives, managers, and subject matter experts. I communicate with clarity, verbally and in one-on-one or group situations.'
   ],
   workHistory: [
     new WorkHistoryItemEntry(
@@ -364,7 +365,7 @@ const DUMMY_DATA = {
       2017,
       'Senior Software Developer',
       'On-Site',
-      'Employment',
+      'Full-Time Employment',
       'GPN DATA Group International',
       'https://dev.gpndata.com/',
       [
@@ -391,7 +392,7 @@ const DUMMY_DATA = {
       2016,
       'Middle/Senior .NET Developer',
       'On-Site',
-      'Employment',
+      'Full-Time Employment',
       'Steady Logic Llc',
       'https://steady-logic.com',
       [
@@ -418,7 +419,7 @@ const DUMMY_DATA = {
       2013,
       'Web Developer',
       'On-Site',
-      'Employment',
+      'Full-Time Employment',
       'Solo Group Ltd',
       'https://solostudio.ge',
       [
