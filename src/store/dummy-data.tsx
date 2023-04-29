@@ -307,12 +307,12 @@ const DUMMY_DATA = {
           ['Volt Delta'],
           [
             'To migrate code from Dimmension to GitHub repositories',
-            'To prepare Development Environment on local machine &amp; Build',
-            "To prepare Development Environment in AWS EC2's &amp; Build",
+            'To prepare Development Environment on local machine & Build',
+            "To prepare Development Environment in AWS EC2's & Build",
             'To migrate issues from Dimmensions to our Centralized Jira',
-            'To find out all dependencies &amp; Migrate',
+            'To find out all dependencies & Migrate',
             'To prepare CI/CD pipelines in Jenkins',
-            "To review E2E TC's &amp; Scenarios for QA team",
+            "To review E2E TC's & Scenarios for QA team",
             'To fetch last code changes and prepare documents for Unit Testing team',
             'To close the current defect backlog and deliver fixes for NodeJs services',
             'To close the current test backlog and deliver automated tests for NodeJs services',
@@ -323,11 +323,11 @@ const DUMMY_DATA = {
           ['Mobilogy'],
           [
             'To inspect and investigate UI of the incoming projects',
-            'To prepare Development Environment on local machine &amp; Build',
-            'To prepare Development Environment in Cloud (DevSpaces, Docker) &amp; Build',
+            'To prepare Development Environment on local machine & Build',
+            'To prepare Development Environment in Cloud (DevSpaces, Docker) & Build',
             'To migrate Git repositories',
             'To migrate issues from Jira TFS, Dimmension etc. to our Centralized Jira',
-            'To find out all dependencies &amp; Migrate',
+            'To find out all dependencies & Migrate',
             'To prepare CI/CD pipelines in Jenkins',
             'To close the current defect backlog and deliver fixes for NodeJs services',
             'To close the current feature backlog and deliver new features for NodeJs services'
@@ -372,8 +372,8 @@ const DUMMY_DATA = {
         new ProjectItemEntry(
           ['PSP Gateway (Payment Service Provider Gateway)'],
           [
-            'To maintain legacy PSP application using PHP 7 &amp; MySQL',
-            'To develop internal softwares using .Net Core &amp; Angular 2',
+            'To maintain legacy PSP application using PHP 7 & MySQL',
+            'To develop internal softwares using .Net Core & Angular 2',
             'To integrate Banks into PSP system',
             "To test and find out problems in PSP system if there's any",
             'To simulate payment requests to each Bank for testing purpose',
@@ -406,7 +406,7 @@ const DUMMY_DATA = {
             'To implement DAL (Data Access Layer)',
             'To implement Database Layer using Ms SQL Server, create stored procedures, functions etc.',
             'To participate in planning of architecture design, changing design features and improve stability of software',
-            'To implement Micro Services using C# &amp; RabbitMQ',
+            'To implement Micro Services using C# & RabbitMQ',
             'To implement Cache server using Redis'
           ]
         )
@@ -426,7 +426,7 @@ const DUMMY_DATA = {
         new ProjectItemEntry(
           ['Website Development'],
           [
-            'To create Web Site Markup using HTML 5 &amp; CSS 3',
+            'To create Web Site Markup using HTML 5 & CSS 3',
             'To create Web Site Front-End using Javascript, jQuery',
             'To create Web Site Back-End using PHP 5 or ASP.NET MVC',
             'To create Web Site Database using MySQL or Ms SQL Server ',
