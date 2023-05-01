@@ -87,6 +87,7 @@ const DUMMY_DATA = {
       new SkillItemEntry('fab fa-amazon', 'AWS Cognito'),
       new SkillItemEntry('fab fa-amazon', 'AWS IAM'),
       new SkillItemEntry('fab fa-amazon', 'AWS EC2'),
+      new SkillItemEntry('fab fa-amazon', 'AWS AMI'),
       new SkillItemEntry('fab fa-amazon', 'AWS S3'),
       new SkillItemEntry('fab fa-amazon', 'AWS Route53'),
       new SkillItemEntry('fab fa-amazon', 'AWS DynamoDB'),
@@ -182,7 +183,7 @@ const DUMMY_DATA = {
       2022,
       null,
       null,
-      'Full-Stack Freelancer (Angular, NestJs, React, React Native, AWS)',
+      'Full-Stack Freelancer (Angular, NestJs, React, React Native, AWS, Docker)',
       'Remote',
       'Freelance',
       'Upwork.com',
@@ -298,6 +299,15 @@ const DUMMY_DATA = {
             'To test Angular software with Karma / Jasmine',
             "To do a regular code reviews for non angular expert team members PR's and coach them how to achieve better result"
           ]
+          // [
+          //   new SkillItemEntry('fab fa-angular', 'Angular'),
+          //   new SkillItemEntry('fab fa-angular', 'NGXS'),
+          //   new SkillItemEntry('', 'RxJs'),
+          //   new SkillItemEntry('fab fa-windows', 'Asp.Net / Asp.Net core 2'),
+          //   new SkillItemEntry('', 'agGrid'),
+          //   new SkillItemEntry('fab fa-angular', 'Karma'),
+          //   new SkillItemEntry('fab fa-angular', 'Jasmine')
+          // ]
         ),
         new ProjectItemEntry(
           ['AES CIS'],
@@ -306,6 +316,11 @@ const DUMMY_DATA = {
             'To update legacy software UI from HTML to HTML 5',
             'To make old (only IE compatible) software, compatible with modern browsers (JS)'
           ]
+          // [
+          //   new SkillItemEntry('fab fa-js', 'Javascript'),
+          //   new SkillItemEntry('fab fa-sass', 'SCSS'),
+          //   new SkillItemEntry('fab fa-windows', 'Asp.Net / Asp.Net core 2')
+          // ]
         ),
         new ProjectItemEntry(
           ['Volt Delta'],
@@ -322,6 +337,14 @@ const DUMMY_DATA = {
             'To close the current test backlog and deliver automated tests for NodeJs services',
             'To close the current feature backlog and deliver new features for NodeJs services'
           ]
+          // [
+          //   new SkillItemEntry('fab fa-docker', 'Docker'),
+          //   new SkillItemEntry('fab fa-jenkins', 'CI / CD'),
+          //   new SkillItemEntry('', 'C#'),
+          //   new SkillItemEntry('fab fa-node', 'Node.js'),
+          //   new SkillItemEntry('fab fa-amazon', 'AWS EC2'),
+          //   new SkillItemEntry('fab fa-amazon', 'AWS AMI')
+          // ]
         ),
         new ProjectItemEntry(
           ['Mobilogy'],
@@ -336,6 +359,38 @@ const DUMMY_DATA = {
             'To close the current defect backlog and deliver fixes for NodeJs services',
             'To close the current feature backlog and deliver new features for NodeJs services'
           ]
+          // [
+          //   new SkillItemEntry('fab fa-angular', 'Angular'),
+          //   new SkillItemEntry('fab fa-angular', 'Ngrx Store'),
+          //   new SkillItemEntry('', 'RxJs'),
+          //   new SkillItemEntry('fab fa-node', 'Node.js'),
+          //   new SkillItemEntry('fab fa-docker', 'Docker'),
+          //   new SkillItemEntry('fab fa-jenkins', 'CI / CD'),
+          //   new SkillItemEntry('fab fa-angular', 'Karma'),
+          //   new SkillItemEntry('fab fa-angular', 'Jasmine'),
+          //   new SkillItemEntry('fab fa-amazon', 'AWS')
+          // ]
+        ),
+        new ProjectItemEntry(
+          ['LyrisHQ / Campaign Manager'],
+          [
+            'To investigate legacy application and expose necessary Api endpoints',
+            'To reskin legacy Lyris application UI using Angular 5',
+            'To write Unit Tests using Karma, Jasmine',
+            'To integrate Angular 5 UI with Java / Spring based REST Api',
+            'To write E2E Tests using Protractor',
+            'To run E2E Tests against several browsers using Browserstack'
+          ]
+          // [
+          //   new SkillItemEntry('fab fa-angular', 'Angular'),
+          //   new SkillItemEntry('', 'RxJs'),
+          //   new SkillItemEntry('fab fa-angular', 'Karma'),
+          //   new SkillItemEntry('fab fa-angular', 'Jasmine'),
+          //   new SkillItemEntry('fab fa-angular', 'Protractor'),
+          //   new SkillItemEntry('fab fa-java', 'Java Spring'),
+          //   new SkillItemEntry('', 'Swagger'),
+          //   new SkillItemEntry('', 'TypeScript')
+          // ]
         ),
         new ProjectItemEntry(
           ['CRM'],
@@ -348,17 +403,16 @@ const DUMMY_DATA = {
             'To write E2E Tests using Protractor',
             'To run E2E Tests against several browsers using Browserstack'
           ]
-        ),
-        new ProjectItemEntry(
-          ['LyrisHQ / Campaign Manager'],
-          [
-            'To investigate legacy application and expose necessary Api endpoints',
-            'To reskin legacy Lyris application UI using Angular 5',
-            'To write Unit Tests using Karma, Jasmine',
-            'To integrate Angular 5 UI with Java / Spring based REST Api',
-            'To write E2E Tests using Protractor',
-            'To run E2E Tests against several browsers using Browserstack'
-          ]
+          // [
+          //   new SkillItemEntry('fab fa-angular', 'Angular'),
+          //   new SkillItemEntry('', 'RxJs'),
+          //   new SkillItemEntry('fab fa-angular', 'Karma'),
+          //   new SkillItemEntry('fab fa-angular', 'Jasmine'),
+          //   new SkillItemEntry('fab fa-angular', 'Protractor'),
+          //   new SkillItemEntry('', 'Web Api / REST Api'),
+          //   new SkillItemEntry('', 'Swagger'),
+          //   new SkillItemEntry('', 'TypeScript')
+          // ]
         )
       ]
     ),
