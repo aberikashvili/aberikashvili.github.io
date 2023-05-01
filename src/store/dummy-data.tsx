@@ -42,7 +42,7 @@ const DUMMY_DATA = {
   },
   skills: {
     primary: [
-      new SkillItemEntry('fab fa-angular', 'Angular 14'),
+      new SkillItemEntry('fab fa-angular', 'Angular 15'),
       new SkillItemEntry('', 'TypeScript'),
       new SkillItemEntry('fab fa-js', 'Javascript'),
       new SkillItemEntry('fab fa-angular', 'Angular Material'),
