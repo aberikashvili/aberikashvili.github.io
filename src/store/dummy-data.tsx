@@ -5,6 +5,7 @@ import SkillItemEntry from '../models/SkillItemEntry';
 import TrainCertEntry from '../models/TrainCertEntry';
 import WorkHistoryItemEntry from '../models/WorkHistoryItemEntry';
 import IMAGE_BASE_64 from './image-base-64';
+import { SkillSet } from './skills';
 
 const DUMMY_DATA = {
   profile: {
@@ -41,77 +42,87 @@ const DUMMY_DATA = {
     )
   },
   skills: {
-    primary: [
-      new SkillItemEntry('fab fa-angular', 'Angular 15'),
-      new SkillItemEntry('', 'TypeScript'),
-      new SkillItemEntry('fab fa-js', 'Javascript'),
-      new SkillItemEntry('fab fa-angular', 'Angular Material'),
-      new SkillItemEntry('fab fa-angular', 'NX'),
-      new SkillItemEntry('', 'RxJs'),
-      new SkillItemEntry('fab fa-react', 'React Native'),
-      new SkillItemEntry('fab fa-react', 'React'),
-      new SkillItemEntry('fab fa-react', 'Redux'),
-      new SkillItemEntry('', 'Jest'),
-      new SkillItemEntry('', 'Karma'),
-      new SkillItemEntry('', 'Jasmine'),
-      new SkillItemEntry('', 'agGrid'),
-      new SkillItemEntry('fab fa-angular', 'NGXS'),
-      new SkillItemEntry('fab fa-angular', 'NGRX Store'),
-      new SkillItemEntry('fab fa-node', 'NodeJs'),
-      new SkillItemEntry('fab fa-node', 'NestJs'),
-      new SkillItemEntry('fab fa-sass', 'SCSS'),
-      new SkillItemEntry('', 'Unit Testing'),
-      new SkillItemEntry('fab fa-github', 'Git'),
-      new SkillItemEntry('fab fa-jira', 'Jira'),
-      new SkillItemEntry('fab fa-angular', 'Angular E2E Testing'),
-      new SkillItemEntry('fab fa-angular', 'AngularJs'),
-      new SkillItemEntry('fab fa-twitter', 'Twitter Bootstrap'),
-      new SkillItemEntry('', 'Swagger'),
-      new SkillItemEntry('fab fa-jenkins', 'Jenkins'),
-      new SkillItemEntry('fab fa-windows', '.Net / .Net Core'),
-      new SkillItemEntry('', 'C#'),
-      new SkillItemEntry('', 'EF Core 2'),
-      new SkillItemEntry('fab fa-windows', 'Asp.Net / Asp.Net core 2'),
-      new SkillItemEntry('', 'ADO.NET'),
-      new SkillItemEntry('', 'Web Api / REST Api'),
-      new SkillItemEntry('fab fa-docker', 'Docker'),
-      new SkillItemEntry('fa fa-database', 'MySql'),
-      new SkillItemEntry('fab fa-jenkins', 'CI / CD'),
-      new SkillItemEntry('fab fa-github', 'Github'),
-      new SkillItemEntry('fab fa-bitbucket', 'BitBucket')
-    ],
-    secondary: [
-      new SkillItemEntry('fab fa-amazon', 'AWS Lambda'),
-      new SkillItemEntry('fab fa-amazon', 'AWS API Gateway'),
-      new SkillItemEntry('fab fa-amazon', 'AWS CloudFront'),
-      new SkillItemEntry('fab fa-amazon', 'AWS Cognito'),
-      new SkillItemEntry('fab fa-amazon', 'AWS IAM'),
-      new SkillItemEntry('fab fa-amazon', 'AWS EC2'),
-      new SkillItemEntry('fab fa-amazon', 'AWS AMI'),
-      new SkillItemEntry('fab fa-amazon', 'AWS S3'),
-      new SkillItemEntry('fab fa-amazon', 'AWS Route53'),
-      new SkillItemEntry('fab fa-amazon', 'AWS DynamoDB'),
-      new SkillItemEntry('fab fa-amazon', 'AWS CloudWatch'),
-      new SkillItemEntry('', 'Protractor'),
-      new SkillItemEntry('fab fa-firefox', 'Browserstack'),
-      new SkillItemEntry('', 'Postman'),
-      new SkillItemEntry('', 'Fiddler'),
-      new SkillItemEntry('', 'Integration Testing'),
-      new SkillItemEntry('fab fa-php', 'PHP'),
-      new SkillItemEntry('', 'Agile / Scrum Methodology'),
-      new SkillItemEntry('fa fa-database', 'T-SQL'),
-      new SkillItemEntry('fab fa-windows', 'Team Fundation Server'),
-      new SkillItemEntry('', 'YAML'),
-      new SkillItemEntry('', 'XML'),
-      new SkillItemEntry('', 'Domain Driven Design'),
-      new SkillItemEntry('', 'Redis'),
-      new SkillItemEntry('', 'RabbitMQ'),
-      new SkillItemEntry('', 'Nginx'),
-      new SkillItemEntry('fab fa-js', 'ExtJs'),
-      new SkillItemEntry('fa fa-database', 'Ms Sql Server'),
-      new SkillItemEntry('', 'NoSql'),
-      new SkillItemEntry('fab fa-js', 'jQuery')
-    ],
+    primary: SkillSet([
+      'angular',
+      'typescript',
+      'javascript',
+      'angular-material',
+      'nx',
+      'rxjs',
+      'react-native',
+      'react',
+      'redux',
+      'jest',
+      'karma',
+      'jasmine',
+      'agGrid',
+      'ngxs',
+      'ngrx-store',
+      'nodejs',
+      'nestjs',
+      'mikro-orm',
+      'scss',
+      'unit-testing',
+      'git',
+      'jira',
+      'angular-e2e',
+      'angularjs',
+      'twitter-bootstrap',
+      'swagger',
+      'jenkins',
+      'csharp',
+      'efcore',
+      'asp.net core',
+      'ado.net',
+      'web api / rest api',
+      'docker',
+      'docker-compose',
+      'mysql',
+      'cicd',
+      'github',
+      'bitbucket',
+      'aws-ebs',
+      'aws-lambda',
+      'aws-api-gateway',
+      'aws-rds',
+      'aws-iam',
+      'aws-ec2',
+      'aws-ami',
+      'aws-s3'
+    ]),
+    secondary: SkillSet([
+      'aws-cloudfront',
+      'aws-cognito',
+      'aws-route53',
+      'aws-dynamodb',
+      'aws-cloudwatch',
+      'aws-cli',
+      'aws-sdk',
+      'postgresql',
+      'passport',
+      'jwt',
+      'protractor',
+      'browserstack',
+      'postman',
+      'fiddler',
+      'integration-testing',
+      'php',
+      'agile-scrum',
+      'tsql',
+      'tfs',
+      'yaml',
+      'xml',
+      'domain-driven-design',
+      'redis',
+      'rabbitmq',
+      'nginx',
+      'extjs',
+      'mssqlserver',
+      'nosql',
+      'jquery',
+      'cypress',
+      'firebase'
+    ]),
     os: [
       new SkillItemEntry('fab fa-apple', 'MacOS'),
       new SkillItemEntry('fab fa-windows', 'Windows'),
@@ -168,13 +179,7 @@ const DUMMY_DATA = {
             'To setup pre-commit / pre-push hooks for each project',
             'To participate in Sprint Planning with Project Managers'
           ],
-          [
-            new SkillItemEntry('fab fa-angular', 'Angular'),
-            new SkillItemEntry('fab fa-react', 'React'),
-            new SkillItemEntry('fab fa-react', 'React Native'),
-            new SkillItemEntry('', 'Firebase'),
-            new SkillItemEntry('fab fa-github', 'Github')
-          ]
+          SkillSet(['angular', 'react', 'react-native', 'firebase', 'github'])
         )
       ]
     ),
@@ -197,13 +202,7 @@ const DUMMY_DATA = {
             'To write integration test samples for NestJs projects',
             'To write integration test samples for React projects'
           ],
-          [
-            new SkillItemEntry('', 'NX'),
-            new SkillItemEntry('fab fa-react', 'React'),
-            new SkillItemEntry('fab fa-node', 'NestJs'),
-            new SkillItemEntry('fab fa-docker', 'Docker Compose'),
-            new SkillItemEntry('', 'Typescript')
-          ]
+          SkillSet(['nx', 'react', 'nodejs', 'docker', 'docker-compose', 'typescript'])
         ),
         new ProjectItemEntry(
           ['TRKR LLC: Auth Microservice'],
@@ -216,18 +215,18 @@ const DUMMY_DATA = {
             'To integrate React app with auth microservice (HTTP + RabbitMQ)',
             'To integrate Angular + Firebase admin app with auth microservice (HTTP + RabbitMQ)'
           ],
-          [
-            new SkillItemEntry('fab fa-node', 'NestJs'),
-            new SkillItemEntry('fab fa-node', 'Mikro-orm'),
-            new SkillItemEntry('fab fa-node', 'passport'),
-            new SkillItemEntry('', 'JWT'),
-            new SkillItemEntry('', 'Swagger'),
-            new SkillItemEntry('fa fa-database', 'PostgreSQL'),
-            new SkillItemEntry('', 'RabbiqMQ'),
-            new SkillItemEntry('fab fa-angular', 'Angular'),
-            new SkillItemEntry('fab fa-react', 'React'),
-            new SkillItemEntry('', 'Firebase')
-          ]
+          SkillSet([
+            'nestjs',
+            'mikro-orm',
+            'passport',
+            'jwt',
+            'swagger',
+            'postgresql',
+            'rabbitmq',
+            'angular',
+            'react',
+            'firebase'
+          ])
         )
       ]
     ),
@@ -299,15 +298,7 @@ const DUMMY_DATA = {
             'To test Angular software with Karma / Jasmine',
             "To do a regular code reviews for non angular expert team members PR's and coach them how to achieve better result"
           ]
-          // [
-          //   new SkillItemEntry('fab fa-angular', 'Angular'),
-          //   new SkillItemEntry('fab fa-angular', 'NGXS'),
-          //   new SkillItemEntry('', 'RxJs'),
-          //   new SkillItemEntry('fab fa-windows', 'Asp.Net / Asp.Net core 2'),
-          //   new SkillItemEntry('', 'agGrid'),
-          //   new SkillItemEntry('fab fa-angular', 'Karma'),
-          //   new SkillItemEntry('fab fa-angular', 'Jasmine')
-          // ]
+          // SkillSet(['angular', 'ngxs', 'rxjs', 'asp.net core', 'agGrid', 'karma', 'jasmine'])
         ),
         new ProjectItemEntry(
           ['AES CIS'],
@@ -316,11 +307,7 @@ const DUMMY_DATA = {
             'To update legacy software UI from HTML to HTML 5',
             'To make old (only IE compatible) software, compatible with modern browsers (JS)'
           ]
-          // [
-          //   new SkillItemEntry('fab fa-js', 'Javascript'),
-          //   new SkillItemEntry('fab fa-sass', 'SCSS'),
-          //   new SkillItemEntry('fab fa-windows', 'Asp.Net / Asp.Net core 2')
-          // ]
+          // SkillSet(['javascript', 'scss', 'asp.net core'])
         ),
         new ProjectItemEntry(
           ['Volt Delta'],
@@ -337,14 +324,7 @@ const DUMMY_DATA = {
             'To close the current test backlog and deliver automated tests for NodeJs services',
             'To close the current feature backlog and deliver new features for NodeJs services'
           ]
-          // [
-          //   new SkillItemEntry('fab fa-docker', 'Docker'),
-          //   new SkillItemEntry('fab fa-jenkins', 'CI / CD'),
-          //   new SkillItemEntry('', 'C#'),
-          //   new SkillItemEntry('fab fa-node', 'Node.js'),
-          //   new SkillItemEntry('fab fa-amazon', 'AWS EC2'),
-          //   new SkillItemEntry('fab fa-amazon', 'AWS AMI')
-          // ]
+          // SkillSet(['docker', 'cicd', 'csharp', 'nodejs', 'aws-ec2', 'aws-ami'])
         ),
         new ProjectItemEntry(
           ['Mobilogy'],
@@ -359,17 +339,18 @@ const DUMMY_DATA = {
             'To close the current defect backlog and deliver fixes for NodeJs services',
             'To close the current feature backlog and deliver new features for NodeJs services'
           ]
-          // [
-          //   new SkillItemEntry('fab fa-angular', 'Angular'),
-          //   new SkillItemEntry('fab fa-angular', 'Ngrx Store'),
-          //   new SkillItemEntry('', 'RxJs'),
-          //   new SkillItemEntry('fab fa-node', 'Node.js'),
-          //   new SkillItemEntry('fab fa-docker', 'Docker'),
-          //   new SkillItemEntry('fab fa-jenkins', 'CI / CD'),
-          //   new SkillItemEntry('fab fa-angular', 'Karma'),
-          //   new SkillItemEntry('fab fa-angular', 'Jasmine'),
-          //   new SkillItemEntry('fab fa-amazon', 'AWS')
-          // ]
+          // SkillSet([
+          //   'angular',
+          //   'ngrx-store',
+          //   'rxjs',
+          //   'nodejs',
+          //   'docker',
+          //   'docker-compose',
+          //   'cicd',
+          //   'karma',
+          //   'jasmine',
+          //   'aws'
+          // ])
         ),
         new ProjectItemEntry(
           ['LyrisHQ / Campaign Manager'],
@@ -381,16 +362,16 @@ const DUMMY_DATA = {
             'To write E2E Tests using Protractor',
             'To run E2E Tests against several browsers using Browserstack'
           ]
-          // [
-          //   new SkillItemEntry('fab fa-angular', 'Angular'),
-          //   new SkillItemEntry('', 'RxJs'),
-          //   new SkillItemEntry('fab fa-angular', 'Karma'),
-          //   new SkillItemEntry('fab fa-angular', 'Jasmine'),
-          //   new SkillItemEntry('fab fa-angular', 'Protractor'),
-          //   new SkillItemEntry('fab fa-java', 'Java Spring'),
-          //   new SkillItemEntry('', 'Swagger'),
-          //   new SkillItemEntry('', 'TypeScript')
-          // ]
+          // SkillSet([
+          //   'angular',
+          //   'rxjs',
+          //   'karma',
+          //   'jasmine',
+          //   'protractor',
+          //   'java',
+          //   'swagger',
+          //   'typescript'
+          // ])
         ),
         new ProjectItemEntry(
           ['CRM'],
@@ -403,16 +384,16 @@ const DUMMY_DATA = {
             'To write E2E Tests using Protractor',
             'To run E2E Tests against several browsers using Browserstack'
           ]
-          // [
-          //   new SkillItemEntry('fab fa-angular', 'Angular'),
-          //   new SkillItemEntry('', 'RxJs'),
-          //   new SkillItemEntry('fab fa-angular', 'Karma'),
-          //   new SkillItemEntry('fab fa-angular', 'Jasmine'),
-          //   new SkillItemEntry('fab fa-angular', 'Protractor'),
-          //   new SkillItemEntry('', 'Web Api / REST Api'),
-          //   new SkillItemEntry('', 'Swagger'),
-          //   new SkillItemEntry('', 'TypeScript')
-          // ]
+          // SkillSet([
+          //   'angular',
+          //   'rxjs',
+          //   'karma',
+          //   'jasmine',
+          //   'protractor',
+          //   'asp.net core',
+          //   'swagger',
+          //   'typescript'
+          // ])
         )
       ]
     ),
