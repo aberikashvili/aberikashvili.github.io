@@ -1,6 +1,31 @@
 import SkillItemEntry from '../models/SkillItemEntry';
 
 type SkillMap = {
+  // Soft Skills
+  commubnication: SkillItemEntry;
+  teamwork: SkillItemEntry;
+  leadership: SkillItemEntry;
+  'problem-solving': SkillItemEntry;
+  'time-management': SkillItemEntry;
+  'critical-thinking': SkillItemEntry;
+  collaboration: SkillItemEntry;
+  learning: SkillItemEntry;
+  management: SkillItemEntry;
+  'project-management': SkillItemEntry;
+  flexibility: SkillItemEntry;
+  // Soft Skills
+
+  // Tools
+  testrail: SkillItemEntry;
+  teamcity: SkillItemEntry;
+  gitlab: SkillItemEntry;
+  netlify: SkillItemEntry;
+  // Tools
+
+  // DevOps
+  groovy: SkillItemEntry;
+  // DevOps
+
   angular: SkillItemEntry;
   typescript: SkillItemEntry;
   javascript: SkillItemEntry;
@@ -60,6 +85,8 @@ type SkillMap = {
   'aws-dynamodb': SkillItemEntry;
   'aws-cloudwatch': SkillItemEntry;
   'aws-rds': SkillItemEntry;
+  'aws-efs': SkillItemEntry;
+  digitalocean: SkillItemEntry;
   protractor: SkillItemEntry;
   browserstack: SkillItemEntry;
   postman: SkillItemEntry;

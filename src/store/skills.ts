@@ -2,6 +2,40 @@ import SkillItemEntry from '../models/SkillItemEntry';
 import SkillMap from '../types/skill-map.type';
 
 const skillsMap: SkillMap = {
+  // Soft Skills
+  commubnication: new SkillItemEntry('fa fa-hashtag', 'Communication'),
+  teamwork: new SkillItemEntry('fa fa-hashtag', 'Teamwork'),
+  leadership: new SkillItemEntry('fa fa-hashtag', 'Leadership'),
+  'problem-solving': new SkillItemEntry('fa fa-hashtag', 'Problem Solving'),
+  'time-management': new SkillItemEntry('fa fa-hashtag', 'Time Management'),
+  'critical-thinking': new SkillItemEntry('fa fa-hashtag', 'Critical Thinking'),
+  collaboration: new SkillItemEntry('fa fa-hashtag', 'Collaboration'),
+  learning: new SkillItemEntry('fa fa-hashtag', 'Learning'),
+  management: new SkillItemEntry('fa fa-hashtag', 'Management'),
+  'project-management': new SkillItemEntry('fa fa-hashtag', 'Project Management'),
+  flexibility: new SkillItemEntry('fa fa-hashtag', 'Flexibility'),
+  // Soft Skills
+
+  // Tools
+  github: new SkillItemEntry('fab fa-github', 'Github'),
+  bitbucket: new SkillItemEntry('fab fa-bitbucket', 'BitBucket'),
+  jenkins: new SkillItemEntry('fab fa-jenkins', 'Jenkins'),
+  testrail: new SkillItemEntry('fa fa-hashtag', 'TeatRail'),
+  teamcity: new SkillItemEntry('fa fa-hashtag', 'TeamCity'),
+  gitlab: new SkillItemEntry('fab fa-github', 'GitLab'),
+  netlify: new SkillItemEntry('fa fa-hashtag', 'Netlify'),
+  docker: new SkillItemEntry('fab fa-docker', 'Docker'),
+  'docker-compose': new SkillItemEntry('fab fa-docker', 'Docker Compose'),
+  browserstack: new SkillItemEntry('fab fa-firefox', 'Browserstack'),
+  postman: new SkillItemEntry('fa fa-hashtag', 'Postman'),
+  fiddler: new SkillItemEntry('fa fa-hashtag', 'Fiddler'),
+  tfs: new SkillItemEntry('fab fa-windows', 'Team Fundation Server'),
+  // Tools
+
+  // DevOps
+  groovy: new SkillItemEntry('fa fa-hashtag', 'Groovy'),
+  // DevOps
+
   angular: new SkillItemEntry('fab fa-angular', 'Angular 15'),
   typescript: new SkillItemEntry('fa fa-hashtag', 'Typescript'),
   javascript: new SkillItemEntry('fab fa-js', 'Javascript'),
@@ -27,7 +61,6 @@ const skillsMap: SkillMap = {
   angularjs: new SkillItemEntry('fab fa-angular', 'AngularJs'),
   'twitter-bootstrap': new SkillItemEntry('fab fa-twitter', 'Twitter Bootstrap'),
   swagger: new SkillItemEntry('fa fa-hashtag', 'Swagger'),
-  jenkins: new SkillItemEntry('fab fa-jenkins', 'Jenkins'),
   netcore: new SkillItemEntry('fab fa-windows', '.Net / .Net Core'),
   csharp: new SkillItemEntry('fa fa-hashtag', 'C#'),
   java: new SkillItemEntry('fab fa-java', 'Java Spring'),
@@ -35,12 +68,8 @@ const skillsMap: SkillMap = {
   'asp.net core': new SkillItemEntry('fab fa-windows', 'Asp.Net / Asp.Net core 2'),
   'ado.net': new SkillItemEntry('fa fa-hashtag', 'ADO.NET'),
   'web api / rest api': new SkillItemEntry('fa fa-hashtag', 'Web Api / REST Api'),
-  docker: new SkillItemEntry('fab fa-docker', 'Docker'),
-  'docker-compose': new SkillItemEntry('fab fa-docker', 'Docker Compose'),
   mysql: new SkillItemEntry('fa fa-database', 'MySql'),
   cicd: new SkillItemEntry('fab fa-jenkins', 'CI / CD'),
-  github: new SkillItemEntry('fab fa-github', 'Github'),
-  bitbucket: new SkillItemEntry('fab fa-bitbucket', 'BitBucket'),
   'mikro-orm': new SkillItemEntry('fab fa-node', 'Mikro-Orm'),
   passport: new SkillItemEntry('fab fa-node', 'passport'),
   jwt: new SkillItemEntry('fa fa-hashtag', 'JWT'),
@@ -61,15 +90,13 @@ const skillsMap: SkillMap = {
   'aws-dynamodb': new SkillItemEntry('fab fa-amazon', 'AWS DynamoDB'),
   'aws-cloudwatch': new SkillItemEntry('fab fa-amazon', 'AWS CloudWatch'),
   'aws-rds': new SkillItemEntry('fab fa-amazon', 'AWS RDS'),
+  'aws-efs': new SkillItemEntry('fab fa-amazon', 'AWS EFS'),
+  digitalocean: new SkillItemEntry('fa fa-hashtag', 'DigitalOcean'),
   protractor: new SkillItemEntry('fa fa-hashtag', 'Protractor'),
-  browserstack: new SkillItemEntry('fab fa-firefox', 'Browserstack'),
-  postman: new SkillItemEntry('fa fa-hashtag', 'Postman'),
-  fiddler: new SkillItemEntry('fa fa-hashtag', 'Fiddler'),
   'integration-testing': new SkillItemEntry('fa fa-hashtag', 'Integration Testing'),
   php: new SkillItemEntry('fab fa-php', 'PHP'),
   'agile-scrum': new SkillItemEntry('fa fa-hashtag', 'Agile / Scrum Methodology'),
   tsql: new SkillItemEntry('fa fa-database', 'T-SQL'),
-  tfs: new SkillItemEntry('fab fa-windows', 'Team Fundation Server'),
   yaml: new SkillItemEntry('fa fa-hashtag', 'YAML'),
   xml: new SkillItemEntry('fa fa-hashtag', 'XML'),
   'domain-driven-design': new SkillItemEntry('fa fa-hashtag', 'Domain Driven Design'),
