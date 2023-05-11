@@ -281,7 +281,7 @@ const DUMMY_DATA = {
             'To participate in the discussions related to project planning and workflow with PMs',
             'To perform code reviews',
             'To assist Junior / Middle developers solving their obstacles',
-            'To share Best Practises, Clean Code, K.I.S.S and S.O.L.I.D priciples with team members',
+            'To share Best Practises, Clean Code, K.I.S.S, D.R.Y, A.C.I.D and S.O.L.I.D priciples with team members',
             'To configure eslint, prettier, puppeteer and etc. for each project',
             'To setup github actions',
             'To setup pre-commit / pre-push hooks for each project',
