@@ -73,6 +73,7 @@ const DUMMY_DATA = {
         'aws-cli',
         'aws-sdk',
         'aws-efs',
+        'aws-elb',
         'firebase',
         'digitalocean'
       ]),

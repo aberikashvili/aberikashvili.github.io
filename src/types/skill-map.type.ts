@@ -86,6 +86,7 @@ type SkillMap = {
   'aws-cloudwatch': SkillItemEntry;
   'aws-rds': SkillItemEntry;
   'aws-efs': SkillItemEntry;
+  'aws-elb': SkillItemEntry;
   digitalocean: SkillItemEntry;
   protractor: SkillItemEntry;
   browserstack: SkillItemEntry;

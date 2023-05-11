@@ -91,6 +91,7 @@ const skillsMap: SkillMap = {
   'aws-cloudwatch': new SkillItemEntry('fab fa-amazon', 'AWS CloudWatch'),
   'aws-rds': new SkillItemEntry('fab fa-amazon', 'AWS RDS'),
   'aws-efs': new SkillItemEntry('fab fa-amazon', 'AWS EFS'),
+  'aws-elb': new SkillItemEntry('fab fa-amazon', 'AWS ELB'),
   digitalocean: new SkillItemEntry('fa fa-cloud', 'DigitalOcean'),
   protractor: new SkillItemEntry('fa fa-hashtag', 'Protractor'),
   'integration-testing': new SkillItemEntry('fa fa-hashtag', 'Integration Testing'),
