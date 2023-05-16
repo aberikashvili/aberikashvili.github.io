@@ -75,7 +75,8 @@ const DUMMY_DATA = {
         'aws-efs',
         'aws-elb',
         'firebase',
-        'digitalocean'
+        'digitalocean',
+        'netlify'
       ]),
       frontEnd: SkillSet([
         'angular',
@@ -145,8 +146,8 @@ const DUMMY_DATA = {
         'tfs',
         'testrail',
         'gitlab',
-        'netlify',
-        'browserstack'
+        'browserstack',
+        'git'
       ])
     },
     primary: SkillSet([

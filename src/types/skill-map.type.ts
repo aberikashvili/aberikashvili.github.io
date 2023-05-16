@@ -16,59 +16,38 @@ type SkillMap = {
   // Soft Skills
 
   // Tools
+  github: SkillItemEntry;
+  bitbucket: SkillItemEntry;
+  jenkins: SkillItemEntry;
   testrail: SkillItemEntry;
   teamcity: SkillItemEntry;
   gitlab: SkillItemEntry;
-  netlify: SkillItemEntry;
+  browserstack: SkillItemEntry;
+  postman: SkillItemEntry;
+  fiddler: SkillItemEntry;
+  tfs: SkillItemEntry;
+  git: SkillItemEntry;
+  jira: SkillItemEntry;
   // Tools
+
+  // General
+  'unit-testing': SkillItemEntry;
+  protractor: SkillItemEntry;
+  'integration-testing': SkillItemEntry;
+  'agile-scrum': SkillItemEntry;
+  yaml: SkillItemEntry;
+  xml: SkillItemEntry;
+  'domain-driven-design': SkillItemEntry;
+  // General
 
   // DevOps
   groovy: SkillItemEntry;
-  // DevOps
-
-  angular: SkillItemEntry;
-  typescript: SkillItemEntry;
-  javascript: SkillItemEntry;
-  'angular-material': SkillItemEntry;
-  nx: SkillItemEntry;
-  rxjs: SkillItemEntry;
-  'react-native': SkillItemEntry;
-  react: SkillItemEntry;
-  redux: SkillItemEntry;
-  jest: SkillItemEntry;
-  karma: SkillItemEntry;
-  jasmine: SkillItemEntry;
-  agGrid: SkillItemEntry;
-  ngxs: SkillItemEntry;
-  'ngrx-store': SkillItemEntry;
-  nodejs: SkillItemEntry;
-  nestjs: SkillItemEntry;
-  scss: SkillItemEntry;
-  'unit-testing': SkillItemEntry;
-  git: SkillItemEntry;
-  jira: SkillItemEntry;
-  'angular-e2e': SkillItemEntry;
-  angularjs: SkillItemEntry;
-  'twitter-bootstrap': SkillItemEntry;
-  swagger: SkillItemEntry;
-  jenkins: SkillItemEntry;
-  netcore: SkillItemEntry;
-  csharp: SkillItemEntry;
-  java: SkillItemEntry;
-  efcore: SkillItemEntry;
-  'asp.net core': SkillItemEntry;
-  'ado.net': SkillItemEntry;
-  'web api / rest api': SkillItemEntry;
   docker: SkillItemEntry;
   'docker-compose': SkillItemEntry;
-  mysql: SkillItemEntry;
   cicd: SkillItemEntry;
-  github: SkillItemEntry;
-  bitbucket: SkillItemEntry;
-  'mikro-orm': SkillItemEntry;
-  passport: SkillItemEntry;
-  jwt: SkillItemEntry;
-  postgresql: SkillItemEntry;
+  // DevOps
+
+  // Cloud
   aws: SkillItemEntry;
   'aws-ebs': SkillItemEntry;
   'aws-cli': SkillItemEntry;
@@ -88,27 +67,60 @@ type SkillMap = {
   'aws-efs': SkillItemEntry;
   'aws-elb': SkillItemEntry;
   digitalocean: SkillItemEntry;
-  protractor: SkillItemEntry;
-  browserstack: SkillItemEntry;
-  postman: SkillItemEntry;
-  fiddler: SkillItemEntry;
-  'integration-testing': SkillItemEntry;
+  firebase: SkillItemEntry;
+  netlify: SkillItemEntry;
+  // Cloud
+
+  // Front-End
+  angular: SkillItemEntry;
+  typescript: SkillItemEntry;
+  javascript: SkillItemEntry;
+  'angular-material': SkillItemEntry;
+  nx: SkillItemEntry;
+  rxjs: SkillItemEntry;
+  'react-native': SkillItemEntry;
+  react: SkillItemEntry;
+  redux: SkillItemEntry;
+  jest: SkillItemEntry;
+  karma: SkillItemEntry;
+  jasmine: SkillItemEntry;
+  agGrid: SkillItemEntry;
+  ngxs: SkillItemEntry;
+  'ngrx-store': SkillItemEntry;
+  scss: SkillItemEntry;
+  'angular-e2e': SkillItemEntry;
+  angularjs: SkillItemEntry;
+  ionic: SkillItemEntry;
+  'twitter-bootstrap': SkillItemEntry;
+  extjs: SkillItemEntry;
+  jquery: SkillItemEntry;
+  cypress: SkillItemEntry;
+  // Front-End
+
+  // Back-End
+  nodejs: SkillItemEntry;
+  nestjs: SkillItemEntry;
+  swagger: SkillItemEntry;
+  netcore: SkillItemEntry;
+  csharp: SkillItemEntry;
+  java: SkillItemEntry;
+  efcore: SkillItemEntry;
+  'asp.net core': SkillItemEntry;
+  'ado.net': SkillItemEntry;
+  'web api / rest api': SkillItemEntry;
+  mysql: SkillItemEntry;
+  'mikro-orm': SkillItemEntry;
+  passport: SkillItemEntry;
+  jwt: SkillItemEntry;
+  postgresql: SkillItemEntry;
   php: SkillItemEntry;
-  'agile-scrum': SkillItemEntry;
   tsql: SkillItemEntry;
-  tfs: SkillItemEntry;
-  yaml: SkillItemEntry;
-  xml: SkillItemEntry;
-  'domain-driven-design': SkillItemEntry;
   redis: SkillItemEntry;
   rabbitmq: SkillItemEntry;
   nginx: SkillItemEntry;
-  extjs: SkillItemEntry;
   mssqlserver: SkillItemEntry;
   nosql: SkillItemEntry;
-  jquery: SkillItemEntry;
-  cypress: SkillItemEntry;
-  firebase: SkillItemEntry;
+  // Back-End
 };
 
 export default SkillMap;
