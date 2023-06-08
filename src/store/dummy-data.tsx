@@ -275,6 +275,7 @@ const DUMMY_DATA = {
       [
         new ProjectItemEntry(
           ['thc-angular', 'cc-angular'],
+          'test',
           [
             'To setup github repositories and application architecture',
             'To setup and configure CI/CD on Netlify',
@@ -305,6 +306,7 @@ const DUMMY_DATA = {
       [
         new ProjectItemEntry(
           ['Foxtrail: Integration Test Environment Setup on NX monorepo'],
+          null,
           [
             'To setup Jest integration tests for NX monorepo',
             'To write script for E2E automation on Typescript',
@@ -315,6 +317,7 @@ const DUMMY_DATA = {
         ),
         new ProjectItemEntry(
           ['TRKR LLC: Auth Microservice'],
+          '',
           [
             'To implement NestJs microservice for auth',
             'To implement JWT authentication using HTTP Api',
@@ -352,21 +355,19 @@ const DUMMY_DATA = {
       [
         new ProjectItemEntry(
           ['StudyTube/ultra', 'StudyTube/LMS'],
+          'Online education platform developing customized educational content to fit the needs of individual students.',
           [
             'To implement separated reusable components in ultra library according to new design. Ultra library is private component library, based on angular',
             'To re-implement LMS ui using new ultra library components. LMS is Learning Management System, web platform for online learning materials, like videos, documents etc.',
             'To collaborate with StudyTube team'
           ]
         ),
-        new ProjectItemEntry(
-          ['SAP/Fundamental-NGX', 'SAP/Fundamental-Styles'],
-          [
-            'To Implement new features into Fundamental NGX / Styles library',
-            'To collaborate with external teams and fix defects they require',
-            'To Do the defect hunting and constantly figure out regressions, then fix them',
-            'To implement accessibility functionality'
-          ]
-        )
+        new ProjectItemEntry(['SAP/Fundamental-NGX', 'SAP/Fundamental-Styles'], null, [
+          'To Implement new features into Fundamental NGX / Styles library',
+          'To collaborate with external teams and fix defects they require',
+          'To Do the defect hunting and constantly figure out regressions, then fix them',
+          'To implement accessibility functionality'
+        ])
       ]
     ),
     new WorkHistoryItemEntry(
@@ -380,26 +381,21 @@ const DUMMY_DATA = {
       'Crossover For Work',
       'https://crossover.com/',
       [
-        new ProjectItemEntry(
-          ['Kayako Classic'],
-          [
-            'To Do the defect RCA (Root Cause Analysis)',
-            'To Implement the fix of defects using PHP 7, MySQL',
-            'To implement the fix of frontend defects using React, Javascript',
-            'To write automated E2E test for the fix using Gherkin'
-          ]
-        ),
-        new ProjectItemEntry(
-          ['CX Monitor'],
-          [
-            'To update legacy software UI components from Adobe Flash to Javascript / React',
-            'To update legacy software UI charts from Adobe Flash to Fusion Charts (Js)',
-            'To update legacy software UI graphs from Adobe Flash to D3.js',
-            'To refactor old legacy Ext.js code, make it compatible with eslint rules'
-          ]
-        ),
+        new ProjectItemEntry(['Kayako Classic'], '', [
+          'To Do the defect RCA (Root Cause Analysis)',
+          'To Implement the fix of defects using PHP 7, MySQL',
+          'To implement the fix of frontend defects using React, Javascript',
+          'To write automated E2E test for the fix using Gherkin'
+        ]),
+        new ProjectItemEntry(['CX Monitor'], '', [
+          'To update legacy software UI components from Adobe Flash to Javascript / React',
+          'To update legacy software UI charts from Adobe Flash to Fusion Charts (Js)',
+          'To update legacy software UI graphs from Adobe Flash to D3.js',
+          'To refactor old legacy Ext.js code, make it compatible with eslint rules'
+        ]),
         new ProjectItemEntry(
           ['Acorn PA5G/AAA'],
+          '',
           [
             'To update legacy software UI from Microsoft Silverlight to Angular 8 / Material / Scss / NGXS',
             'To update legacy software UI complex grid components from Silverlight to Ag-Grid',
@@ -411,6 +407,7 @@ const DUMMY_DATA = {
         ),
         new ProjectItemEntry(
           ['AES CIS'],
+          '',
           [
             'To update legacy software UI from CSS to SCSS',
             'To update legacy software UI from HTML to HTML 5',
@@ -420,6 +417,7 @@ const DUMMY_DATA = {
         ),
         new ProjectItemEntry(
           ['Volt Delta'],
+          '',
           [
             'To migrate code from Dimmension to GitHub repositories',
             'To prepare Development Environment on local machine & Build',
@@ -437,6 +435,7 @@ const DUMMY_DATA = {
         ),
         new ProjectItemEntry(
           ['Mobilogy'],
+          '',
           [
             'To inspect and investigate UI of the incoming projects',
             'To prepare Development Environment on local machine & Build',
@@ -463,6 +462,7 @@ const DUMMY_DATA = {
         ),
         new ProjectItemEntry(
           ['LyrisHQ / Campaign Manager'],
+          '',
           [
             'To investigate legacy application and expose necessary Api endpoints',
             'To reskin legacy Lyris application UI using Angular 5',
@@ -484,6 +484,7 @@ const DUMMY_DATA = {
         ),
         new ProjectItemEntry(
           ['CRM'],
+          '',
           [
             'To investigate legacy application and expose necessary Api endpoints',
             'To reskin legacy CRM application UI using Angular 4',
@@ -517,20 +518,17 @@ const DUMMY_DATA = {
       'GPN DATA Group International',
       'https://dev.gpndata.com/',
       [
-        new ProjectItemEntry(
-          ['PSP Gateway (Payment Service Provider Gateway)'],
-          [
-            'To maintain legacy PSP application using PHP 7 & MySQL',
-            'To develop internal softwares using .Net Core & Angular 2',
-            'To integrate Banks into PSP system',
-            "To test and find out problems in PSP system if there's any",
-            'To simulate payment requests to each Bank for testing purpose',
-            'To integrate SEPAExpress (SEPA - Single Euro Payment Area) payment method into PSP system',
-            'To create validations for accepting Visa, MasterCard transactions and Bank transfers',
-            'To integrate external services like Ethoca into PSP system',
-            'To maintain anti Fraud logic of PSP system'
-          ]
-        )
+        new ProjectItemEntry(['PSP Gateway (Payment Service Provider Gateway)'], '', [
+          'To maintain legacy PSP application using PHP 7 & MySQL',
+          'To develop internal softwares using .Net Core & Angular 2',
+          'To integrate Banks into PSP system',
+          "To test and find out problems in PSP system if there's any",
+          'To simulate payment requests to each Bank for testing purpose',
+          'To integrate SEPAExpress (SEPA - Single Euro Payment Area) payment method into PSP system',
+          'To create validations for accepting Visa, MasterCard transactions and Bank transfers',
+          'To integrate external services like Ethoca into PSP system',
+          'To maintain anti Fraud logic of PSP system'
+        ])
       ]
     ),
     new WorkHistoryItemEntry(
@@ -544,20 +542,17 @@ const DUMMY_DATA = {
       'Steady Logic Llc',
       'https://steady-logic.com',
       [
-        new ProjectItemEntry(
-          ['Sportsbook'],
-          [
-            "To create Sportsbook Administrative Tool's UI using AngularJs, later Angular 2",
-            'To implement Presentation Layer of Back-End using ASP.NET MVC',
-            'To implement WebSocket based modules for managing Live events of several sports: Soccer, basketball, Tennis etc.',
-            'To implement BLL (Business Logic Layer)',
-            'To implement DAL (Data Access Layer)',
-            'To implement Database Layer using Ms SQL Server, create stored procedures, functions etc.',
-            'To participate in planning of architecture design, changing design features and improve stability of software',
-            'To implement Micro Services using C# & RabbitMQ',
-            'To implement Cache server using Redis'
-          ]
-        )
+        new ProjectItemEntry(['Sportsbook'], '', [
+          "To create Sportsbook Administrative Tool's UI using AngularJs, later Angular 2",
+          'To implement Presentation Layer of Back-End using ASP.NET MVC',
+          'To implement WebSocket based modules for managing Live events of several sports: Soccer, basketball, Tennis etc.',
+          'To implement BLL (Business Logic Layer)',
+          'To implement DAL (Data Access Layer)',
+          'To implement Database Layer using Ms SQL Server, create stored procedures, functions etc.',
+          'To participate in planning of architecture design, changing design features and improve stability of software',
+          'To implement Micro Services using C# & RabbitMQ',
+          'To implement Cache server using Redis'
+        ])
       ]
     ),
     new WorkHistoryItemEntry(
@@ -571,16 +566,13 @@ const DUMMY_DATA = {
       'Solo Group Ltd',
       'https://solostudio.ge',
       [
-        new ProjectItemEntry(
-          ['Website Development'],
-          [
-            'To create Web Site Markup using HTML 5 & CSS 3',
-            'To create Web Site Front-End using Javascript, jQuery',
-            'To create Web Site Back-End using PHP 5 or ASP.NET MVC',
-            'To create Web Site Database using MySQL or Ms SQL Server ',
-            'To create Web based software for Restaurants, Delivery companies etc using PHP 5 or ASP.NET, HTML 5, CSS 3, jQuery'
-          ]
-        )
+        new ProjectItemEntry(['Website Development'], '', [
+          'To create Web Site Markup using HTML 5 & CSS 3',
+          'To create Web Site Front-End using Javascript, jQuery',
+          'To create Web Site Back-End using PHP 5 or ASP.NET MVC',
+          'To create Web Site Database using MySQL or Ms SQL Server ',
+          'To create Web based software for Restaurants, Delivery companies etc using PHP 5 or ASP.NET, HTML 5, CSS 3, jQuery'
+        ])
       ]
     )
   ],

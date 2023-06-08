@@ -39,6 +39,12 @@ const ProjectInfo = ({
             <Tag key={title} title={title} />
           ))}
         </p>
+        {project.description && (
+          <div>
+            <div className="roles-and-responsibilities-title">Project description:</div>
+            <p>{project.description}</p>
+          </div>
+        )}
         <div>
           <div className="roles-and-responsibilities-title">Roles &amp; Responsibilities:</div>
           <ul className="roles">
