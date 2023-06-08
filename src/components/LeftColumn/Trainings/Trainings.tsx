@@ -1,3 +1,4 @@
+import React from 'react';
 import TrainCertEntry from '../../../models/TrainCertEntry';
 import Fieldset from '../../Fieldset/Fieldset';
 import Row from '../../Row/Row';
@@ -24,7 +25,7 @@ const Trainings = ({ trainings }: { trainings: TrainCertEntry[] }) => {
           }
 
           return (
-            <>
+            <React.Fragment key={title}>
               <div className="training">
                 <div className="training__title--outer">
                   <div className="training__icon">
@@ -38,7 +39,7 @@ const Trainings = ({ trainings }: { trainings: TrainCertEntry[] }) => {
                 </div>
               </div>
               <hr />
-            </>
+            </React.Fragment>
           );
         })}
       </Fieldset>
