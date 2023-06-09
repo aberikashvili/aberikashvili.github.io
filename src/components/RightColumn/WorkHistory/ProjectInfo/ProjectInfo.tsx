@@ -42,7 +42,13 @@ const ProjectInfo = ({
         {project.description && (
           <div>
             <div className="roles-and-responsibilities-title">Project description:</div>
-            <p>{project.description}</p>
+            <p
+              style={{
+                borderLeft: '2px solid #eae4e4',
+                paddingLeft: '10px'
+              }}>
+              {project.description}
+            </p>
           </div>
         )}
         <div>
@@ -54,12 +60,20 @@ const ProjectInfo = ({
           </ul>
         </div>
         {!!project.stack?.length && (
-          <p className="project-info">
-            <b>Stack: </b>
-            {project.stack.map((stack, i) => (
-              <Tag key={`stack-${i}`} icon={stack.icon} title={stack.title} />
-            ))}
-          </p>
+          // <p className="project-info">
+          //   <b>Stack: </b>
+          //   {project.stack.map((stack, i) => (
+          //     <Tag key={`stack-${i}`} icon={stack.icon} title={stack.title} />
+          //   ))}
+          // </p>
+          <div>
+            <div className="roles-and-responsibilities-title">Tools &amp; Technologies:</div>
+            <p>
+              {project.stack.map((stack, i) => (
+                <Tag key={`stack-${i}`} icon={stack.icon} title={stack.title} />
+              ))}
+            </p>
+          </div>
         )}
       </td>
     </>
