@@ -1,5 +1,6 @@
 .Column-Left {
   max-width: 340px;
+  min-width: 340px;
   background: #3a4d63;
   color: #fff;
 }

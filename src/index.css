@@ -22,7 +22,8 @@ h6 {
 }
 
 hr {
-  border-color: #eae4e4;
+  /* border-color: #eae4e4; */
+  border-color: #b8b8b8;
   border-style: inherit;
   border-width: 1px;
 }
