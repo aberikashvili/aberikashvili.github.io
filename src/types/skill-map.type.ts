@@ -28,6 +28,8 @@ type SkillMap = {
   tfs: SkillItemEntry;
   git: SkillItemEntry;
   jira: SkillItemEntry;
+  trello: SkillItemEntry;
+  circleci: SkillItemEntry;
   // Tools
 
   // General
@@ -79,6 +81,7 @@ type SkillMap = {
   nx: SkillItemEntry;
   rxjs: SkillItemEntry;
   'react-native': SkillItemEntry;
+  'expo-cli': SkillItemEntry;
   react: SkillItemEntry;
   redux: SkillItemEntry;
   jest: SkillItemEntry;

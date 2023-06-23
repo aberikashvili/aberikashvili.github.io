@@ -29,6 +29,8 @@ const skillsMap: SkillMap = {
   tfs: new SkillItemEntry('fab fa-windows', 'Team Fundation Server'),
   git: new SkillItemEntry('fab fa-github', 'Git'),
   jira: new SkillItemEntry('fab fa-jira', 'Jira'),
+  trello: new SkillItemEntry('fab fa-trello', 'Trello'),
+  circleci: new SkillItemEntry('fa fa-hashtag', 'CircleCI'),
   // Tools
 
   // General
@@ -80,6 +82,7 @@ const skillsMap: SkillMap = {
   nx: new SkillItemEntry('fab fa-angular', 'NX'),
   rxjs: new SkillItemEntry('fa fa-hashtag', 'RxJs'),
   'react-native': new SkillItemEntry('fab fa-react', 'React Native'),
+  'expo-cli': new SkillItemEntry('fab fa-react', 'Expo CLI'),
   react: new SkillItemEntry('fab fa-react', 'React'),
   redux: new SkillItemEntry('fab fa-react', 'Redux'),
   jest: new SkillItemEntry('fa fa-hashtag', 'Jest'),

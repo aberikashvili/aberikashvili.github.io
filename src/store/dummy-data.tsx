@@ -274,6 +274,36 @@ const DUMMY_DATA = {
       'https://www.conceptdigital.com/',
       [
         new ProjectItemEntry(
+          ['forbes-mobile-app', 'bmg-mobile-app'],
+          `
+          Me and my team of junior mobile developers are involved in 2 similar mobile app development using React Native + Expo CLI.
+          Forbes georgia and BMG (Business Media Georgia) are business news agencies.
+          The mobile apps we are developing from scratch, will help users to read business newsfeeds in time
+          `,
+          [
+            'To setup github repositories and application architecture',
+            'To setup and configure CI/CD on CircleCI',
+            'To take technical decisions',
+            'To participate in the discussions related to project planning and workflow with PMs',
+            'To perform code reviews',
+            'To assist Junior / Middle developers solving their obstacles',
+            'To share Best Practises, Clean Code, K.I.S.S, D.R.Y, A.C.I.D and S.O.L.I.D priciples with team members',
+            'To configure eslint, prettier, puppeteer and etc. for each project',
+            'To setup github actions',
+            'To setup pre-commit / pre-push hooks for each project',
+            'To participate in Sprint Planning with Project Managers'
+          ],
+          SkillSet([
+            'react-native',
+            'expo-cli',
+            'web api / rest api',
+            'git',
+            'github',
+            'trello',
+            'circleci'
+          ])
+        ),
+        new ProjectItemEntry(
           ['thc-angular', 'cc-angular'],
           `
           The projects I'm leading are various, web projects are based on Angular, Mobile projects are based on React Native.
@@ -292,7 +322,15 @@ const DUMMY_DATA = {
             'To setup pre-commit / pre-push hooks for each project',
             'To participate in Sprint Planning with Project Managers'
           ],
-          SkillSet(['angular', 'react', 'react-native', 'firebase', 'github'])
+          SkillSet([
+            'angular',
+            'web api / rest api',
+            'firebase',
+            'git',
+            'github',
+            'trello',
+            'netlify'
+          ])
         )
       ]
     ),
