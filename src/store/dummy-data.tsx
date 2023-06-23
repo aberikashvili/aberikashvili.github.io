@@ -275,6 +275,10 @@ const DUMMY_DATA = {
       [
         new ProjectItemEntry(
           ['thc-angular', 'cc-angular'],
+          `
+          The projects I'm leading are various, web projects are based on Angular, Mobile projects are based on React Native.
+          All of them are being developed from scratch
+          `,
           [
             'To setup github repositories and application architecture',
             'To setup and configure CI/CD on Netlify',
@@ -295,8 +299,8 @@ const DUMMY_DATA = {
     new WorkHistoryItemEntry(
       'Dec',
       2022,
-      null,
-      null,
+      'Apr',
+      2023,
       'Full-Stack Freelancer (Angular, NestJs, React, React Native, AWS, Docker)',
       'Remote',
       'Freelance',
@@ -305,6 +309,7 @@ const DUMMY_DATA = {
       [
         new ProjectItemEntry(
           ['Foxtrail: Integration Test Environment Setup on NX monorepo'],
+          null,
           [
             'To setup Jest integration tests for NX monorepo',
             'To write script for E2E automation on Typescript',
@@ -315,6 +320,12 @@ const DUMMY_DATA = {
         ),
         new ProjectItemEntry(
           ['TRKR LLC: Auth Microservice'],
+          `
+          The TRKR is a US based startup, which provides web/mobile apps for managing and automate relations between truck drivers & cargo companies.
+          The product is based on Nest.js microservises, which are communicating between each other using the message broker RabbitMQ.
+          I've implemented Auth microservice and integrated it with Angular and React UI apps. As a Database I used PostgreSQL and Mikro-ORM as a data access layer.
+          The brief functionality of the microservice is Authorization / Authentication using JWT, Role Management, Permission Management, User Management APIs.
+          `,
           [
             'To implement NestJs microservice for auth',
             'To implement JWT authentication using HTTP Api',
@@ -352,6 +363,7 @@ const DUMMY_DATA = {
       [
         new ProjectItemEntry(
           ['StudyTube/ultra', 'StudyTube/LMS'],
+          'Online education platform developing customized educational content to fit the needs of individual students.',
           [
             'To implement separated reusable components in ultra library according to new design. Ultra library is private component library, based on angular',
             'To re-implement LMS ui using new ultra library components. LMS is Learning Management System, web platform for online learning materials, like videos, documents etc.',
@@ -360,6 +372,10 @@ const DUMMY_DATA = {
         ),
         new ProjectItemEntry(
           ['SAP/Fundamental-NGX', 'SAP/Fundamental-Styles'],
+          `
+          The @fundamental-ngx (core / platform) library is a set of Angular components built using Fundamental Library Styles.
+          The Fundamental Library Styles is a design system and HTML/CSS component library used to build modern product user experiences with the SAP look and feel.\
+          `,
           [
             'To Implement new features into Fundamental NGX / Styles library',
             'To collaborate with external teams and fix defects they require',
@@ -382,6 +398,7 @@ const DUMMY_DATA = {
       [
         new ProjectItemEntry(
           ['Kayako Classic'],
+          'Kayako Classic is self-hosted service desk software, which helps companies and their customers to deal with support tickets.',
           [
             'To Do the defect RCA (Root Cause Analysis)',
             'To Implement the fix of defects using PHP 7, MySQL',
@@ -391,6 +408,7 @@ const DUMMY_DATA = {
         ),
         new ProjectItemEntry(
           ['CX Monitor'],
+          'CX Monitor is enterprise software which delivers the system monitoring, root-cause analysis, and issue identification tools you need to run your business in real time.',
           [
             'To update legacy software UI components from Adobe Flash to Javascript / React',
             'To update legacy software UI charts from Adobe Flash to Fusion Charts (Js)',
@@ -400,26 +418,29 @@ const DUMMY_DATA = {
         ),
         new ProjectItemEntry(
           ['Acorn PA5G/AAA'],
+          'Acorn is Time-Driven Activity-Based-Costing (TDABC) platform that distills and attributes costs of delivering products and services by building business-specific models which take into account nuances of account processes.',
           [
             'To update legacy software UI from Microsoft Silverlight to Angular 8 / Material / Scss / NGXS',
             'To update legacy software UI complex grid components from Silverlight to Ag-Grid',
             'To make new angular software compatible with legacy .Net RIA Services api',
             'To test Angular software with Karma / Jasmine',
             "To do a regular code reviews for non angular expert team members PR's and coach them how to achieve better result"
-          ]
-          // SkillSet(['angular', 'ngxs', 'rxjs', 'asp.net core', 'agGrid', 'karma', 'jasmine'])
+          ],
+          SkillSet(['angular', 'ngxs', 'rxjs', 'asp.net core', 'agGrid', 'karma', 'jasmine'])
         ),
         new ProjectItemEntry(
           ['AES CIS'],
+          "AES CIS (Aurea Energy Solutions Customer Information System) is a web-based billing, invoicing, payment, and Customer service & management system designed for use by suppliers. The product is part of Aurea's Revenue Lifecycle Management and it's used by top US energy provider companies.",
           [
             'To update legacy software UI from CSS to SCSS',
             'To update legacy software UI from HTML to HTML 5',
             'To make old (only IE compatible) software, compatible with modern browsers (JS)'
-          ]
-          // SkillSet(['javascript', 'scss', 'asp.net core'])
+          ],
+          SkillSet(['javascript', 'scss', 'asp.net core'])
         ),
         new ProjectItemEntry(
           ['Volt Delta'],
+          'Volt Delta is multi-channel contact center solutions, smart automation and data-driven contact management in the cloud and within the company to optimize customer journeys. The product consists of many various modules, written on various technologiesm like: C++, C#, Node.js, Javascript.',
           [
             'To migrate code from Dimmension to GitHub repositories',
             'To prepare Development Environment on local machine & Build',
@@ -432,11 +453,12 @@ const DUMMY_DATA = {
             'To close the current defect backlog and deliver fixes for NodeJs services',
             'To close the current test backlog and deliver automated tests for NodeJs services',
             'To close the current feature backlog and deliver new features for NodeJs services'
-          ]
-          // SkillSet(['docker', 'cicd', 'csharp', 'nodejs', 'aws-ec2', 'aws-ami'])
+          ],
+          SkillSet(['docker', 'cicd', 'csharp', 'nodejs', 'aws-ec2', 'aws-ami'])
         ),
         new ProjectItemEntry(
           ['Mobilogy'],
+          'Mobilogy is an advanced mobile lifecycle solutions that enable operators, retailers, buyback vendors and enterprises to provide enhanced customer experience, increase revenue, improve productivity, enhance security and reduce cost.',
           [
             'To inspect and investigate UI of the incoming projects',
             'To prepare Development Environment on local machine & Build',
@@ -447,22 +469,26 @@ const DUMMY_DATA = {
             'To prepare CI/CD pipelines in Jenkins',
             'To close the current defect backlog and deliver fixes for NodeJs services',
             'To close the current feature backlog and deliver new features for NodeJs services'
-          ]
-          // SkillSet([
-          //   'angular',
-          //   'ngrx-store',
-          //   'rxjs',
-          //   'nodejs',
-          //   'docker',
-          //   'docker-compose',
-          //   'cicd',
-          //   'karma',
-          //   'jasmine',
-          //   'aws'
-          // ])
+          ],
+          SkillSet([
+            'angular',
+            'ngrx-store',
+            'rxjs',
+            'nodejs',
+            'docker',
+            'docker-compose',
+            'cicd',
+            'karma',
+            'jasmine',
+            'aws'
+          ])
         ),
         new ProjectItemEntry(
           ['LyrisHQ / Campaign Manager'],
+          `
+          Lyris Technologies – now Aurea Email Marketing – is a leading digital messaging platform. 
+          Lyris delivers mature, field-tested email marketing capabilities, as an industry leading cloud-based or on-premise solution that lets customers easily, segment, target, and measure the effectiveness of email campaigns on every device.
+          `,
           [
             'To investigate legacy application and expose necessary Api endpoints',
             'To reskin legacy Lyris application UI using Angular 5',
@@ -470,20 +496,24 @@ const DUMMY_DATA = {
             'To integrate Angular 5 UI with Java / Spring based REST Api',
             'To write E2E Tests using Protractor',
             'To run E2E Tests against several browsers using Browserstack'
-          ]
-          // SkillSet([
-          //   'angular',
-          //   'rxjs',
-          //   'karma',
-          //   'jasmine',
-          //   'protractor',
-          //   'java',
-          //   'swagger',
-          //   'typescript'
-          // ])
+          ],
+          SkillSet([
+            'angular',
+            'rxjs',
+            'karma',
+            'jasmine',
+            'protractor',
+            'java',
+            'swagger',
+            'typescript'
+          ])
         ),
         new ProjectItemEntry(
           ['CRM'],
+          `
+          CRM is a Customer Relationship Management system provided by Aurea, 
+          the goal of this product is to manage every lead, opportunity, and interaction with all of your prospects and customers – quickly, easily, and effectively.
+          `,
           [
             'To investigate legacy application and expose necessary Api endpoints',
             'To reskin legacy CRM application UI using Angular 4',
@@ -492,17 +522,17 @@ const DUMMY_DATA = {
             'To implement Swagger mocks',
             'To write E2E Tests using Protractor',
             'To run E2E Tests against several browsers using Browserstack'
-          ]
-          // SkillSet([
-          //   'angular',
-          //   'rxjs',
-          //   'karma',
-          //   'jasmine',
-          //   'protractor',
-          //   'asp.net core',
-          //   'swagger',
-          //   'typescript'
-          // ])
+          ],
+          SkillSet([
+            'angular',
+            'rxjs',
+            'karma',
+            'jasmine',
+            'protractor',
+            'asp.net core',
+            'swagger',
+            'typescript'
+          ])
         )
       ]
     ),
@@ -518,7 +548,11 @@ const DUMMY_DATA = {
       'https://dev.gpndata.com/',
       [
         new ProjectItemEntry(
-          ['PSP Gateway (Payment Service Provider Gateway)'],
+          ['PSP Gateway'],
+          `
+          PSP Gateway stands for Payment Service Provider Gateway, and it is responsible for processing Visa, MasterCard, Diners Club, SEPA, etc. online transactions.
+          The product provides the pure API only for the E-commerce customers who has PCI-DSS license and Payment Page for the rest of other clients. Payment Page can be embedded into the E-commerce website.
+          `,
           [
             'To maintain legacy PSP application using PHP 7 & MySQL',
             'To develop internal softwares using .Net Core & Angular 2',
@@ -529,7 +563,8 @@ const DUMMY_DATA = {
             'To create validations for accepting Visa, MasterCard transactions and Bank transfers',
             'To integrate external services like Ethoca into PSP system',
             'To maintain anti Fraud logic of PSP system'
-          ]
+          ],
+          SkillSet(['angular', 'php', 'asp.net core', 'javascript', 'typescript'])
         )
       ]
     ),
@@ -546,6 +581,14 @@ const DUMMY_DATA = {
       [
         new ProjectItemEntry(
           ['Sportsbook'],
+          `
+          Sportsbook is a online Gambling platform, focused on betting solutions for sport games like soccer, basketball, volleyball, etc. which consists of the following modules: 
+          Website (based on real-time websockets, where users can login and register to make bets). Mobile app (based on Sencha Touch technology and websockets).
+          Core (based on .NET, SQL and Ext.js (UI), mainly Core is responsible for handling general functionality across other modules and other products of the company).
+          Feed (separated backend service, which requests and delivers third party data to our database, the third party data providers are Betradar, Bwin, etc).
+          Admin (based on .NET, SignalR, Ext.js / angular.js, which is responsible for managing everything for the Sporttsbook: Risk management, Monitoring, Acceptance, Live event management, Resulting, Event / Market / Odd management, Reporting, etc).
+          The Sportsbook itself was using N-Tier architecture from the beginning, later we decided to redesign the architecture and split it as microservices to overcome the issues we faced, and we implemented RabbitMQ for communication between microservices, Redis for data caching and protobuf.
+          `,
           [
             "To create Sportsbook Administrative Tool's UI using AngularJs, later Angular 2",
             'To implement Presentation Layer of Back-End using ASP.NET MVC',
@@ -556,7 +599,18 @@ const DUMMY_DATA = {
             'To participate in planning of architecture design, changing design features and improve stability of software',
             'To implement Micro Services using C# & RabbitMQ',
             'To implement Cache server using Redis'
-          ]
+          ],
+          SkillSet([
+            'csharp',
+            'asp.net core',
+            'ado.net',
+            'extjs',
+            'redis',
+            'rabbitmq',
+            'mssqlserver',
+            'angularjs',
+            'web api / rest api'
+          ])
         )
       ]
     ),
@@ -571,16 +625,13 @@ const DUMMY_DATA = {
       'Solo Group Ltd',
       'https://solostudio.ge',
       [
-        new ProjectItemEntry(
-          ['Website Development'],
-          [
-            'To create Web Site Markup using HTML 5 & CSS 3',
-            'To create Web Site Front-End using Javascript, jQuery',
-            'To create Web Site Back-End using PHP 5 or ASP.NET MVC',
-            'To create Web Site Database using MySQL or Ms SQL Server ',
-            'To create Web based software for Restaurants, Delivery companies etc using PHP 5 or ASP.NET, HTML 5, CSS 3, jQuery'
-          ]
-        )
+        new ProjectItemEntry(['Website Development'], null, [
+          'To create Web Site Markup using HTML 5 & CSS 3',
+          'To create Web Site Front-End using Javascript, jQuery',
+          'To create Web Site Back-End using PHP 5 or ASP.NET MVC',
+          'To create Web Site Database using MySQL or Ms SQL Server ',
+          'To create Web based software for Restaurants, Delivery companies etc using PHP 5 or ASP.NET, HTML 5, CSS 3, jQuery'
+        ])
       ]
     )
   ],

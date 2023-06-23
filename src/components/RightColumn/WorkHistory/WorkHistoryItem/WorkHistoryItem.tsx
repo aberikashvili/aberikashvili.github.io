@@ -12,9 +12,7 @@ const WorkHistoryItem = ({ work }: { work: WorkHistoryItemEntry }) => {
                 {i === 0 && (
                   <b>
                     {work.fromMonth} {work.fromYear} -{' '}
-                    {!work.toMonth && !work.toYear
-                      ? 'To current'
-                      : `${work.toMonth} ${work.toYear}`}
+                    {!work.toMonth && !work.toYear ? 'Present' : `${work.toMonth} ${work.toYear}`}
                   </b>
                 )}
               </td>
