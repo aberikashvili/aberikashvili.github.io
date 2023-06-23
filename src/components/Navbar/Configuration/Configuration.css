@@ -1,0 +1,19 @@
+.configuration-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 50px;
+  padding: 0 10px;
+  background: #fafafa;
+}
+
+.configuration-modes-wrapper {
+}
+
+.configuration-custom-mode-wrapper {
+  display: flex;
+  padding: 0 20px;
+}
+
+.configuration-column {
+}
