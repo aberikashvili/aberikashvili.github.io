@@ -83,7 +83,6 @@ const DUMMY_DATA = {
         'typescript',
         'javascript',
         'angular-material',
-        'nx',
         'rxjs',
         'react-native',
         'react',
@@ -139,6 +138,7 @@ const DUMMY_DATA = {
         'jenkins',
         'teamcity',
         'jira',
+        'nx',
         'docker',
         'docker-compose',
         'postman',
@@ -147,91 +147,11 @@ const DUMMY_DATA = {
         'testrail',
         'gitlab',
         'browserstack',
-        'git'
+        'git',
+        'figma',
+        'storybook'
       ])
     },
-    primary: SkillSet([
-      'angular',
-      'typescript',
-      'javascript',
-      'angular-material',
-      'nx',
-      'rxjs',
-      'react-native',
-      'react',
-      'redux',
-      'jest',
-      'karma',
-      'jasmine',
-      'agGrid',
-      'ngxs',
-      'ngrx-store',
-      'nodejs',
-      'nestjs',
-      'mikro-orm',
-      'scss',
-      'unit-testing',
-      'git',
-      'jira',
-      'angular-e2e',
-      'angularjs',
-      'twitter-bootstrap',
-      'swagger',
-      'jenkins',
-      'csharp',
-      'efcore',
-      'asp.net core',
-      'ado.net',
-      'web api / rest api',
-      'docker',
-      'docker-compose',
-      'mysql',
-      'cicd',
-      'github',
-      'bitbucket',
-      'aws-ebs',
-      'aws-lambda',
-      'aws-api-gateway',
-      'aws-rds',
-      'aws-iam',
-      'aws-ec2',
-      'aws-ami',
-      'aws-s3'
-    ]),
-    secondary: SkillSet([
-      'aws-cloudfront',
-      'aws-cognito',
-      'aws-route53',
-      'aws-dynamodb',
-      'aws-cloudwatch',
-      'aws-cli',
-      'aws-sdk',
-      'aws-efs',
-      'postgresql',
-      'passport',
-      'jwt',
-      'protractor',
-      'browserstack',
-      'postman',
-      'fiddler',
-      'integration-testing',
-      'php',
-      'agile-scrum',
-      'tsql',
-      'tfs',
-      'yaml',
-      'xml',
-      'domain-driven-design',
-      'redis',
-      'rabbitmq',
-      'nginx',
-      'extjs',
-      'mssqlserver',
-      'nosql',
-      'jquery',
-      'cypress',
-      'firebase'
-    ]),
     os: [
       new SkillItemEntry('fab fa-apple', 'MacOS'),
       new SkillItemEntry('fab fa-windows', 'Windows'),
@@ -294,17 +214,19 @@ const DUMMY_DATA = {
             'To participate in Sprint Planning with Project Managers'
           ],
           SkillSet([
+            'nx',
             'react-native',
             'expo-cli',
             'web api / rest api',
             'git',
             'github',
             'trello',
-            'circleci'
+            'circleci',
+            'figma'
           ])
         ),
         new ProjectItemEntry(
-          ['thc-angular', 'cc-angular'],
+          ['Tbilisi Holding Company', 'Casa Calda'],
           `
           The projects I'm leading are various, web projects are based on Angular, Mobile projects are based on React Native.
           All of them are being developed from scratch
@@ -329,7 +251,49 @@ const DUMMY_DATA = {
             'git',
             'github',
             'trello',
-            'netlify'
+            'netlify',
+            'figma'
+          ])
+        )
+      ]
+    ),
+    new WorkHistoryItemEntry(
+      'Feb',
+      2023,
+      null,
+      null,
+      'Senior Javascript Engineer',
+      'Remote',
+      'Contract',
+      'Simplifield',
+      'https://simplifield.com',
+      [
+        new ProjectItemEntry(
+          ['sf-frontend', 'sf-mobile', 'sf-backend'],
+          `
+          SimpliField is leading the retail digital transformation as the first fully integrated mobile platform for retail operations, 
+          internal communications and advanced performance analytics.
+          `,
+          [
+            `To implement new frontend features using Angular.js or React, following the design spec from Figma`,
+            `To implement new mobile features using Ionic + Angular.js, following the design spec from Figma`,
+            `To provide defect / bug fixes for mobile and frontend`,
+            `To participate in daily meetings, sprint plannings`,
+            `To participate in discussions of technical aspects of the current and future goals`,
+            `To debug the backend and provide fixes if needed`
+          ],
+          SkillSet([
+            'javascript',
+            'typescript',
+            'angularjs',
+            'react',
+            'ionic',
+            'nodejs',
+            'mongodb',
+            'jira',
+            'github',
+            'circleci',
+            'figma'
           ])
         )
       ]
@@ -406,7 +370,16 @@ const DUMMY_DATA = {
             'To implement separated reusable components in ultra library according to new design. Ultra library is private component library, based on angular',
             'To re-implement LMS ui using new ultra library components. LMS is Learning Management System, web platform for online learning materials, like videos, documents etc.',
             'To collaborate with StudyTube team'
-          ]
+          ],
+          SkillSet([
+            'angular',
+            'angular-material',
+            'nx',
+            'typescript',
+            'netlify',
+            'nestjs',
+            'storybook'
+          ])
         ),
         new ProjectItemEntry(
           ['SAP/Fundamental-NGX', 'SAP/Fundamental-Styles'],
@@ -419,7 +392,8 @@ const DUMMY_DATA = {
             'To collaborate with external teams and fix defects they require',
             'To Do the defect hunting and constantly figure out regressions, then fix them',
             'To implement accessibility functionality'
-          ]
+          ],
+          SkillSet(['angular', 'nx', 'typescript', 'netlify', 'nestjs', 'storybook'])
         )
       ]
     ),
@@ -442,7 +416,8 @@ const DUMMY_DATA = {
             'To Implement the fix of defects using PHP 7, MySQL',
             'To implement the fix of frontend defects using React, Javascript',
             'To write automated E2E test for the fix using Gherkin'
-          ]
+          ],
+          SkillSet(['react', 'php', 'mysql', 'docker', 'docker-compose'])
         ),
         new ProjectItemEntry(
           ['CX Monitor'],
@@ -452,7 +427,8 @@ const DUMMY_DATA = {
             'To update legacy software UI charts from Adobe Flash to Fusion Charts (Js)',
             'To update legacy software UI graphs from Adobe Flash to D3.js',
             'To refactor old legacy Ext.js code, make it compatible with eslint rules'
-          ]
+          ],
+          SkillSet(['react', 'd3', 'fusion-charts', 'typescript', 'javascript'])
         ),
         new ProjectItemEntry(
           ['Acorn PA5G/AAA'],
@@ -657,19 +633,24 @@ const DUMMY_DATA = {
       2011,
       'Sep',
       2013,
-      'Web Developer',
+      'Junior Web Developer',
       'On-Site',
       'Full-Time Employment',
       'Solo Group Ltd',
       'https://solostudio.ge',
       [
-        new ProjectItemEntry(['Website Development'], null, [
-          'To create Web Site Markup using HTML 5 & CSS 3',
-          'To create Web Site Front-End using Javascript, jQuery',
-          'To create Web Site Back-End using PHP 5 or ASP.NET MVC',
-          'To create Web Site Database using MySQL or Ms SQL Server ',
-          'To create Web based software for Restaurants, Delivery companies etc using PHP 5 or ASP.NET, HTML 5, CSS 3, jQuery'
-        ])
+        new ProjectItemEntry(
+          ['Website Development'],
+          null,
+          [
+            'To create Web Site Markup using HTML 5 & CSS 3',
+            'To create Web Site Front-End using Javascript, jQuery',
+            'To create Web Site Back-End using PHP 5 or ASP.NET MVC',
+            'To create Web Site Database using MySQL or Ms SQL Server ',
+            'To create Web based software for Restaurants, Delivery companies etc using PHP 5 or ASP.NET, HTML 5, CSS 3, jQuery'
+          ],
+          SkillSet(['php', 'mysql', 'jquery', 'javascript'])
+        )
       ]
     )
   ],

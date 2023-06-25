@@ -30,6 +30,8 @@ type SkillMap = {
   jira: SkillItemEntry;
   trello: SkillItemEntry;
   circleci: SkillItemEntry;
+  figma: SkillItemEntry;
+  storybook: SkillItemEntry;
   // Tools
 
   // General
@@ -98,6 +100,8 @@ type SkillMap = {
   extjs: SkillItemEntry;
   jquery: SkillItemEntry;
   cypress: SkillItemEntry;
+  d3: SkillItemEntry;
+  'fusion-charts': SkillItemEntry;
   // Front-End
 
   // Back-End
@@ -123,6 +127,7 @@ type SkillMap = {
   nginx: SkillItemEntry;
   mssqlserver: SkillItemEntry;
   nosql: SkillItemEntry;
+  mongodb: SkillItemEntry;
   // Back-End
 };
 
