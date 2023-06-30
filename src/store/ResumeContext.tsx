@@ -12,12 +12,8 @@ import HardSkillsEntry from '../models/HardSkillsEntry';
 const ResumeContext = createContext({
   profile: {} as ProfileEntry,
   personalInfo: {} as PersonalInfoEntry,
-  primarySkills: [] as SkillItemEntry[],
-  secondarySkills: [] as SkillItemEntry[],
-  // new style
   softSkills: [] as SkillItemEntry[],
   hardSkills: {} as HardSkillsEntry,
-  // new style
   operationSystems: [] as SkillItemEntry[],
   languages: [] as string[],
   trainings: [] as TrainCertEntry[],
@@ -30,8 +26,6 @@ export const ResumeContextProvider = ({ children }: { children: any }) => {
   const context = {
     profile: DUMMY_DATA.profile,
     personalInfo: DUMMY_DATA.personalInfo,
-    primarySkills: DUMMY_DATA.skills.primary,
-    secondarySkills: DUMMY_DATA.skills.secondary,
     softSkills: DUMMY_DATA.skills.softSkills,
     hardSkills: DUMMY_DATA.skills.hardSkills,
     operationSystems: DUMMY_DATA.skills.os,
