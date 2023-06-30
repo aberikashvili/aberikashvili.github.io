@@ -187,7 +187,7 @@ const DUMMY_DATA = {
       2023,
       null,
       null,
-      'Tech Lead (Angular, React Native)',
+      'Tech Lead (Angular, React Native, NestJs)',
       'Remote Part-Time',
       'Contract',
       'Conceptdigital',
@@ -196,13 +196,15 @@ const DUMMY_DATA = {
         new ProjectItemEntry(
           ['forbes-mobile-app', 'bmg-mobile-app'],
           `
-          Me and my team of junior mobile developers are involved in 2 similar mobile app development using React Native + Expo CLI.
-          Forbes georgia and BMG (Business Media Georgia) are business news agencies.
-          The mobile apps we are developing from scratch, will help users to read business newsfeeds in time
+          I'm tech leading 2 teams of 3 Junior/Middle React Native developers per each team. We're building Android/iOS mobile apps from scratch,
+          for 2 biggest local internet magazines, Forbes georgia and BMG (Business Media Georgia). Due to these mobile apps consist of quite many screens and components, 
+          I made technical decision to start coding from shared component libraries, I've created project architecture using NX (https://nx.dev) and added 2 shared libraries: core and platform, 
+          core contains trivial components like: buttons, inputs, labels, etc. but platform contains bigger specific components, which are build from core components. 
+          These libraries can be build as npm package later as well. I also implemented CI using github action and expo.dev and we have Android .apk and iOS simulator builds per each pull request.
           `,
           [
-            'To setup github repositories and application architecture',
-            'To setup and configure CI/CD on CircleCI',
+            'To setup github repositories and application architecture uising NX',
+            'To setup and configure CI/CD on expo.dev',
             'To take technical decisions',
             'To participate in the discussions related to project planning and workflow with PMs',
             'To perform code reviews',
@@ -221,7 +223,6 @@ const DUMMY_DATA = {
             'git',
             'github',
             'trello',
-            'circleci',
             'figma'
           ])
         ),
