@@ -27,86 +27,67 @@ const ConfigurationContext = createContext({
   setVisibleWorkHistory: (items: LabelValue[]) => {}
 });
 
+const varToString = (varObj: any) => Object.keys(varObj)[0];
+
 export const ConfigurationContextProvider = ({ children }: { children: any }) => {
-  const [modeConfig, setModeConfig] = useState<Mode>('full');
-  const [projectDescriptionConfig, setProjectDescriptionConfig] = useState<boolean>(true);
-  const [toolsAndTechConfig, setToolsAndTechConfig] = useState<boolean>(true);
-  const [softSkillsConfig, setSoftSkillsConfig] = useState<boolean>(true);
-  const [cloudSkillsConfig, setCloudSkillsConfig] = useState<boolean>(true);
-  const [frontEndSkillsConfig, setFrontEndSkillsConfig] = useState<boolean>(true);
-  const [backEndSkillsConfig, setBackEndSkillsConfig] = useState<boolean>(true);
-  const [devOpsSkillsConfig, setDevOpsSkillsConfig] = useState<boolean>(true);
-  const [toolsSkillsConfig, setToolsSkillsConfig] = useState<boolean>(true);
-  const [osSkillsConfig, setOsSkillsConfig] = useState<boolean>(true);
-  const [visibleWorkHistoryConfig, setVisibleWorkHistoryConfig] = useState<LabelValue[]>([]);
+  const [config, setConfig] = useState<{
+    mode: Mode;
+    projectDescription: boolean;
+    toolsAndTech: boolean;
+    softSkills: boolean;
+    cloudSkills: boolean;
+    frontEndSkills: boolean;
+    backEndSkills: boolean;
+    devOpsSkills: boolean;
+    toolsSkills: boolean;
+    osSkills: boolean;
+    visibleWorkHistory: LabelValue[];
+  }>({
+    mode: 'full',
+    projectDescription: true,
+    toolsAndTech: true,
+    softSkills: true,
+    cloudSkills: true,
+    frontEndSkills: true,
+    backEndSkills: true,
+    devOpsSkills: true,
+    toolsSkills: true,
+    osSkills: true,
+    visibleWorkHistory: []
+  });
 
-  const setMode = (mode: Mode) => {
-    setModeConfig(mode);
-  };
+  const updateState = (value: any) => {
+    const propName = varToString(value);
 
-  const setProjectDescription = (value: boolean) => {
-    setProjectDescriptionConfig(value);
-  };
-
-  const setToolsAndTech = (value: boolean) => {
-    setToolsAndTechConfig(value);
-  };
-
-  const setSoftSkills = (value: boolean) => {
-    setSoftSkillsConfig(value);
-  };
-
-  const setCloudSkills = (value: boolean) => {
-    setCloudSkillsConfig(value);
-  };
-
-  const setFrontEndSkills = (value: boolean) => {
-    setFrontEndSkillsConfig(value);
-  };
-
-  const setBackendSkills = (value: boolean) => {
-    setBackEndSkillsConfig(value);
-  };
-
-  const setDevopsSkills = (value: boolean) => {
-    setDevOpsSkillsConfig(value);
-  };
-
-  const setToolsSkills = (value: boolean) => {
-    setToolsSkillsConfig(value);
-  };
-
-  const setOsSkills = (value: boolean) => {
-    setOsSkillsConfig(value);
-  };
-
-  const setVisibleWorkHistory = (items: LabelValue[]) => {
-    setVisibleWorkHistoryConfig(items);
+    setConfig((state) => ({
+      ...state,
+      [propName]: value[propName]
+    }));
   };
 
   const context = {
-    mode: modeConfig,
-    setMode,
-    projectDescription: projectDescriptionConfig,
-    setProjectDescription,
-    toolsAndTech: toolsAndTechConfig,
-    setToolsAndTech,
-    softSkills: softSkillsConfig,
-    setSoftSkills,
-    cloudSkills: cloudSkillsConfig,
-    setCloudSkills,
-    frontEndSkills: frontEndSkillsConfig,
-    setFrontEndSkills,
-    backEndSkills: backEndSkillsConfig,
-    setBackendSkills,
-    devOpsSkills: devOpsSkillsConfig,
-    setDevopsSkills,
-    toolsSkills: toolsSkillsConfig,
-    setToolsSkills,
-    osSkills: osSkillsConfig,
-    setOsSkills,
-    visibleWorkHistory: visibleWorkHistoryConfig,
-    setVisibleWorkHistory
+    mode: config.mode,
+    setMode: (mode: Mode) => updateState({ mode }),
+    projectDescription: config.projectDescription,
+    setProjectDescription: (projectDescription: boolean) => updateState({ projectDescription }),
+    toolsAndTech: config.toolsAndTech,
+    setToolsAndTech: (toolsAndTech: boolean) => updateState({ toolsAndTech }),
+    softSkills: config.softSkills,
+    setSoftSkills: (softSkills: boolean) => updateState({ softSkills }),
+    cloudSkills: config.cloudSkills,
+    setCloudSkills: (cloudSkills: boolean) => updateState({ cloudSkills }),
+    frontEndSkills: config.frontEndSkills,
+    setFrontEndSkills: (frontEndSkills: boolean) => updateState({ frontEndSkills }),
+    backEndSkills: config.backEndSkills,
+    setBackendSkills: (backEndSkills: boolean) => updateState({ backEndSkills }),
+    devOpsSkills: config.devOpsSkills,
+    setDevopsSkills: (devOpsSkills: boolean) => updateState({ devOpsSkills }),
+    toolsSkills: config.toolsSkills,
+    setToolsSkills: (toolsSkills: boolean) => updateState({ toolsSkills }),
+    osSkills: config.osSkills,
+    setOsSkills: (osSkills: boolean) => updateState({ osSkills }),
+    visibleWorkHistory: config.visibleWorkHistory,
+    setVisibleWorkHistory: (visibleWorkHistory: LabelValue[]) => updateState({ visibleWorkHistory })
   };
 
   return <ConfigurationContext.Provider value={context}>{children}</ConfigurationContext.Provider>;
