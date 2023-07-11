@@ -1,5 +1,7 @@
+import { useContext } from 'react';
 import ProjectItemEntry from '../../../../models/ProjectItemEntry';
 import Tag from '../../../shared/Tag/Tag';
+import ConfigurationContext from '../../../../store/ConfigurationContext';
 
 const ProjectInfo = ({
   position,
@@ -18,6 +20,13 @@ const ProjectInfo = ({
   project: ProjectItemEntry;
   hideCompanytitle: boolean;
 }) => {
+  const configCtx = useContext(ConfigurationContext);
+
+  const showToolsAndTech =
+    configCtx.mode === 'full' || (configCtx.mode === 'custom' && configCtx.toolsAndTech);
+  const showProjectDescription =
+    configCtx.mode === 'full' || (configCtx.mode === 'custom' && configCtx.projectDescription);
+
   const borderTop = hideCompanytitle && { borderTop: '1px solid #eae4e4' };
 
   return (
@@ -41,7 +50,7 @@ const ProjectInfo = ({
             <Tag key={title} title={title} />
           ))}
         </p>
-        {project.description && (
+        {project.description && showProjectDescription && (
           <div>
             <div className="roles-and-responsibilities-title">Project description:</div>
             <p
@@ -61,7 +70,7 @@ const ProjectInfo = ({
             ))}
           </ul>
         </div>
-        {!!project.stack?.length && (
+        {!!project.stack?.length && showToolsAndTech && (
           <div>
             <div className="roles-and-responsibilities-title">Tools &amp; Technologies:</div>
             <p>

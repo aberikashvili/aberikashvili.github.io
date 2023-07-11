@@ -2,6 +2,12 @@
   margin: 0;
 }
 
+@media print {
+  .configuration-container {
+    display: none;
+  }
+}
+
 html,
 body {
   background: #fff;
@@ -22,8 +28,9 @@ h6 {
 }
 
 hr {
+  border-color: rgb(234, 228, 228);
   /* border-color: #eae4e4; */
-  border-color: #b8b8b8;
+  /* border-color: #b8b8b8; */
   border-style: inherit;
   border-width: 1px;
 }

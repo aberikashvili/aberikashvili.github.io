@@ -8,30 +8,27 @@ import WorkHistoryItemEntry from '../models/WorkHistoryItemEntry';
 import DUMMY_DATA from './dummy-data';
 import TrainCertEntry from '../models/TrainCertEntry';
 import HardSkillsEntry from '../models/HardSkillsEntry';
+import { LabelValue } from '../types/label-value';
 
 const ResumeContext = createContext({
   profile: {} as ProfileEntry,
   personalInfo: {} as PersonalInfoEntry,
-  primarySkills: [] as SkillItemEntry[],
-  secondarySkills: [] as SkillItemEntry[],
-  // new style
   softSkills: [] as SkillItemEntry[],
   hardSkills: {} as HardSkillsEntry,
-  // new style
   operationSystems: [] as SkillItemEntry[],
   languages: [] as string[],
   trainings: [] as TrainCertEntry[],
   summary: [] as string[],
   workHistory: [] as WorkHistoryItemEntry[],
-  education: [] as EducationItemEntry[]
+  education: [] as EducationItemEntry[],
+  getWorkHistoryIdList: () => [] as string[],
+  getWorkHistoryOptions: () => [] as LabelValue[]
 });
 
 export const ResumeContextProvider = ({ children }: { children: any }) => {
   const context = {
     profile: DUMMY_DATA.profile,
     personalInfo: DUMMY_DATA.personalInfo,
-    primarySkills: DUMMY_DATA.skills.primary,
-    secondarySkills: DUMMY_DATA.skills.secondary,
     softSkills: DUMMY_DATA.skills.softSkills,
     hardSkills: DUMMY_DATA.skills.hardSkills,
     operationSystems: DUMMY_DATA.skills.os,
@@ -39,7 +36,13 @@ export const ResumeContextProvider = ({ children }: { children: any }) => {
     trainings: DUMMY_DATA.skills.trainings,
     summary: DUMMY_DATA.summary,
     workHistory: DUMMY_DATA.workHistory,
-    education: DUMMY_DATA.education
+    education: DUMMY_DATA.education,
+    getWorkHistoryIdList: () => DUMMY_DATA.workHistory.map((item) => item.id),
+    getWorkHistoryOptions: () =>
+      DUMMY_DATA.workHistory.map(({ id, company }) => ({
+        label: company,
+        value: id
+      }))
   };
 
   return <ResumeContext.Provider value={context}>{children}</ResumeContext.Provider>;

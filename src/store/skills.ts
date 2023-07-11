@@ -29,6 +29,11 @@ const skillsMap: SkillMap = {
   tfs: new SkillItemEntry('fab fa-windows', 'Team Fundation Server'),
   git: new SkillItemEntry('fab fa-github', 'Git'),
   jira: new SkillItemEntry('fab fa-jira', 'Jira'),
+  trello: new SkillItemEntry('fab fa-trello', 'Trello'),
+  circleci: new SkillItemEntry('fa fa-hashtag', 'CircleCI'),
+  nx: new SkillItemEntry('fa fa-code', 'NX'),
+  figma: new SkillItemEntry('fab fa-figma', 'Figma'),
+  storybook: new SkillItemEntry('fa fa-code', 'Storybook'),
   // Tools
 
   // General
@@ -77,9 +82,9 @@ const skillsMap: SkillMap = {
   typescript: new SkillItemEntry('fa fa-hashtag', 'Typescript'),
   javascript: new SkillItemEntry('fab fa-js', 'Javascript'),
   'angular-material': new SkillItemEntry('fab fa-angular', 'Angular Material'),
-  nx: new SkillItemEntry('fab fa-angular', 'NX'),
   rxjs: new SkillItemEntry('fa fa-hashtag', 'RxJs'),
   'react-native': new SkillItemEntry('fab fa-react', 'React Native'),
+  'expo-cli': new SkillItemEntry('fab fa-react', 'Expo CLI'),
   react: new SkillItemEntry('fab fa-react', 'React'),
   redux: new SkillItemEntry('fab fa-react', 'Redux'),
   jest: new SkillItemEntry('fa fa-hashtag', 'Jest'),
@@ -96,6 +101,8 @@ const skillsMap: SkillMap = {
   extjs: new SkillItemEntry('fab fa-js', 'ExtJs'),
   jquery: new SkillItemEntry('fab fa-js', 'jQuery'),
   cypress: new SkillItemEntry('fa fa-hashtag', 'Cypress'),
+  d3: new SkillItemEntry('fa fa-code', 'D3.js'),
+  'fusion-charts': new SkillItemEntry('fa fa-code', 'FusionCharts'),
   // Front-End
 
   // Back-End
@@ -120,7 +127,8 @@ const skillsMap: SkillMap = {
   rabbitmq: new SkillItemEntry('fa fa-hashtag', 'RabbitMQ'),
   nginx: new SkillItemEntry('fa fa-hashtag', 'Nginx'),
   mssqlserver: new SkillItemEntry('fa fa-database', 'Ms Sql Server'),
-  nosql: new SkillItemEntry('fa fa-hashtag', 'NoSql')
+  nosql: new SkillItemEntry('fa fa-hashtag', 'NoSql'),
+  mongodb: new SkillItemEntry('fa fa-database', 'MongoDB')
   // Back-End
 };
 
