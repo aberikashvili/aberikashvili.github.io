@@ -1,9 +1,10 @@
-import { useCallback, useContext } from 'react';
+import { useCallback, useContext, useEffect, useState } from 'react';
 
-import { Checkbox, Segmented } from 'antd';
+import { Checkbox, Segmented, Select, SelectProps } from 'antd';
 import { SegmentedValue } from 'antd/es/segmented';
 import type { CheckboxChangeEvent } from 'antd/es/checkbox';
 
+import ResumeContext from '../../../store/ResumeContext';
 import ConfigurationContext from '../../../store/ConfigurationContext';
 import { Mode } from '../../../types/Mode';
 
@@ -11,6 +12,13 @@ import './Configuration.css';
 
 const Configuration = () => {
   const configCtx = useContext(ConfigurationContext);
+  const resumeCtx = useContext(ResumeContext);
+  const [workItemValue, setWorkItemValue] = useState<string[]>([]);
+
+  useEffect(() => {
+    setWorkItemValue(resumeCtx.getWorkHistoryIdList());
+    configCtx.setVisibleWorkHistory(resumeCtx.getWorkHistoryOptions());
+  }, []);
 
   const options: { key: Mode; label: string }[] = [
     {
@@ -85,6 +93,24 @@ const Configuration = () => {
     configCtx.setOsSkills(e.target.checked);
   };
 
+  const selectProps: SelectProps = {
+    mode: 'multiple',
+    style: { width: '500px' },
+    value: workItemValue,
+    options: resumeCtx.getWorkHistoryOptions(),
+    onChange: (newValue: string[]) => {
+      setWorkItemValue(newValue);
+      configCtx.setVisibleWorkHistory(
+        resumeCtx
+          .getWorkHistoryOptions()
+          .filter((option) => newValue.includes(option.value.toString()))
+      );
+    },
+    placeholder: 'Select Item...',
+    maxTagCount: 'responsive',
+    size: 'large'
+  };
+
   return (
     <div className="configuration-container">
       <div className="configuration-modes-wrapper">
@@ -142,6 +168,9 @@ const Configuration = () => {
             <Checkbox onChange={toggleOsSkills} defaultChecked={configCtx.osSkills}>
               Show OS Skills
             </Checkbox>
+          </div>
+          <div className="configuration-column">
+            <Select {...selectProps} />
           </div>
         </div>
       )}

@@ -1,5 +1,6 @@
 import { createContext, useState } from 'react';
 import { Mode } from '../types/Mode';
+import { LabelValue } from '../types/label-value';
 
 const ConfigurationContext = createContext({
   mode: 'compact' as Mode,
@@ -21,7 +22,9 @@ const ConfigurationContext = createContext({
   toolsSkills: true,
   setToolsSkills: (value: boolean) => {},
   osSkills: true,
-  setOsSkills: (value: boolean) => {}
+  setOsSkills: (value: boolean) => {},
+  visibleWorkHistory: [] as LabelValue[],
+  setVisibleWorkHistory: (items: LabelValue[]) => {}
 });
 
 export const ConfigurationContextProvider = ({ children }: { children: any }) => {
@@ -35,6 +38,7 @@ export const ConfigurationContextProvider = ({ children }: { children: any }) =>
   const [devOpsSkillsConfig, setDevOpsSkillsConfig] = useState<boolean>(true);
   const [toolsSkillsConfig, setToolsSkillsConfig] = useState<boolean>(true);
   const [osSkillsConfig, setOsSkillsConfig] = useState<boolean>(true);
+  const [visibleWorkHistoryConfig, setVisibleWorkHistoryConfig] = useState<LabelValue[]>([]);
 
   const setMode = (mode: Mode) => {
     setModeConfig(mode);
@@ -76,6 +80,10 @@ export const ConfigurationContextProvider = ({ children }: { children: any }) =>
     setOsSkillsConfig(value);
   };
 
+  const setVisibleWorkHistory = (items: LabelValue[]) => {
+    setVisibleWorkHistoryConfig(items);
+  };
+
   const context = {
     mode: modeConfig,
     setMode,
@@ -96,7 +104,9 @@ export const ConfigurationContextProvider = ({ children }: { children: any }) =>
     toolsSkills: toolsSkillsConfig,
     setToolsSkills,
     osSkills: osSkillsConfig,
-    setOsSkills
+    setOsSkills,
+    visibleWorkHistory: visibleWorkHistoryConfig,
+    setVisibleWorkHistory
   };
 
   return <ConfigurationContext.Provider value={context}>{children}</ConfigurationContext.Provider>;

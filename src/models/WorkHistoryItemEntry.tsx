@@ -1,6 +1,8 @@
 import ProjectItemEntry from './ProjectItemEntry';
 
 class WorkHistoryItemEntry {
+  public id = '';
+
   constructor(
     public fromMonth: string,
     public fromYear: number,
@@ -12,7 +14,12 @@ class WorkHistoryItemEntry {
     public company: string,
     public companyWebsite: string,
     public projects: ProjectItemEntry[]
-  ) {}
+  ) {
+    this.id = `${fromYear}-${fromMonth}-${company}-${position}`
+      .replace(/ /gi, '-')
+      .replace(/[\(\),]/gi, '')
+      .toLowerCase();
+  }
 }
 
 export default WorkHistoryItemEntry;
