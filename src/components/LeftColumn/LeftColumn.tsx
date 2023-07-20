@@ -13,6 +13,7 @@ import Trainings from './Trainings/Trainings';
 import ResumeContext from '../../store/ResumeContext';
 import Skills from './Skills/Skills';
 import ConfigurationContext from '../../store/ConfigurationContext';
+import Publications from './Publications/Publications';
 
 const LeftColumn = () => {
   const configCtx = useContext(ConfigurationContext);
@@ -25,6 +26,8 @@ const LeftColumn = () => {
   const showDevOpsSkills = configCtx.mode !== 'custom' || configCtx.devOpsSkills;
   const showToolsSkills = configCtx.mode !== 'custom' || configCtx.toolsSkills;
   const showOsSkills = configCtx.mode !== 'custom' || configCtx.osSkills;
+  const showCertification = configCtx.mode !== 'custom' || configCtx.certification;
+  const showPublications = configCtx.mode !== 'custom' || configCtx.publications;
 
   return (
     <Column classNames="Column-Left">
@@ -52,7 +55,8 @@ const LeftColumn = () => {
       {showToolsSkills && <Skills title="Tools" skills={ctx.hardSkills.tools} />}
       {showOsSkills && <OperationSystems opSystems={ctx.operationSystems} />}
       <Languages languages={ctx.languages} />
-      <Trainings trainings={ctx.trainings} />
+      {showPublications && <Publications publications={ctx.publications} />}
+      {showCertification && <Trainings trainings={ctx.trainings} />}
     </Column>
   );
 };

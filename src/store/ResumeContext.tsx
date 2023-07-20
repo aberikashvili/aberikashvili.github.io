@@ -9,6 +9,7 @@ import DUMMY_DATA from './dummy-data';
 import TrainCertEntry from '../models/TrainCertEntry';
 import HardSkillsEntry from '../models/HardSkillsEntry';
 import { LabelValue } from '../types/label-value';
+import { ArticleEntry } from '../models/ArticleEntry';
 
 const ResumeContext = createContext({
   profile: {} as ProfileEntry,
@@ -21,6 +22,7 @@ const ResumeContext = createContext({
   summary: [] as string[],
   workHistory: [] as WorkHistoryItemEntry[],
   education: [] as EducationItemEntry[],
+  publications: [] as ArticleEntry[],
   getWorkHistoryIdList: () => [] as string[],
   getWorkHistoryOptions: () => [] as LabelValue[]
 });
@@ -37,6 +39,7 @@ export const ResumeContextProvider = ({ children }: { children: any }) => {
     summary: DUMMY_DATA.summary,
     workHistory: DUMMY_DATA.workHistory,
     education: DUMMY_DATA.education,
+    publications: DUMMY_DATA.publications,
     getWorkHistoryIdList: () => DUMMY_DATA.workHistory.map((item) => item.id),
     getWorkHistoryOptions: () =>
       DUMMY_DATA.workHistory.map(({ id, company }) => ({

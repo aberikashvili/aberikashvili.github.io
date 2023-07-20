@@ -1,15 +1,20 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import TrainCertEntry from '../../../models/TrainCertEntry';
 import Fieldset from '../../Fieldset/Fieldset';
 import Row from '../../Row/Row';
 
 import './Trainings.css';
+import ConfigurationContext from '../../../store/ConfigurationContext';
+import Card from '../../shared/Card/Card';
 
 const Trainings = ({ trainings }: { trainings: TrainCertEntry[] }) => {
-  let result = (
+  const configCtx = useContext(ConfigurationContext);
+  const showCertificateImages = configCtx.mode === 'custom' && configCtx.certificateImages;
+
+  return (
     <Row>
       <Fieldset legend="Trainings & Certifications">
-        {trainings.map(({ state, title, location, icon }) => {
+        {trainings.map(({ state, title, location, icon, certificate }) => {
           let locationFragment = (
             <>
               <i className="fa fa-globe"></i> Online
@@ -25,28 +30,18 @@ const Trainings = ({ trainings }: { trainings: TrainCertEntry[] }) => {
           }
 
           return (
-            <React.Fragment key={title}>
-              <div className="training">
-                <div className="training__title--outer">
-                  <div className="training__icon">
-                    <i className={icon}></i>
-                  </div>
-                  <div className="training__title">{title}</div>
-                </div>
-                <div className="training__details">
-                  <div>{state}</div>
-                  <div>{locationFragment}</div>
-                </div>
-              </div>
-              <hr />
-            </React.Fragment>
+            <Card
+              key={`cert-${title}`}
+              meta={{ left: state, right: locationFragment }}
+              title={title}
+              icon={icon || undefined}
+              {...(showCertificateImages && { image: certificate })}
+            />
           );
         })}
       </Fieldset>
     </Row>
   );
-
-  return result;
 };
 
 export default Trainings;

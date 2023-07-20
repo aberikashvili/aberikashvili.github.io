@@ -2,47 +2,46 @@ import { createContext, useState } from 'react';
 import { Mode } from '../types/Mode';
 import { LabelValue } from '../types/label-value';
 
-const ConfigurationContext = createContext({
-  mode: 'compact' as Mode,
-  setMode: (mode: Mode) => {},
-  projectDescription: false,
-  setProjectDescription: (value: boolean) => {},
-  toolsAndTech: false,
-  setToolsAndTech: (value: boolean) => {},
-  softSkills: true,
-  setSoftSkills: (value: boolean) => {},
-  cloudSkills: true,
-  setCloudSkills: (value: boolean) => {},
-  frontEndSkills: true,
-  setFrontEndSkills: (value: boolean) => {},
-  backEndSkills: true,
-  setBackendSkills: (value: boolean) => {},
-  devOpsSkills: true,
-  setDevopsSkills: (value: boolean) => {},
-  toolsSkills: true,
-  setToolsSkills: (value: boolean) => {},
-  osSkills: true,
-  setOsSkills: (value: boolean) => {},
-  visibleWorkHistory: [] as LabelValue[],
-  setVisibleWorkHistory: (items: LabelValue[]) => {}
-});
+export type ConfigContextState = {
+  mode: Mode;
+  projectDescription: boolean;
+  toolsAndTech: boolean;
+  softSkills: boolean;
+  cloudSkills: boolean;
+  frontEndSkills: boolean;
+  backEndSkills: boolean;
+  devOpsSkills: boolean;
+  toolsSkills: boolean;
+  osSkills: boolean;
+  certification: boolean;
+  certificateImages: boolean;
+  publications: boolean;
+  visibleWorkHistory: LabelValue[];
+};
+
+export type ConfigurationContextFunctions = ConfigContextState & {
+  setMode: (mode: Mode) => void;
+  setProjectDescription: (value: boolean) => void;
+  setToolsAndTech: (value: boolean) => void;
+  setSoftSkills: (value: boolean) => void;
+  setCloudSkills: (value: boolean) => void;
+  setFrontEndSkills: (value: boolean) => void;
+  setBackendSkills: (value: boolean) => void;
+  setDevopsSkills: (value: boolean) => void;
+  setToolsSkills: (value: boolean) => void;
+  setOsSkills: (value: boolean) => void;
+  setCertification: (value: boolean) => void;
+  setCertificateImages: (value: boolean) => void;
+  setPublications: (value: boolean) => void;
+  setVisibleWorkHistory: (items: LabelValue[]) => void;
+};
+
+const ConfigurationContext = createContext({} as ConfigurationContextFunctions);
 
 const varToString = (varObj: any) => Object.keys(varObj)[0];
 
 export const ConfigurationContextProvider = ({ children }: { children: any }) => {
-  const [config, setConfig] = useState<{
-    mode: Mode;
-    projectDescription: boolean;
-    toolsAndTech: boolean;
-    softSkills: boolean;
-    cloudSkills: boolean;
-    frontEndSkills: boolean;
-    backEndSkills: boolean;
-    devOpsSkills: boolean;
-    toolsSkills: boolean;
-    osSkills: boolean;
-    visibleWorkHistory: LabelValue[];
-  }>({
+  const [config, setConfig] = useState<ConfigContextState>({
     mode: 'full',
     projectDescription: true,
     toolsAndTech: true,
@@ -53,6 +52,9 @@ export const ConfigurationContextProvider = ({ children }: { children: any }) =>
     devOpsSkills: true,
     toolsSkills: true,
     osSkills: true,
+    certification: true,
+    certificateImages: false,
+    publications: true,
     visibleWorkHistory: []
   });
 
@@ -86,6 +88,12 @@ export const ConfigurationContextProvider = ({ children }: { children: any }) =>
     setToolsSkills: (toolsSkills: boolean) => updateState({ toolsSkills }),
     osSkills: config.osSkills,
     setOsSkills: (osSkills: boolean) => updateState({ osSkills }),
+    certification: config.certification,
+    setCertification: (certification: boolean) => updateState({ certification }),
+    certificateImages: config.certificateImages,
+    setCertificateImages: (certificateImages: boolean) => updateState({ certificateImages }),
+    publications: config.publications,
+    setPublications: (publications: boolean) => updateState({ publications }),
     visibleWorkHistory: config.visibleWorkHistory,
     setVisibleWorkHistory: (visibleWorkHistory: LabelValue[]) => updateState({ visibleWorkHistory })
   };

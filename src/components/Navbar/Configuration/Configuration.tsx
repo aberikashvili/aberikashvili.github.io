@@ -93,6 +93,18 @@ const Configuration = () => {
     configCtx.setOsSkills(e.target.checked);
   };
 
+  const toggleCertifications = (e: CheckboxChangeEvent) => {
+    configCtx.setCertification(e.target.checked);
+  };
+
+  const toggleCertificateImages = (e: CheckboxChangeEvent) => {
+    configCtx.setCertificateImages(e.target.checked);
+  };
+
+  const togglePublications = (e: CheckboxChangeEvent) => {
+    configCtx.setPublications(e.target.checked);
+  };
+
   const selectProps: SelectProps = {
     mode: 'multiple',
     style: { width: '500px' },
@@ -111,6 +123,24 @@ const Configuration = () => {
     size: 'large'
   };
 
+  // const selectSkillProps: SelectProps = {
+  //   mode: 'multiple',
+  //   style: { width: '500px' },
+  //   value: [],
+  //   options: [{ label: 'Certification', value: 'certification' }],
+  //   onChange: (newValue: string[]) => {
+  //     // setWorkItemValue(newValue);
+  //     // configCtx.setVisibleWorkHistory(
+  //     //   resumeCtx
+  //     //     .getWorkHistoryOptions()
+  //     //     .filter((option) => newValue.includes(option.value.toString()))
+  //     // );
+  //   },
+  //   placeholder: 'Select Skills...',
+  //   maxTagCount: 'responsive',
+  //   size: 'large'
+  // };
+
   return (
     <div className="configuration-container">
       <div className="configuration-modes-wrapper">
@@ -126,47 +156,65 @@ const Configuration = () => {
             <Checkbox
               onChange={toggleProjectDescription}
               defaultChecked={configCtx.projectDescription}>
-              Show Project Description
+              Project Description
             </Checkbox>
           </div>
           <div className="configuration-column">
             <Checkbox onChange={toggleToolsAndTech} defaultChecked={configCtx.toolsAndTech}>
-              Show Project Tools & Tech
+              Project Tools & Tech
             </Checkbox>
           </div>
+          {/* <div className="configuration-column">
+            <Select {...selectSkillProps} />
+          </div> */}
           <div className="configuration-column">
             <Checkbox onChange={toggleSoftSkills} defaultChecked={configCtx.softSkills}>
-              Show Soft Skills
+              Soft Skills
             </Checkbox>
           </div>
           <div className="configuration-column">
             <Checkbox onChange={toggleCloudSkills} defaultChecked={configCtx.cloudSkills}>
-              Show Cloud Skills
+              Cloud Skills
             </Checkbox>
           </div>
           <div className="configuration-column">
             <Checkbox onChange={toggleFrontEndSkills} defaultChecked={configCtx.frontEndSkills}>
-              Show Frontend Skills
+              Frontend Skills
             </Checkbox>
           </div>
           <div className="configuration-column">
             <Checkbox onChange={toggleBackEndSkills} defaultChecked={configCtx.backEndSkills}>
-              Show Backend Skills
+              Backend Skills
             </Checkbox>
           </div>
           <div className="configuration-column">
             <Checkbox onChange={toggleDevOpsSkills} defaultChecked={configCtx.devOpsSkills}>
-              Show DevOps Skills
+              DevOps Skills
             </Checkbox>
           </div>
           <div className="configuration-column">
             <Checkbox onChange={toggleToolsSkills} defaultChecked={configCtx.toolsSkills}>
-              Show Tools Skills
+              Tools Skills
             </Checkbox>
           </div>
           <div className="configuration-column">
             <Checkbox onChange={toggleOsSkills} defaultChecked={configCtx.osSkills}>
-              Show OS Skills
+              OS Skills
+            </Checkbox>
+          </div>
+          <div className="configuration-column">
+            <Checkbox onChange={toggleCertifications} defaultChecked={configCtx.certification}>
+              Certificastion
+            </Checkbox>
+            <Checkbox
+              onChange={toggleCertificateImages}
+              defaultChecked={configCtx.certificateImages}>
+              Certificate Images
+            </Checkbox>
+          </div>
+          <div className="configuration-column">
+            <Checkbox onChange={togglePublications} defaultChecked={configCtx.publications}>
+              Publications
             </Checkbox>
           </div>
           <div className="configuration-column">

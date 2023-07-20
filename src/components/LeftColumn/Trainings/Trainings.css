@@ -24,3 +24,12 @@
   color: #eae4e4;
   padding: 0 2px;
 }
+
+.training__certificate {
+  max-width: 313px;
+  padding: 10px 0 0 0;
+}
+
+.training__certificate img {
+  max-width: 313px;
+}
