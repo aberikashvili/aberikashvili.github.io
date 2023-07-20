@@ -1,3 +1,4 @@
+import { ArticleEntry } from '../models/ArticleEntry';
 import EducationItemEntry from '../models/EducationItemEntry';
 import PersonalInfoItemEntry from '../models/PersonalInfoItemEntry';
 import ProjectItemEntry from '../models/ProjectItemEntry';
@@ -166,6 +167,59 @@ const DUMMY_DATA = {
         'fab fa-amazon'
       ),
       new TrainCertEntry(
+        'Preparing',
+        'AlgoExpert Certification in Algorithms & Data Structures',
+        'Online',
+        'fa fa-asterisk'
+      ),
+      // new TrainCertEntry(
+      //   'Preparing',
+      //   '.NET Core Microservices - The Complete Guide (.NET 8 MVC)',
+      //   'Online',
+      //   'fab fa-windows'
+      // ),
+      // new TrainCertEntry(
+      //   'Preparing',
+      //   'Cypress End-to-End Testing - Getting Started',
+      //   'Online',
+      //   'fab fa-angular'
+      // ),
+      new TrainCertEntry(
+        'Certified',
+        'React Native - The Practical Guide [2023]',
+        'Online',
+        'fab fa-react',
+        'http://localhost:5173/src/assets/certificates/UC-7cb1e0fd-e81b-4fab-8294-6a3618aff264.jpg'
+      ),
+      new TrainCertEntry(
+        'Certified',
+        "NestJS: The Complete Developer's Guide",
+        'Online',
+        'fab fa-node',
+        'http://localhost:5173/src/assets/certificates/UC-c49c5d58-070e-4ae1-baf3-9a4a9e5ce6bb.jpg'
+      ),
+      new TrainCertEntry(
+        'Certified',
+        'Learning Algorithms in JavaScript from Scratch',
+        'Online',
+        'fab fa-js',
+        'http://localhost:5173/src/assets/certificates/UC-3CBGS5S6.jpg'
+      ),
+      new TrainCertEntry(
+        'Certified',
+        'Learning Data Structures in JavaScript from Scratch',
+        'Online',
+        'fab fa-js',
+        'http://localhost:5173/src/assets/certificates/UC-APHRY51G.jpg'
+      ),
+      new TrainCertEntry(
+        'Certified',
+        'Redux in Angular (2 and 4+)',
+        'Online',
+        'fab fa-angular',
+        'http://localhost:5173/src/assets/certificates/UC-5V2KOW57.jpg'
+      ),
+      new TrainCertEntry(
         'Attended',
         'Web application security - attack and defense',
         {
@@ -182,6 +236,62 @@ const DUMMY_DATA = {
     'I also posses excellent verbal and written communication skills and the ability to interact professionally with a diverse group, executives, managers, and subject matter experts. I communicate with clarity, verbally and in one-on-one or group situations.'
   ],
   workHistory: [
+    // new WorkHistoryItemEntry(
+    //   'Aug',
+    //   2023,
+    //   null,
+    //   null,
+    //   'Lead Angular Engineer',
+    //   'Remote',
+    //   'Full-Time Employment',
+    //   'Broccoli Agency',
+    //   'https://broccoli-agency.com/',
+    //   [
+    //     new ProjectItemEntry(
+    //       ['Energy Solutions ECOSystem'],
+    //       `<This Project> is a Energy Solutions ECOSystem for Bulgaria`,
+    //       [
+    //         'To make technical decisions related to Angular app architecture',
+    //         'To make technical decisions and implement high performance solutions for high loaded Angular app'
+    //       ],
+    //       SkillSet(['angular', 'swagger', 'web api / rest api', 'ngxs', 'git', 'gitlab'])
+    //     )
+    //   ]
+    // ),
+    // new WorkHistoryItemEntry(
+    //   'Jul',
+    //   2023,
+    //   null,
+    //   null,
+    //   'Senior React / React Native Engineer',
+    //   'Remote Part-Time',
+    //   'Freelance',
+    //   'MaxinAI',
+    //   'https://maxin-ai.com',
+    //   [
+    //     new ProjectItemEntry(
+    //       ['flyer-spread-app'],
+    //       '',
+    //       // `Mobile app connects the business who needs to spread flyers to the people who can spread.
+    //       // The business posts job with requirements and information, how much flyers they need to spread, where do they need to spread and how much they pay for it.
+    //       // They can hire one or more applicants, who later can grab printed flyers from the facility
+    //       // or receive using post and start spreading them.`,
+    //       [
+    //         'To implement CI/CD pipelins for Pull Request automated builds',
+    //         'To implement new features according to technical specs and business requirements'
+    //       ],
+    //       SkillSet([
+    //         'react',
+    //         'react-native',
+    //         'web api / rest api',
+    //         'git',
+    //         'github',
+    //         'jira',
+    //         'figma'
+    //       ])
+    //     )
+    //   ]
+    // ),
     new WorkHistoryItemEntry(
       'Mar',
       2023,
@@ -261,8 +371,8 @@ const DUMMY_DATA = {
     new WorkHistoryItemEntry(
       'Feb',
       2023,
-      null,
-      null,
+      'Aug',
+      2023,
       'Senior Javascript Engineer',
       'Remote',
       'Contract',
@@ -663,7 +773,36 @@ const DUMMY_DATA = {
       'Bachelor of Computer Science',
       'Georgian Technical University (GTU)'
     )
-  ]
+  ],
+  publications: [
+    {
+      title: 'React Native EAS builds on NX + @nrwl/expo using Github workflows',
+      caption: 'How to setup EAS builds for NX + expo',
+      date: new Date(2023, 6, 1),
+      featuredImage:
+        'https://miro.medium.com/v2/resize:fit:1100/format:webp/1*t_fYGjeVe84rhd6xlal2yA.jpeg',
+      url: 'https://medium.com/@arkadi.berikashvili/react-native-eas-builds-on-nx-nrwl-expo-using-github-workflows-80f420f52563',
+      channel: 'medium.com'
+    },
+    {
+      title: `You shouldn’t worry about CCAT`,
+      caption: 'How to take tough CCAT test with confidence',
+      date: new Date(2023, 0, 4),
+      featuredImage:
+        'https://miro.medium.com/v2/resize:fit:1100/format:webp/0*TDRG5PLafNPYohlN.jpg',
+      url: 'https://medium.com/@arkadi.berikashvili/you-shouldnt-worry-about-ccat-45e6a05e7bac',
+      channel: 'medium.com'
+    },
+    {
+      title: 'How to use @nestjs/cli with NX workspace',
+      caption: '',
+      date: new Date(2022, 11, 28),
+      featuredImage:
+        'https://miro.medium.com/v2/resize:fit:1100/format:webp/1*q7CbzBsMxfWBCFdZwHeNCg.png',
+      url: 'https://medium.com/@arkadi.berikashvili/how-to-use-nestjs-cli-with-nx-workspace-40ebcfbea303',
+      channel: 'medium.com'
+    }
+  ] as ArticleEntry[]
 };
 
 export default DUMMY_DATA;
