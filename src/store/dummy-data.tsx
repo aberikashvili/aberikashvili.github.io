@@ -189,35 +189,35 @@ const DUMMY_DATA = {
         'React Native - The Practical Guide [2023]',
         'Online',
         'fab fa-react',
-        'http://localhost:5173/src/assets/certificates/UC-7cb1e0fd-e81b-4fab-8294-6a3618aff264.jpg'
+        '/assets/certificates/UC-7cb1e0fd-e81b-4fab-8294-6a3618aff264.jpg'
       ),
       new TrainCertEntry(
         'Certified',
         "NestJS: The Complete Developer's Guide",
         'Online',
         'fab fa-node',
-        'http://localhost:5173/src/assets/certificates/UC-c49c5d58-070e-4ae1-baf3-9a4a9e5ce6bb.jpg'
+        '/assets/certificates/UC-c49c5d58-070e-4ae1-baf3-9a4a9e5ce6bb.jpg'
       ),
       new TrainCertEntry(
         'Certified',
         'Learning Algorithms in JavaScript from Scratch',
         'Online',
         'fab fa-js',
-        'http://localhost:5173/src/assets/certificates/UC-3CBGS5S6.jpg'
+        '/assets/certificates/UC-3CBGS5S6.jpg'
       ),
       new TrainCertEntry(
         'Certified',
         'Learning Data Structures in JavaScript from Scratch',
         'Online',
         'fab fa-js',
-        'http://localhost:5173/src/assets/certificates/UC-APHRY51G.jpg'
+        '/assets/certificates/UC-APHRY51G.jpg'
       ),
       new TrainCertEntry(
         'Certified',
         'Redux in Angular (2 and 4+)',
         'Online',
         'fab fa-angular',
-        'http://localhost:5173/src/assets/certificates/UC-5V2KOW57.jpg'
+        '/assets/certificates/UC-5V2KOW57.jpg'
       ),
       new TrainCertEntry(
         'Attended',

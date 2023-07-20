@@ -16,8 +16,8 @@ import ConfigurationContext from '../../store/ConfigurationContext';
 import Publications from './Publications/Publications';
 
 const LeftColumn = () => {
-  const configCtx = useContext(ConfigurationContext);
   const ctx = useContext(ResumeContext);
+  const configCtx = useContext(ConfigurationContext);
 
   const showSoftSkills = configCtx.mode !== 'custom' || configCtx.softSkills;
   const showCloudSkills = configCtx.mode !== 'custom' || configCtx.cloudSkills;
