@@ -128,7 +128,9 @@ const skillsMap: SkillMap = {
   nginx: new SkillItemEntry('fa fa-hashtag', 'Nginx'),
   mssqlserver: new SkillItemEntry('fa fa-database', 'Ms Sql Server'),
   nosql: new SkillItemEntry('fa fa-hashtag', 'NoSql'),
-  mongodb: new SkillItemEntry('fa fa-database', 'MongoDB')
+  mongodb: new SkillItemEntry('fa fa-database', 'MongoDB'),
+  python: new SkillItemEntry('fab fa-python', 'Python'),
+  django: new SkillItemEntry('fab fa-django', 'Django')
   // Back-End
 };
 

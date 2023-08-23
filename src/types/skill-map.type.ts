@@ -128,6 +128,8 @@ type SkillMap = {
   mssqlserver: SkillItemEntry;
   nosql: SkillItemEntry;
   mongodb: SkillItemEntry;
+  python: SkillItemEntry;
+  django: SkillItemEntry;
   // Back-End
 };
 
