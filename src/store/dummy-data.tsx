@@ -236,62 +236,77 @@ const DUMMY_DATA = {
     'I also posses excellent verbal and written communication skills and the ability to interact professionally with a diverse group, executives, managers, and subject matter experts. I communicate with clarity, verbally and in one-on-one or group situations.'
   ],
   workHistory: [
-    // new WorkHistoryItemEntry(
-    //   'Aug',
-    //   2023,
-    //   null,
-    //   null,
-    //   'Lead Angular Engineer',
-    //   'Remote',
-    //   'Full-Time Employment',
-    //   'Broccoli Agency',
-    //   'https://broccoli-agency.com/',
-    //   [
-    //     new ProjectItemEntry(
-    //       ['Energy Solutions ECOSystem'],
-    //       `<This Project> is a Energy Solutions ECOSystem for Bulgaria`,
-    //       [
-    //         'To make technical decisions related to Angular app architecture',
-    //         'To make technical decisions and implement high performance solutions for high loaded Angular app'
-    //       ],
-    //       SkillSet(['angular', 'swagger', 'web api / rest api', 'ngxs', 'git', 'gitlab'])
-    //     )
-    //   ]
-    // ),
-    // new WorkHistoryItemEntry(
-    //   'Jul',
-    //   2023,
-    //   null,
-    //   null,
-    //   'Senior React / React Native Engineer',
-    //   'Remote Part-Time',
-    //   'Freelance',
-    //   'MaxinAI',
-    //   'https://maxin-ai.com',
-    //   [
-    //     new ProjectItemEntry(
-    //       ['flyer-spread-app'],
-    //       '',
-    //       // `Mobile app connects the business who needs to spread flyers to the people who can spread.
-    //       // The business posts job with requirements and information, how much flyers they need to spread, where do they need to spread and how much they pay for it.
-    //       // They can hire one or more applicants, who later can grab printed flyers from the facility
-    //       // or receive using post and start spreading them.`,
-    //       [
-    //         'To implement CI/CD pipelins for Pull Request automated builds',
-    //         'To implement new features according to technical specs and business requirements'
-    //       ],
-    //       SkillSet([
-    //         'react',
-    //         'react-native',
-    //         'web api / rest api',
-    //         'git',
-    //         'github',
-    //         'jira',
-    //         'figma'
-    //       ])
-    //     )
-    //   ]
-    // ),
+    new WorkHistoryItemEntry(
+      'Aug',
+      2023,
+      null,
+      null,
+      'Senior Angular Developer',
+      'Hybrid',
+      'Full-Time Employment',
+      'Sweeft Digital',
+      'https://sweeftdigital.com/',
+      [
+        new ProjectItemEntry(
+          ['ENERGO-PRO BG'],
+          `
+          ENERGO-PRO Varna EAD is part of the ENERGO-PRO Group established in 1994 in the Czech Republic. 
+          Its business is focused on generation, distribution and power trading. 
+          The Group operates hydropower plants and electrical distribution grids in Central and Eastern Europe, the Black Sea and the Caucasus. ENERGO-PRO Varna EAD has more than 2300 employees. Holding licenses for the activities: electrical power distribution and power supply though its daughter companies Electrodistribution North AD and ENERGO-PRO Sales AD, it serves 1 200 000 customers in Northeastern Bulgaria. ENERGO-PRO Energy Services EAD is also part of ENERGO-PRO Varna EAD and is one of the leading traders on the liberalized market in Bulgaria serving more than 33 000 customers.
+          `,
+          [
+            'To implement complex UI/UX on Angular',
+            'To take technical decisions related to Angular app architecture',
+            'To take technical decisions and implement high performance solutions for high loaded Angular app',
+            'To communicate and collaborate with back-end team',
+            'To perform peer reviews',
+            'To participate in Sprint Planning with Project Managers',
+            'To perform defect hunting routine'
+          ],
+          SkillSet(['angular', 'swagger', 'web api / rest api', 'ngxs', 'git', 'gitlab'])
+        )
+      ]
+    ),
+    new WorkHistoryItemEntry(
+      'Jul',
+      2023,
+      null,
+      null,
+      'Senior React / React Native Engineer',
+      'Remote Part-Time',
+      'Freelance',
+      'MaxinAI',
+      'https://maxinai.com',
+      [
+        new ProjectItemEntry(
+          ['pixidium-mobile', 'pixidium-web'],
+          `Mobile app connects the business who needs to spread flyers / leaflets to the people who can spread.
+          The business posts campaign with requirements and information, how much flyers they need to spread, where do they need to spread etc.
+          Campaigns can be assigned to ambassadors.`,
+          [
+            'To implement CI/CD pipelins for Pull Request automated Android/iOS builds',
+            'To implement new features according to technical specs and business requirements',
+            'To fix bugs according to provided backlog',
+            'To release the development and production versions of mobile app',
+            'To fix bugs on the web jQuery + React + Python + MySQL'
+          ],
+          SkillSet([
+            'react',
+            'react-native',
+            'web api / rest api',
+            'python',
+            'django',
+            'aws-s3',
+            'aws-sdk',
+            'jquery',
+            'git',
+            'github',
+            'jira',
+            'cicd'
+          ])
+        )
+      ]
+    ),
     new WorkHistoryItemEntry(
       'Mar',
       2023,
