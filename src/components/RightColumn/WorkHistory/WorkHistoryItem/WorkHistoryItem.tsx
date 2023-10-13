@@ -10,10 +10,19 @@ const WorkHistoryItem = ({ work }: { work: WorkHistoryItemEntry }) => {
             <tr key={project.titles.join('')}>
               <td valign="top" className="no-wrap">
                 {i === 0 && (
-                  <b>
-                    {work.fromMonth} {work.fromYear} -{' '}
-                    {!work.toMonth && !work.toYear ? 'Present' : `${work.toMonth} ${work.toYear}`}
-                  </b>
+                  <>
+                    <b>
+                      {work.fromMonth} {work.fromYear} -{' '}
+                      {!work.toMonth && !work.toYear ? 'Present' : `${work.toMonth} ${work.toYear}`}
+                    </b>
+                    {/* <div
+                      style={{
+                        paddingTop: '8px',
+                        textAlign: 'center'
+                      }}>
+                      <b>{work.period()}</b>
+                    </div> */}
+                  </>
                 )}
               </td>
               <ProjectInfo

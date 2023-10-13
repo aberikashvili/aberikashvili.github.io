@@ -102,6 +102,8 @@ type SkillMap = {
   cypress: SkillItemEntry;
   d3: SkillItemEntry;
   'fusion-charts': SkillItemEntry;
+  auth0: SkillItemEntry;
+  'push-notifications': SkillItemEntry;
   // Front-End
 
   // Back-End

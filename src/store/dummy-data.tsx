@@ -254,6 +254,7 @@ const DUMMY_DATA = {
           Its business is focused on generation, distribution and power trading. 
           The Group operates hydropower plants and electrical distribution grids in Central and Eastern Europe, the Black Sea and the Caucasus. ENERGO-PRO Varna EAD has more than 2300 employees. Holding licenses for the activities: electrical power distribution and power supply though its daughter companies Electrodistribution North AD and ENERGO-PRO Sales AD, it serves 1 200 000 customers in Northeastern Bulgaria. ENERGO-PRO Energy Services EAD is also part of ENERGO-PRO Varna EAD and is one of the leading traders on the liberalized market in Bulgaria serving more than 33 000 customers.
           `,
+          [],
           [
             'To implement complex UI/UX on Angular',
             'To take technical decisions related to Angular app architecture',
@@ -278,11 +279,67 @@ const DUMMY_DATA = {
       'MaxinAI',
       'https://maxinai.com',
       [
+        // new ProjectItemEntry(
+        //   ['fitness-community trainer-app'],
+        //   `desc`,
+        //   [],
+        //   [],
+        //   SkillSet([
+        //     'react-native',
+        //     'nx',
+        //     'expo-cli',
+        //     'firebase',
+        //     'aws',
+        //     'auth0',
+        //     'push-notifications',
+        //     'git',
+        //     'github'
+        //   ])
+        // ),
+        // new ProjectItemEntry(
+        //   ['amkhanagoba-app'],
+        //   `
+        //     Mobile app connects the apartament owners, development companies and service providers into the same space.
+        //     The app simplifies the communication between the sides and helps to manage the issues related to living place and achieve the result.
+        //   `,
+        //   [],
+        //   [
+        //     'To implement CI/CD pipelins for Pull Request automated Android/iOS builds',
+        //     'To implement new features according to technical specs and business requirements',
+        //     'To fix bugs according to provided backlog',
+        //     'To release the development and production versions of mobile app',
+        //     'To fix bugs on the web jQuery + React + Python + MySQL'
+        //   ],
+        //   SkillSet([
+        //     'react-native',
+        //     'nx',
+        //     'expo-cli',
+        //     'firebase',
+        //     'aws',
+        //     'auth0',
+        //     'push-notifications',
+        //     'git',
+        //     'github'
+        //   ])
+        // ),
         new ProjectItemEntry(
           ['pixidium-mobile', 'pixidium-web'],
           `Mobile app connects the business who needs to spread flyers / leaflets to the people who can spread.
           The business posts campaign with requirements and information, how much flyers they need to spread, where do they need to spread etc.
           Campaigns can be assigned to ambassadors.`,
+          [
+            '/assets/projects/mobile/pixidium/IMG_0005.PNG',
+            '/assets/projects/mobile/pixidium/IMG_0006.PNG',
+            '/assets/projects/mobile/pixidium/IMG_0007.PNG',
+            '/assets/projects/mobile/pixidium/IMG_0008.PNG',
+            '/assets/projects/mobile/pixidium/IMG_0009.PNG',
+            '/assets/projects/mobile/pixidium/IMG_0010.PNG',
+            '/assets/projects/mobile/pixidium/IMG_0012.PNG',
+            '/assets/projects/mobile/pixidium/IMG_0013.PNG',
+            '/assets/projects/mobile/pixidium/IMG_0014.PNG',
+            '/assets/projects/mobile/pixidium/IMG_0015.PNG',
+            '/assets/projects/mobile/pixidium/IMG_0016.PNG'
+          ],
           [
             'To implement CI/CD pipelins for Pull Request automated Android/iOS builds',
             'To implement new features according to technical specs and business requirements',
@@ -302,7 +359,9 @@ const DUMMY_DATA = {
             'git',
             'github',
             'jira',
-            'cicd'
+            'cicd',
+            'firebase',
+            'push-notifications'
           ])
         )
       ]
@@ -310,8 +369,8 @@ const DUMMY_DATA = {
     new WorkHistoryItemEntry(
       'Mar',
       2023,
-      null,
-      null,
+      'Sep',
+      2023,
       'Tech Lead (Angular, React Native, NestJs)',
       'Remote Part-Time',
       'Contract',
@@ -327,6 +386,7 @@ const DUMMY_DATA = {
           core contains trivial components like: buttons, inputs, labels, etc. but platform contains bigger specific components, which are build from core components. 
           These libraries can be build as npm package later as well. I also implemented CI using github action and expo.dev and we have Android .apk and iOS simulator builds per each pull request.
           `,
+          [],
           [
             'To setup github repositories and application architecture uising NX',
             'To setup and configure CI/CD on expo.dev',
@@ -357,6 +417,7 @@ const DUMMY_DATA = {
           The projects I'm leading are various, web projects are based on Angular, Mobile projects are based on React Native.
           All of them are being developed from scratch
           `,
+          [],
           [
             'To setup github repositories and application architecture',
             'To setup and configure CI/CD on Netlify',
@@ -400,6 +461,7 @@ const DUMMY_DATA = {
           SimpliField is leading the retail digital transformation as the first fully integrated mobile platform for retail operations, 
           internal communications and advanced performance analytics.
           `,
+          [],
           [
             `To implement new frontend features using Angular.js or React, following the design spec from Figma`,
             `To implement new mobile features using Ionic + Angular.js, following the design spec from Figma`,
@@ -438,6 +500,7 @@ const DUMMY_DATA = {
         new ProjectItemEntry(
           ['Foxtrail: Integration Test Environment Setup on NX monorepo'],
           null,
+          [],
           [
             'To setup Jest integration tests for NX monorepo',
             'To write script for E2E automation on Typescript',
@@ -454,6 +517,7 @@ const DUMMY_DATA = {
           I've implemented Auth microservice and integrated it with Angular and React UI apps. As a Database I used PostgreSQL and Mikro-ORM as a data access layer.
           The brief functionality of the microservice is Authorization / Authentication using JWT, Role Management, Permission Management, User Management APIs.
           `,
+          [],
           [
             'To implement NestJs microservice for auth',
             'To implement JWT authentication using HTTP Api',
@@ -492,6 +556,7 @@ const DUMMY_DATA = {
         new ProjectItemEntry(
           ['StudyTube/ultra', 'StudyTube/LMS'],
           'Online education platform developing customized educational content to fit the needs of individual students.',
+          [],
           [
             'To implement separated reusable components in ultra library according to new design. Ultra library is private component library, based on angular',
             'To re-implement LMS ui using new ultra library components. LMS is Learning Management System, web platform for online learning materials, like videos, documents etc.',
@@ -513,6 +578,7 @@ const DUMMY_DATA = {
           The @fundamental-ngx (core / platform) library is a set of Angular components built using Fundamental Library Styles.
           The Fundamental Library Styles is a design system and HTML/CSS component library used to build modern product user experiences with the SAP look and feel.\
           `,
+          [],
           [
             'To Implement new features into Fundamental NGX / Styles library',
             'To collaborate with external teams and fix defects they require',
@@ -537,17 +603,20 @@ const DUMMY_DATA = {
         new ProjectItemEntry(
           ['Kayako Classic'],
           'Kayako Classic is self-hosted service desk software, which helps companies and their customers to deal with support tickets.',
+          [],
           [
             'To Do the defect RCA (Root Cause Analysis)',
             'To Implement the fix of defects using PHP 7, MySQL',
             'To implement the fix of frontend defects using React, Javascript',
             'To write automated E2E test for the fix using Gherkin'
           ],
+
           SkillSet(['react', 'php', 'mysql', 'docker', 'docker-compose'])
         ),
         new ProjectItemEntry(
           ['CX Monitor'],
           'CX Monitor is enterprise software which delivers the system monitoring, root-cause analysis, and issue identification tools you need to run your business in real time.',
+          [],
           [
             'To update legacy software UI components from Adobe Flash to Javascript / React',
             'To update legacy software UI charts from Adobe Flash to Fusion Charts (Js)',
@@ -559,6 +628,7 @@ const DUMMY_DATA = {
         new ProjectItemEntry(
           ['Acorn PA5G/AAA'],
           'Acorn is Time-Driven Activity-Based-Costing (TDABC) platform that distills and attributes costs of delivering products and services by building business-specific models which take into account nuances of account processes.',
+          [],
           [
             'To update legacy software UI from Microsoft Silverlight to Angular 8 / Material / Scss / NGXS',
             'To update legacy software UI complex grid components from Silverlight to Ag-Grid',
@@ -571,6 +641,7 @@ const DUMMY_DATA = {
         new ProjectItemEntry(
           ['AES CIS'],
           "AES CIS (Aurea Energy Solutions Customer Information System) is a web-based billing, invoicing, payment, and Customer service & management system designed for use by suppliers. The product is part of Aurea's Revenue Lifecycle Management and it's used by top US energy provider companies.",
+          [],
           [
             'To update legacy software UI from CSS to SCSS',
             'To update legacy software UI from HTML to HTML 5',
@@ -581,6 +652,7 @@ const DUMMY_DATA = {
         new ProjectItemEntry(
           ['Volt Delta'],
           'Volt Delta is multi-channel contact center solutions, smart automation and data-driven contact management in the cloud and within the company to optimize customer journeys. The product consists of many various modules, written on various technologiesm like: C++, C#, Node.js, Javascript.',
+          [],
           [
             'To migrate code from Dimmension to GitHub repositories',
             'To prepare Development Environment on local machine & Build',
@@ -599,6 +671,7 @@ const DUMMY_DATA = {
         new ProjectItemEntry(
           ['Mobilogy'],
           'Mobilogy is an advanced mobile lifecycle solutions that enable operators, retailers, buyback vendors and enterprises to provide enhanced customer experience, increase revenue, improve productivity, enhance security and reduce cost.',
+          [],
           [
             'To inspect and investigate UI of the incoming projects',
             'To prepare Development Environment on local machine & Build',
@@ -629,6 +702,7 @@ const DUMMY_DATA = {
           Lyris Technologies – now Aurea Email Marketing – is a leading digital messaging platform. 
           Lyris delivers mature, field-tested email marketing capabilities, as an industry leading cloud-based or on-premise solution that lets customers easily, segment, target, and measure the effectiveness of email campaigns on every device.
           `,
+          [],
           [
             'To investigate legacy application and expose necessary Api endpoints',
             'To reskin legacy Lyris application UI using Angular 5',
@@ -654,6 +728,7 @@ const DUMMY_DATA = {
           CRM is a Customer Relationship Management system provided by Aurea, 
           the goal of this product is to manage every lead, opportunity, and interaction with all of your prospects and customers – quickly, easily, and effectively.
           `,
+          [],
           [
             'To investigate legacy application and expose necessary Api endpoints',
             'To reskin legacy CRM application UI using Angular 4',
@@ -693,6 +768,7 @@ const DUMMY_DATA = {
           PSP Gateway stands for Payment Service Provider Gateway, and it is responsible for processing Visa, MasterCard, Diners Club, SEPA, etc. online transactions.
           The product provides the pure API only for the E-commerce customers who has PCI-DSS license and Payment Page for the rest of other clients. Payment Page can be embedded into the E-commerce website.
           `,
+          [],
           [
             'To maintain legacy PSP application using PHP 7 & MySQL',
             'To develop internal softwares using .Net Core & Angular 2',
@@ -729,6 +805,7 @@ const DUMMY_DATA = {
           Admin (based on .NET, SignalR, Ext.js / angular.js, which is responsible for managing everything for the Sporttsbook: Risk management, Monitoring, Acceptance, Live event management, Resulting, Event / Market / Odd management, Reporting, etc).
           The Sportsbook itself was using N-Tier architecture from the beginning, later we decided to redesign the architecture and split it as microservices to overcome the issues we faced, and we implemented RabbitMQ for communication between microservices, Redis for data caching and protobuf.
           `,
+          [],
           [
             "To create Sportsbook Administrative Tool's UI using AngularJs, later Angular 2",
             'To implement Presentation Layer of Back-End using ASP.NET MVC',
@@ -768,6 +845,7 @@ const DUMMY_DATA = {
         new ProjectItemEntry(
           ['Website Development'],
           null,
+          [],
           [
             'To create Web Site Markup using HTML 5 & CSS 3',
             'To create Web Site Front-End using Javascript, jQuery',

@@ -103,6 +103,8 @@ const skillsMap: SkillMap = {
   cypress: new SkillItemEntry('fa fa-hashtag', 'Cypress'),
   d3: new SkillItemEntry('fa fa-code', 'D3.js'),
   'fusion-charts': new SkillItemEntry('fa fa-code', 'FusionCharts'),
+  auth0: new SkillItemEntry('fa fa-lib', 'Auth0'),
+  'push-notifications': new SkillItemEntry('fa fa-hashtag', 'Push Notifications'),
   // Front-End
 
   // Back-End
