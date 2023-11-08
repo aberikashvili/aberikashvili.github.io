@@ -271,8 +271,8 @@ const DUMMY_DATA = {
     new WorkHistoryItemEntry(
       'Jul',
       2023,
-      null,
-      null,
+      'Oct',
+      2023,
       'Senior React / React Native Engineer',
       'Remote Part-Time',
       'Freelance',
