@@ -80,6 +80,7 @@ type SkillMap = {
   typescript: SkillItemEntry;
   javascript: SkillItemEntry;
   'angular-material': SkillItemEntry;
+  'prime-ng': SkillItemEntry;
   nx: SkillItemEntry;
   rxjs: SkillItemEntry;
   'react-native': SkillItemEntry;
@@ -111,9 +112,11 @@ type SkillMap = {
   nestjs: SkillItemEntry;
   swagger: SkillItemEntry;
   netcore: SkillItemEntry;
+  'dotnet-5-plus': SkillItemEntry;
   csharp: SkillItemEntry;
   java: SkillItemEntry;
   efcore: SkillItemEntry;
+  'entity-framework': SkillItemEntry;
   'asp.net core': SkillItemEntry;
   'ado.net': SkillItemEntry;
   'web api / rest api': SkillItemEntry;

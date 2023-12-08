@@ -237,6 +237,41 @@ const DUMMY_DATA = {
   ],
   workHistory: [
     new WorkHistoryItemEntry(
+      'Dec',
+      2023,
+      null,
+      null,
+      'Senior Full Stack Engineer (.NET 6 / Angular)',
+      'Remote Part-Time',
+      'Contract',
+      'AITech Goni',
+      'https://goni.ge',
+      [
+        new ProjectItemEntry(
+          ['Logistic Analisys System'],
+          `Logistic analysis system`,
+          [],
+          [
+            'To implement reporting service business logic',
+            'To implement reporting infrastructure (data access) logic',
+            'To fix existing bugs',
+            'To deliver bugfree MVP'
+          ],
+          SkillSet([
+            'dotnet-5-plus',
+            'entity-framework',
+            'ado.net',
+            'mssqlserver',
+            'angular',
+            'prime-ng',
+            'swagger',
+            'git',
+            'bitbucket'
+          ])
+        )
+      ]
+    ),
+    new WorkHistoryItemEntry(
       'Aug',
       2023,
       null,
