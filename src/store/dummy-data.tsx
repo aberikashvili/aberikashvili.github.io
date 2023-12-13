@@ -244,17 +244,21 @@ const DUMMY_DATA = {
       'Senior Full Stack Engineer (.NET 6 / Angular)',
       'Remote Part-Time',
       'Contract',
-      'AITech Goni',
-      'https://goni.ge',
+      'ADMI Consulting',
+      'https://admi.ge',
       [
         new ProjectItemEntry(
-          ['Logistic Analisys System'],
-          `Logistic analysis system`,
+          ['AITech Goni'],
+          `
+          AITech Goni is Logistic analysis system for retailing business segment. It includes data visualisation features,
+          Data presentation views and various kinds of reporting functionality. The system is developed with .NET 6 (EF, ADO.NET), Ms SQL Server and Angular 15+.
+          `,
           [],
           [
             'To implement reporting service business logic',
             'To implement reporting infrastructure (data access) logic',
-            'To fix existing bugs',
+            'To fix existing bugs related to reporting functionality',
+            'To investigate and fix SQL queries',
             'To deliver bugfree MVP'
           ],
           SkillSet([
@@ -404,7 +408,7 @@ const DUMMY_DATA = {
     new WorkHistoryItemEntry(
       'Mar',
       2023,
-      'Sep',
+      'Dec',
       2023,
       'Tech Lead (Angular, React Native, NestJs)',
       'Remote Part-Time',
