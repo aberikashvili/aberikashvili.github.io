@@ -119,6 +119,7 @@ type SkillMap = {
   'entity-framework': SkillItemEntry;
   'asp.net core': SkillItemEntry;
   'ado.net': SkillItemEntry;
+  dapper: SkillItemEntry;
   'web api / rest api': SkillItemEntry;
   mysql: SkillItemEntry;
   'mikro-orm': SkillItemEntry;

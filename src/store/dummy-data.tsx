@@ -264,7 +264,7 @@ const DUMMY_DATA = {
           SkillSet([
             'dotnet-5-plus',
             'entity-framework',
-            'ado.net',
+            'dapper',
             'mssqlserver',
             'angular',
             'prime-ng',
@@ -278,8 +278,8 @@ const DUMMY_DATA = {
     new WorkHistoryItemEntry(
       'Aug',
       2023,
-      null,
-      null,
+      'Dec',
+      2023,
       'Senior Angular Developer',
       'Hybrid',
       'Full-Time Employment',

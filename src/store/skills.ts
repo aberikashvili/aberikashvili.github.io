@@ -120,6 +120,7 @@ const skillsMap: SkillMap = {
   'entity-framework': new SkillItemEntry('fa fa-database', 'Entity Framework'),
   'asp.net core': new SkillItemEntry('fab fa-windows', 'Asp.Net / Asp.Net core 2'),
   'ado.net': new SkillItemEntry('fa fa-hashtag', 'ADO.NET'),
+  dapper: new SkillItemEntry('fa fa-hashtag', 'Dapper'),
   'web api / rest api': new SkillItemEntry('fa fa-hashtag', 'Web Api / REST Api'),
   mysql: new SkillItemEntry('fa fa-database', 'MySql'),
   'mikro-orm': new SkillItemEntry('fab fa-node', 'Mikro-Orm'),
