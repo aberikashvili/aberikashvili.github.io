@@ -113,6 +113,7 @@ type SkillMap = {
   swagger: SkillItemEntry;
   netcore: SkillItemEntry;
   'dotnet-5-plus': SkillItemEntry;
+  'dotnet-6': SkillItemEntry;
   csharp: SkillItemEntry;
   java: SkillItemEntry;
   efcore: SkillItemEntry;

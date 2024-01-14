@@ -237,37 +237,42 @@ const DUMMY_DATA = {
   ],
   workHistory: [
     new WorkHistoryItemEntry(
-      'Dec',
+      'Sep',
       2023,
       null,
       null,
-      'Senior Full Stack Engineer (.NET 6 / Angular)',
+      'Senior Full Stack Developer (.NET 6 / Angular)',
       'Remote Part-Time',
-      'Contract',
+      'Freelance',
       'ADMI Consulting',
       'https://admi.ge',
       [
         new ProjectItemEntry(
-          ['AITech Goni'],
+          ['Goni Reporting System'],
           `
           AITech Goni is Logistic analysis system for retailing business segment. It includes data visualisation features,
-          Data presentation views and various kinds of reporting functionality. The system is developed with .NET 6 (EF, ADO.NET), Ms SQL Server and Angular 15+.
+          Data presentation views and various kinds of reporting functionality. The system is developed with .NET 6 (EF, Dapper), Ms SQL Server and Angular 15+.
           `,
           [],
           [
             'To implement reporting service business logic',
-            'To implement reporting infrastructure (data access) logic',
+            'To implement reporting infrastructure (data access) logic usinf SQL queries and Dapper',
             'To fix existing bugs related to reporting functionality',
             'To investigate and fix SQL queries',
-            'To deliver bugfree MVP'
+            'To reimplement and optimize SQL query performance',
+            'To implement new reporting features',
+            'Te reimplement and export to excel functionality of each kind of report',
+            'To deliver bugfree MVP',
+            'To implement best practises and get rid of duplicated code'
           ],
           SkillSet([
-            'dotnet-5-plus',
+            'dotnet-6',
             'entity-framework',
             'dapper',
             'mssqlserver',
             'angular',
             'prime-ng',
+            'ngrx-store',
             'swagger',
             'git',
             'bitbucket'
@@ -275,38 +280,38 @@ const DUMMY_DATA = {
         )
       ]
     ),
-    new WorkHistoryItemEntry(
-      'Aug',
-      2023,
-      'Dec',
-      2023,
-      'Senior Angular Developer',
-      'Hybrid',
-      'Full-Time Employment',
-      'Sweeft Digital',
-      'https://sweeftdigital.com/',
-      [
-        new ProjectItemEntry(
-          ['ENERGO-PRO BG'],
-          `
-          ENERGO-PRO Varna EAD is part of the ENERGO-PRO Group established in 1994 in the Czech Republic. 
-          Its business is focused on generation, distribution and power trading. 
-          The Group operates hydropower plants and electrical distribution grids in Central and Eastern Europe, the Black Sea and the Caucasus. ENERGO-PRO Varna EAD has more than 2300 employees. Holding licenses for the activities: electrical power distribution and power supply though its daughter companies Electrodistribution North AD and ENERGO-PRO Sales AD, it serves 1 200 000 customers in Northeastern Bulgaria. ENERGO-PRO Energy Services EAD is also part of ENERGO-PRO Varna EAD and is one of the leading traders on the liberalized market in Bulgaria serving more than 33 000 customers.
-          `,
-          [],
-          [
-            'To implement complex UI/UX on Angular',
-            'To take technical decisions related to Angular app architecture',
-            'To take technical decisions and implement high performance solutions for high loaded Angular app',
-            'To communicate and collaborate with back-end team',
-            'To perform peer reviews',
-            'To participate in Sprint Planning with Project Managers',
-            'To perform defect hunting routine'
-          ],
-          SkillSet(['angular', 'swagger', 'web api / rest api', 'ngxs', 'git', 'gitlab'])
-        )
-      ]
-    ),
+    // new WorkHistoryItemEntry(
+    //   'Aug',
+    //   2023,
+    //   'Dec',
+    //   2023,
+    //   'Senior Angular Developer',
+    //   'Hybrid',
+    //   'Full-Time Employment',
+    //   'Sweeft Digital',
+    //   'https://sweeftdigital.com/',
+    //   [
+    //     new ProjectItemEntry(
+    //       ['ENERGO-PRO BG'],
+    //       `
+    //       ENERGO-PRO Varna EAD is part of the ENERGO-PRO Group established in 1994 in the Czech Republic.
+    //       Its business is focused on generation, distribution and power trading.
+    //       The Group operates hydropower plants and electrical distribution grids in Central and Eastern Europe, the Black Sea and the Caucasus. ENERGO-PRO Varna EAD has more than 2300 employees. Holding licenses for the activities: electrical power distribution and power supply though its daughter companies Electrodistribution North AD and ENERGO-PRO Sales AD, it serves 1 200 000 customers in Northeastern Bulgaria. ENERGO-PRO Energy Services EAD is also part of ENERGO-PRO Varna EAD and is one of the leading traders on the liberalized market in Bulgaria serving more than 33 000 customers.
+    //       `,
+    //       [],
+    //       [
+    //         'To implement complex UI/UX on Angular',
+    //         'To take technical decisions related to Angular app architecture',
+    //         'To take technical decisions and implement high performance solutions for high loaded Angular app',
+    //         'To communicate and collaborate with back-end team',
+    //         'To perform peer reviews',
+    //         'To participate in Sprint Planning with Project Managers',
+    //         'To perform defect hunting routine'
+    //       ],
+    //       SkillSet(['angular', 'swagger', 'web api / rest api', 'ngxs', 'git', 'gitlab'])
+    //     )
+    //   ]
+    // ),
     new WorkHistoryItemEntry(
       'Jul',
       2023,
@@ -406,13 +411,13 @@ const DUMMY_DATA = {
       ]
     ),
     new WorkHistoryItemEntry(
-      'Mar',
+      'May',
       2023,
       'Dec',
       2023,
       'Tech Lead (Angular, React Native, NestJs)',
       'Remote Part-Time',
-      'Contract',
+      'Freelance',
       'Conceptdigital',
       'https://www.conceptdigital.com/',
       [
