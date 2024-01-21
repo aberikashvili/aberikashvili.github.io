@@ -237,6 +237,34 @@ const DUMMY_DATA = {
   ],
   workHistory: [
     new WorkHistoryItemEntry(
+      'Jan',
+      2024,
+      null,
+      null,
+      'Full-Stack React Native Developer and Team Leader',
+      'Remote',
+      'Contract',
+      'PalWallet',
+      'https://palwallet.com/',
+      [
+        new ProjectItemEntry(
+          ['PalWallet mobile app'],
+          `PalWallet is a crypto assets management platform founded by blockchain industry experts with over a decade of experience.`,
+          [],
+          [
+            'To lead mobile app team',
+            'To run daily meetings',
+            'To collaborate with backend team',
+            'To do regular deployments (iOS, Android)',
+            'To perform code reviews and keep codebase healthy',
+            'To participate in implementation of new features',
+            'To investigate issues and apply hotfixes'
+          ],
+          SkillSet(['react-native', 'react', 'dotnet-6', 'rabbitmq', 'entity-framework'])
+        )
+      ]
+    ),
+    new WorkHistoryItemEntry(
       'Sep',
       2023,
       null,
@@ -323,49 +351,6 @@ const DUMMY_DATA = {
       'MaxinAI',
       'https://maxinai.com',
       [
-        // new ProjectItemEntry(
-        //   ['fitness-community trainer-app'],
-        //   `desc`,
-        //   [],
-        //   [],
-        //   SkillSet([
-        //     'react-native',
-        //     'nx',
-        //     'expo-cli',
-        //     'firebase',
-        //     'aws',
-        //     'auth0',
-        //     'push-notifications',
-        //     'git',
-        //     'github'
-        //   ])
-        // ),
-        // new ProjectItemEntry(
-        //   ['amkhanagoba-app'],
-        //   `
-        //     Mobile app connects the apartament owners, development companies and service providers into the same space.
-        //     The app simplifies the communication between the sides and helps to manage the issues related to living place and achieve the result.
-        //   `,
-        //   [],
-        //   [
-        //     'To implement CI/CD pipelins for Pull Request automated Android/iOS builds',
-        //     'To implement new features according to technical specs and business requirements',
-        //     'To fix bugs according to provided backlog',
-        //     'To release the development and production versions of mobile app',
-        //     'To fix bugs on the web jQuery + React + Python + MySQL'
-        //   ],
-        //   SkillSet([
-        //     'react-native',
-        //     'nx',
-        //     'expo-cli',
-        //     'firebase',
-        //     'aws',
-        //     'auth0',
-        //     'push-notifications',
-        //     'git',
-        //     'github'
-        //   ])
-        // ),
         new ProjectItemEntry(
           ['pixidium-mobile', 'pixidium-web'],
           `Mobile app connects the business who needs to spread flyers / leaflets to the people who can spread.
