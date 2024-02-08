@@ -51,6 +51,11 @@ const skillsMap: SkillMap = {
   docker: new SkillItemEntry('fab fa-docker', 'Docker'),
   'docker-compose': new SkillItemEntry('fab fa-docker', 'Docker Compose'),
   cicd: new SkillItemEntry('fab fa-jenkins', 'CI / CD'),
+  'app-center': new SkillItemEntry('fab fa-windows', 'App Center'),
+  'app-center-codepush': new SkillItemEntry('fab fa-windows', 'App Center CodePush'),
+  'apple-test-flight': new SkillItemEntry('fab fa-apple', 'Apple TestFlight'),
+  'apple-app-store': new SkillItemEntry('fab fa-apple', 'Apple App Store'),
+  'google-play-store': new SkillItemEntry('fab fa-google', 'Google Play Store'),
   // DevOps
 
   // Cloud
@@ -85,6 +90,8 @@ const skillsMap: SkillMap = {
   'prime-ng': new SkillItemEntry('fab fa-angular', 'Prime-NG'),
   rxjs: new SkillItemEntry('fa fa-hashtag', 'RxJs'),
   'react-native': new SkillItemEntry('fab fa-react', 'React Native'),
+  xcode: new SkillItemEntry('fab fa-apple', 'XCode'),
+  'android-studio': new SkillItemEntry('fab fa-android', 'Android Studio'),
   'expo-cli': new SkillItemEntry('fab fa-react', 'Expo CLI'),
   react: new SkillItemEntry('fab fa-react', 'React'),
   redux: new SkillItemEntry('fab fa-react', 'Redux'),
@@ -137,8 +144,16 @@ const skillsMap: SkillMap = {
   nosql: new SkillItemEntry('fa fa-hashtag', 'NoSql'),
   mongodb: new SkillItemEntry('fa fa-database', 'MongoDB'),
   python: new SkillItemEntry('fab fa-python', 'Python'),
-  django: new SkillItemEntry('fab fa-django', 'Django')
+  django: new SkillItemEntry('fab fa-django', 'Django'),
   // Back-End
+
+  // Crypto, Blockchain, NFT
+  crypto: new SkillItemEntry('fab fa-hashtag', 'Crypto'),
+  blockchain: new SkillItemEntry('fa fa-hashtag', 'Blockchain'),
+  nft: new SkillItemEntry('fa fa-hashtag', 'NFT'),
+  'trust-wallet-core': new SkillItemEntry('fa fa-hashtag', 'Trust Wallet Core'),
+  'wallet-connect': new SkillItemEntry('fa fa-hashtag', 'Wallet Connect')
+  // Crypto, Blockchain, NFT
 };
 
 export const SkillSet = (skills: (keyof SkillMap)[]): SkillItemEntry[] => {

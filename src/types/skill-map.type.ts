@@ -49,6 +49,11 @@ type SkillMap = {
   docker: SkillItemEntry;
   'docker-compose': SkillItemEntry;
   cicd: SkillItemEntry;
+  'app-center': SkillItemEntry;
+  'app-center-codepush': SkillItemEntry;
+  'apple-test-flight': SkillItemEntry;
+  'apple-app-store': SkillItemEntry;
+  'google-play-store': SkillItemEntry;
   // DevOps
 
   // Cloud
@@ -85,6 +90,8 @@ type SkillMap = {
   rxjs: SkillItemEntry;
   'react-native': SkillItemEntry;
   'expo-cli': SkillItemEntry;
+  xcode: SkillItemEntry;
+  'android-studio': SkillItemEntry;
   react: SkillItemEntry;
   redux: SkillItemEntry;
   jest: SkillItemEntry;
@@ -138,6 +145,14 @@ type SkillMap = {
   python: SkillItemEntry;
   django: SkillItemEntry;
   // Back-End
+
+  // Crypto, Blockchain, NFT
+  crypto: SkillItemEntry;
+  blockchain: SkillItemEntry;
+  nft: SkillItemEntry;
+  'trust-wallet-core': SkillItemEntry;
+  'wallet-connect': SkillItemEntry;
+  // Crypto, Blockchain, NFT
 };
 
 export default SkillMap;

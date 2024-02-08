@@ -237,41 +237,60 @@ const DUMMY_DATA = {
   ],
   workHistory: [
     new WorkHistoryItemEntry(
-      'Jan',
+      'Feb',
       2024,
       null,
       null,
-      'Full-Stack React Native Developer and Team Leader',
+      'Senior React Native Developer / Team Leader',
       'Remote',
       'Contract',
       'PalWallet',
       'https://palwallet.com/',
       [
         new ProjectItemEntry(
-          ['PalWallet mobile app'],
+          ['PalWallet App'],
           `PalWallet is a crypto assets management platform founded by blockchain industry experts with over a decade of experience.`,
           [],
           [
-            'To lead mobile app team',
+            'To lead mobile app development team',
             'To run daily meetings',
             'To collaborate with backend team',
             'To do regular deployments (iOS, Android)',
             'To perform code reviews and keep codebase healthy',
             'To participate in implementation of new features',
-            'To investigate issues and apply hotfixes'
+            'To investigate issues and apply hotfixes',
+            'To run retrospective meetings with team members',
+            'To do regular Defect Hunting and Exploratory Testing'
           ],
-          SkillSet(['react-native', 'react', 'dotnet-6', 'rabbitmq', 'entity-framework'])
+          SkillSet([
+            'react-native',
+            'typescript',
+            'firebase',
+            'xcode',
+            'android-studio',
+            'crypto',
+            'blockchain',
+            'nft',
+            'trust-wallet-core',
+            'wallet-connect',
+            'circleci',
+            'app-center',
+            'app-center-codepush',
+            'apple-test-flight',
+            'apple-app-store',
+            'google-play-store'
+          ])
         )
       ]
     ),
     new WorkHistoryItemEntry(
       'Sep',
       2023,
-      null,
-      null,
+      'Feb',
+      2024,
       'Senior Full Stack Developer (.NET 6 / Angular)',
-      'Remote Part-Time',
-      'Freelance',
+      'Remote',
+      'Freelance, One-Time Project',
       'ADMI Consulting',
       'https://admi.ge',
       [
