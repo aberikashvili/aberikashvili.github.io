@@ -241,7 +241,7 @@ const DUMMY_DATA = {
       2024,
       null,
       null,
-      'Senior React Native Developer / Team Leader',
+      'Senior React Native Developer / Team Lead',
       'Remote',
       'Contract',
       'PalWallet',
@@ -250,7 +250,13 @@ const DUMMY_DATA = {
         new ProjectItemEntry(
           ['PalWallet App'],
           `PalWallet is a crypto assets management platform founded by blockchain industry experts with over a decade of experience.`,
-          [],
+          [
+            '/assets/projects/mobile/palwallet/Dashboard.png',
+            '/assets/projects/mobile/palwallet/CoinInfo.png',
+            '/assets/projects/mobile/palwallet/Swap.png',
+            '/assets/projects/mobile/palwallet/Apps.png',
+            '/assets/projects/mobile/palwallet/Buy.png'
+          ],
           [
             'To lead mobile app development team',
             'To run daily meetings',
@@ -428,13 +434,20 @@ const DUMMY_DATA = {
         new ProjectItemEntry(
           ['forbes-mobile-app', 'bmg-mobile-app'],
           `
-          I'm tech leading 2 teams of 3 Junior/Middle React Native developers per each team. We're building Android/iOS mobile apps from scratch,
+          I'm leading 2 teams of 3 Junior/Middle React Native developers per each team. We're building Android/iOS mobile apps from scratch,
           for 2 biggest local internet magazines, Forbes georgia and BMG (Business Media Georgia). Due to these mobile apps consist of quite many screens and components, 
           I made technical decision to start coding from shared component libraries, I've created project architecture using NX (https://nx.dev) and added 2 shared libraries: core and platform, 
           core contains trivial components like: buttons, inputs, labels, etc. but platform contains bigger specific components, which are build from core components. 
           These libraries can be build as npm package later as well. I also implemented CI using github action and expo.dev and we have Android .apk and iOS simulator builds per each pull request.
           `,
-          [],
+          [
+            '/assets/projects/mobile/bmg/Landing.png',
+            '/assets/projects/mobile/bmg/Main.png',
+            '/assets/projects/mobile/bmg/Article.png',
+            '/assets/projects/mobile/bmg/Tag.png',
+            '/assets/projects/mobile/bmg/Search.png',
+            '/assets/projects/mobile/bmg/Stocks.png'
+          ],
           [
             'To setup github repositories and application architecture uising NX',
             'To setup and configure CI/CD on expo.dev',
