@@ -3,6 +3,7 @@
 }
 
 @media print {
+  #top-divider,
   .configuration-container {
     display: none;
   }
