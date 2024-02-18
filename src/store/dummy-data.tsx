@@ -251,11 +251,18 @@ const DUMMY_DATA = {
           ['PalWallet App'],
           `PalWallet is a crypto assets management platform founded by blockchain industry experts with over a decade of experience.`,
           [
+            '/assets/projects/mobile/palwallet/Splash.png',
             '/assets/projects/mobile/palwallet/Dashboard.png',
             '/assets/projects/mobile/palwallet/CoinInfo.png',
             '/assets/projects/mobile/palwallet/Swap.png',
             '/assets/projects/mobile/palwallet/Apps.png',
-            '/assets/projects/mobile/palwallet/Buy.png'
+            '/assets/projects/mobile/palwallet/PalAcademy.png',
+            '/assets/projects/mobile/palwallet/Buy.png',
+            '/assets/projects/mobile/palwallet/Settings.png',
+            '/assets/projects/mobile/palwallet/KycAml.png',
+            '/assets/projects/mobile/palwallet/Alerts.png',
+            '/assets/projects/mobile/palwallet/Alert.png',
+            '/assets/projects/mobile/palwallet/CreateAlert.png'
           ],
           [
             'To lead mobile app development team',
