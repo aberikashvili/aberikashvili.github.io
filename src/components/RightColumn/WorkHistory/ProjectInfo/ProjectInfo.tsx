@@ -26,6 +26,8 @@ const ProjectInfo = ({
     configCtx.mode === 'full' || (configCtx.mode === 'custom' && configCtx.toolsAndTech);
   const showProjectDescription =
     configCtx.mode === 'full' || (configCtx.mode === 'custom' && configCtx.projectDescription);
+  const showProjectImages =
+    configCtx.mode === 'full' || (configCtx.mode === 'custom' && configCtx.projectImages);
 
   const borderTop = hideCompanytitle && { borderTop: '1px solid #eae4e4' };
 
@@ -60,6 +62,23 @@ const ProjectInfo = ({
               }}>
               {project.description}
             </p>
+            {!!project.images.length && showProjectImages && (
+              <p>
+                {project.images.map((url: string) => (
+                  <img
+                    key={url}
+                    src={url}
+                    style={{
+                      width: '100px',
+                      border: '1px solid rgb(234, 228, 228)',
+                      borderRadius: '5px',
+                      marginRight: '5px',
+                      marginBottom: '5px'
+                    }}
+                  />
+                ))}
+              </p>
+            )}
           </div>
         )}
         <div>

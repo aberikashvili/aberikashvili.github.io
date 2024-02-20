@@ -51,6 +51,11 @@ const skillsMap: SkillMap = {
   docker: new SkillItemEntry('fab fa-docker', 'Docker'),
   'docker-compose': new SkillItemEntry('fab fa-docker', 'Docker Compose'),
   cicd: new SkillItemEntry('fab fa-jenkins', 'CI / CD'),
+  'app-center': new SkillItemEntry('fab fa-windows', 'App Center'),
+  'app-center-codepush': new SkillItemEntry('fab fa-windows', 'App Center CodePush'),
+  'apple-test-flight': new SkillItemEntry('fab fa-apple', 'Apple TestFlight'),
+  'apple-app-store': new SkillItemEntry('fab fa-apple', 'Apple App Store'),
+  'google-play-store': new SkillItemEntry('fab fa-google', 'Google Play Store'),
   // DevOps
 
   // Cloud
@@ -82,8 +87,11 @@ const skillsMap: SkillMap = {
   typescript: new SkillItemEntry('fa fa-hashtag', 'Typescript'),
   javascript: new SkillItemEntry('fab fa-js', 'Javascript'),
   'angular-material': new SkillItemEntry('fab fa-angular', 'Angular Material'),
+  'prime-ng': new SkillItemEntry('fab fa-angular', 'Prime-NG'),
   rxjs: new SkillItemEntry('fa fa-hashtag', 'RxJs'),
   'react-native': new SkillItemEntry('fab fa-react', 'React Native'),
+  xcode: new SkillItemEntry('fab fa-apple', 'XCode'),
+  'android-studio': new SkillItemEntry('fab fa-android', 'Android Studio'),
   'expo-cli': new SkillItemEntry('fab fa-react', 'Expo CLI'),
   react: new SkillItemEntry('fab fa-react', 'React'),
   redux: new SkillItemEntry('fab fa-react', 'Redux'),
@@ -103,6 +111,8 @@ const skillsMap: SkillMap = {
   cypress: new SkillItemEntry('fa fa-hashtag', 'Cypress'),
   d3: new SkillItemEntry('fa fa-code', 'D3.js'),
   'fusion-charts': new SkillItemEntry('fa fa-code', 'FusionCharts'),
+  auth0: new SkillItemEntry('fa fa-lib', 'Auth0'),
+  'push-notifications': new SkillItemEntry('fa fa-hashtag', 'Push Notifications'),
   // Front-End
 
   // Back-End
@@ -110,11 +120,15 @@ const skillsMap: SkillMap = {
   nestjs: new SkillItemEntry('fab fa-node', 'NestJs'),
   swagger: new SkillItemEntry('fa fa-hashtag', 'Swagger'),
   netcore: new SkillItemEntry('fab fa-windows', '.Net / .Net Core'),
+  'dotnet-5-plus': new SkillItemEntry('fab fa-windows', '.NET 5+'),
+  'dotnet-6': new SkillItemEntry('fab fa-windows', '.NET 6'),
   csharp: new SkillItemEntry('fa fa-hashtag', 'C#'),
   java: new SkillItemEntry('fab fa-java', 'Java Spring'),
   efcore: new SkillItemEntry('fa fa-hashtag', 'EF Core 2'),
+  'entity-framework': new SkillItemEntry('fa fa-database', 'Entity Framework'),
   'asp.net core': new SkillItemEntry('fab fa-windows', 'Asp.Net / Asp.Net core 2'),
   'ado.net': new SkillItemEntry('fa fa-hashtag', 'ADO.NET'),
+  dapper: new SkillItemEntry('fa fa-database', 'Dapper'),
   'web api / rest api': new SkillItemEntry('fa fa-hashtag', 'Web Api / REST Api'),
   mysql: new SkillItemEntry('fa fa-database', 'MySql'),
   'mikro-orm': new SkillItemEntry('fab fa-node', 'Mikro-Orm'),
@@ -130,8 +144,16 @@ const skillsMap: SkillMap = {
   nosql: new SkillItemEntry('fa fa-hashtag', 'NoSql'),
   mongodb: new SkillItemEntry('fa fa-database', 'MongoDB'),
   python: new SkillItemEntry('fab fa-python', 'Python'),
-  django: new SkillItemEntry('fab fa-django', 'Django')
+  django: new SkillItemEntry('fab fa-django', 'Django'),
   // Back-End
+
+  // Crypto, Blockchain, NFT
+  crypto: new SkillItemEntry('fab fa-hashtag', 'Crypto'),
+  blockchain: new SkillItemEntry('fa fa-hashtag', 'Blockchain'),
+  nft: new SkillItemEntry('fa fa-hashtag', 'NFT'),
+  'trust-wallet-core': new SkillItemEntry('fa fa-hashtag', 'Trust Wallet Core'),
+  'wallet-connect': new SkillItemEntry('fa fa-hashtag', 'Wallet Connect')
+  // Crypto, Blockchain, NFT
 };
 
 export const SkillSet = (skills: (keyof SkillMap)[]): SkillItemEntry[] => {

@@ -49,6 +49,11 @@ type SkillMap = {
   docker: SkillItemEntry;
   'docker-compose': SkillItemEntry;
   cicd: SkillItemEntry;
+  'app-center': SkillItemEntry;
+  'app-center-codepush': SkillItemEntry;
+  'apple-test-flight': SkillItemEntry;
+  'apple-app-store': SkillItemEntry;
+  'google-play-store': SkillItemEntry;
   // DevOps
 
   // Cloud
@@ -80,10 +85,13 @@ type SkillMap = {
   typescript: SkillItemEntry;
   javascript: SkillItemEntry;
   'angular-material': SkillItemEntry;
+  'prime-ng': SkillItemEntry;
   nx: SkillItemEntry;
   rxjs: SkillItemEntry;
   'react-native': SkillItemEntry;
   'expo-cli': SkillItemEntry;
+  xcode: SkillItemEntry;
+  'android-studio': SkillItemEntry;
   react: SkillItemEntry;
   redux: SkillItemEntry;
   jest: SkillItemEntry;
@@ -102,6 +110,8 @@ type SkillMap = {
   cypress: SkillItemEntry;
   d3: SkillItemEntry;
   'fusion-charts': SkillItemEntry;
+  auth0: SkillItemEntry;
+  'push-notifications': SkillItemEntry;
   // Front-End
 
   // Back-End
@@ -109,11 +119,15 @@ type SkillMap = {
   nestjs: SkillItemEntry;
   swagger: SkillItemEntry;
   netcore: SkillItemEntry;
+  'dotnet-5-plus': SkillItemEntry;
+  'dotnet-6': SkillItemEntry;
   csharp: SkillItemEntry;
   java: SkillItemEntry;
   efcore: SkillItemEntry;
+  'entity-framework': SkillItemEntry;
   'asp.net core': SkillItemEntry;
   'ado.net': SkillItemEntry;
+  dapper: SkillItemEntry;
   'web api / rest api': SkillItemEntry;
   mysql: SkillItemEntry;
   'mikro-orm': SkillItemEntry;
@@ -131,6 +145,14 @@ type SkillMap = {
   python: SkillItemEntry;
   django: SkillItemEntry;
   // Back-End
+
+  // Crypto, Blockchain, NFT
+  crypto: SkillItemEntry;
+  blockchain: SkillItemEntry;
+  nft: SkillItemEntry;
+  'trust-wallet-core': SkillItemEntry;
+  'wallet-connect': SkillItemEntry;
+  // Crypto, Blockchain, NFT
 };
 
 export default SkillMap;

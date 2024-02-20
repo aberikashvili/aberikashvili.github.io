@@ -232,46 +232,177 @@ const DUMMY_DATA = {
   },
   summary: [
     'I have been involved in Software Development since 2011, with excellent knowledge of software development methodologies, frameworks, design patterns and SOLID principles, that include all phase of systems analysis and understanding of client business technologies and processes.',
-    'I have developed and maintained software for Healthcare, Fin-Tech, Energy Solutions, Betting Solutions, Educational, Data Analysis, SaaS industries.',
+    'I have developed and maintained software for Healthcare, Fin-Tech, Crypto/Blockchain, Energy Solutions, Betting Solutions, Educational, Data Analysis, SaaS industries.',
     'I also posses excellent verbal and written communication skills and the ability to interact professionally with a diverse group, executives, managers, and subject matter experts. I communicate with clarity, verbally and in one-on-one or group situations.'
   ],
   workHistory: [
     new WorkHistoryItemEntry(
-      'Aug',
-      2023,
+      'Feb',
+      2024,
       null,
       null,
-      'Senior Angular Developer',
-      'Hybrid',
-      'Full-Time Employment',
-      'Sweeft Digital',
-      'https://sweeftdigital.com/',
+      'Senior React Native Developer / Team Lead',
+      'Remote',
+      'Contract',
+      'PalWallet',
+      'https://palwallet.com/',
       [
         new ProjectItemEntry(
-          ['ENERGO-PRO BG'],
-          `
-          ENERGO-PRO Varna EAD is part of the ENERGO-PRO Group established in 1994 in the Czech Republic. 
-          Its business is focused on generation, distribution and power trading. 
-          The Group operates hydropower plants and electrical distribution grids in Central and Eastern Europe, the Black Sea and the Caucasus. ENERGO-PRO Varna EAD has more than 2300 employees. Holding licenses for the activities: electrical power distribution and power supply though its daughter companies Electrodistribution North AD and ENERGO-PRO Sales AD, it serves 1 200 000 customers in Northeastern Bulgaria. ENERGO-PRO Energy Services EAD is also part of ENERGO-PRO Varna EAD and is one of the leading traders on the liberalized market in Bulgaria serving more than 33 000 customers.
-          `,
+          ['PalWallet App'],
+          `PalWallet is a crypto assets management platform founded by blockchain industry experts with over a decade of experience.`,
           [
-            'To implement complex UI/UX on Angular',
-            'To take technical decisions related to Angular app architecture',
-            'To take technical decisions and implement high performance solutions for high loaded Angular app',
-            'To communicate and collaborate with back-end team',
-            'To perform peer reviews',
-            'To participate in Sprint Planning with Project Managers',
-            'To perform defect hunting routine'
+            '/assets/projects/mobile/palwallet/Splash.png',
+            '/assets/projects/mobile/palwallet/Dashboard.png',
+            '/assets/projects/mobile/palwallet/CoinInfo.png',
+            '/assets/projects/mobile/palwallet/Swap.png',
+            '/assets/projects/mobile/palwallet/Apps.png',
+            '/assets/projects/mobile/palwallet/PalAcademy.png',
+            '/assets/projects/mobile/palwallet/Buy.png',
+            '/assets/projects/mobile/palwallet/Settings.png',
+            '/assets/projects/mobile/palwallet/KycAml.png',
+            '/assets/projects/mobile/palwallet/Alerts.png',
+            '/assets/projects/mobile/palwallet/Alert.png',
+            '/assets/projects/mobile/palwallet/CreateAlert.png'
           ],
-          SkillSet(['angular', 'swagger', 'web api / rest api', 'ngxs', 'git', 'gitlab'])
+          [
+            'To lead mobile app development team',
+            'To run daily meetings',
+            'To collaborate with backend team',
+            'To perform regular deployments (iOS, Android)',
+            'To perform regular CodePush on AppCenter',
+            'To perform code reviews and keep codebase healthy',
+            'To participate in implementation of new features',
+            'To investigate issues and apply hotfixes',
+            'To run retrospective meetings with team members',
+            'To do regular Defect Hunting and Exploratory Testing'
+          ],
+          SkillSet([
+            'react-native',
+            'typescript',
+            'firebase',
+            'xcode',
+            'android-studio',
+            'crypto',
+            'blockchain',
+            'nft',
+            'trust-wallet-core',
+            'wallet-connect',
+            'circleci',
+            'app-center',
+            'app-center-codepush',
+            'apple-test-flight',
+            'apple-app-store',
+            'google-play-store'
+          ])
+        ),
+        new ProjectItemEntry(
+          ['PalPayments'],
+          `PalPayments is the first self-custody digital payments solution for Merchants, allowing to accept all funds directly into wallets with no extra fee or security liability. PalPayments provides one unique hub to process all digital payments, increasing funds control, reducing fraud, money laundering risks and improving efficiency.`,
+          [],
+          [
+            'To lead mobile app development team',
+            'To collaborate with backend team',
+            'To perform code reviews and keep codebase healthy',
+            'To participate in implementation of new features',
+            'To investigate issues and apply hotfixes',
+            'To run retrospective meetings with team members',
+            'To do regular Defect Hunting and Exploratory Testing'
+          ],
+          SkillSet([
+            'react',
+            'typescript',
+            'firebase',
+            'crypto',
+            'blockchain',
+            'nft',
+            'trust-wallet-core',
+            'wallet-connect',
+            'circleci'
+          ])
         )
       ]
     ),
     new WorkHistoryItemEntry(
+      'Sep',
+      2023,
+      'Feb',
+      2024,
+      'Senior Full Stack Developer (.NET 6 / Angular)',
+      'Remote',
+      'Freelance, One-Time Project',
+      'ADMI Consulting',
+      'https://admi.ge',
+      [
+        new ProjectItemEntry(
+          ['Goni Reporting System'],
+          `
+          AITech Goni is Logistic analysis system for retailing business segment. It includes data visualisation features,
+          Data presentation views and various kinds of reporting functionality. The system is developed with .NET 6 (EF, Dapper), Ms SQL Server and Angular 15+.
+          `,
+          [],
+          [
+            'To implement reporting service business logic',
+            'To implement reporting infrastructure (data access) logic usinf SQL queries and Dapper',
+            'To fix existing bugs related to reporting functionality',
+            'To investigate and fix SQL queries',
+            'To reimplement and optimize SQL query performance',
+            'To implement new reporting features',
+            'Te reimplement and export to excel functionality of each kind of report',
+            'To deliver bugfree MVP',
+            'To implement best practises and get rid of duplicated code'
+          ],
+          SkillSet([
+            'dotnet-6',
+            'entity-framework',
+            'dapper',
+            'mssqlserver',
+            'angular',
+            'prime-ng',
+            'ngrx-store',
+            'swagger',
+            'git',
+            'bitbucket'
+          ])
+        )
+      ]
+    ),
+    // new WorkHistoryItemEntry(
+    //   'Aug',
+    //   2023,
+    //   'Dec',
+    //   2023,
+    //   'Senior Angular Developer',
+    //   'Hybrid',
+    //   'Full-Time Employment',
+    //   'Sweeft Digital',
+    //   'https://sweeftdigital.com/',
+    //   [
+    //     new ProjectItemEntry(
+    //       ['ENERGO-PRO BG'],
+    //       `
+    //       ENERGO-PRO Varna EAD is part of the ENERGO-PRO Group established in 1994 in the Czech Republic.
+    //       Its business is focused on generation, distribution and power trading.
+    //       The Group operates hydropower plants and electrical distribution grids in Central and Eastern Europe, the Black Sea and the Caucasus. ENERGO-PRO Varna EAD has more than 2300 employees. Holding licenses for the activities: electrical power distribution and power supply though its daughter companies Electrodistribution North AD and ENERGO-PRO Sales AD, it serves 1 200 000 customers in Northeastern Bulgaria. ENERGO-PRO Energy Services EAD is also part of ENERGO-PRO Varna EAD and is one of the leading traders on the liberalized market in Bulgaria serving more than 33 000 customers.
+    //       `,
+    //       [],
+    //       [
+    //         'To implement complex UI/UX on Angular',
+    //         'To take technical decisions related to Angular app architecture',
+    //         'To take technical decisions and implement high performance solutions for high loaded Angular app',
+    //         'To communicate and collaborate with back-end team',
+    //         'To perform peer reviews',
+    //         'To participate in Sprint Planning with Project Managers',
+    //         'To perform defect hunting routine'
+    //       ],
+    //       SkillSet(['angular', 'swagger', 'web api / rest api', 'ngxs', 'git', 'gitlab'])
+    //     )
+    //   ]
+    // ),
+    new WorkHistoryItemEntry(
       'Jul',
       2023,
-      null,
-      null,
+      'Oct',
+      2023,
       'Senior React / React Native Engineer',
       'Remote Part-Time',
       'Freelance',
@@ -283,6 +414,19 @@ const DUMMY_DATA = {
           `Mobile app connects the business who needs to spread flyers / leaflets to the people who can spread.
           The business posts campaign with requirements and information, how much flyers they need to spread, where do they need to spread etc.
           Campaigns can be assigned to ambassadors.`,
+          [
+            '/assets/projects/mobile/pixidium/IMG_0005.PNG',
+            '/assets/projects/mobile/pixidium/IMG_0006.PNG',
+            '/assets/projects/mobile/pixidium/IMG_0007.PNG',
+            '/assets/projects/mobile/pixidium/IMG_0008.PNG',
+            '/assets/projects/mobile/pixidium/IMG_0009.PNG',
+            '/assets/projects/mobile/pixidium/IMG_0010.PNG',
+            '/assets/projects/mobile/pixidium/IMG_0012.PNG',
+            '/assets/projects/mobile/pixidium/IMG_0013.PNG',
+            '/assets/projects/mobile/pixidium/IMG_0014.PNG',
+            '/assets/projects/mobile/pixidium/IMG_0015.PNG',
+            '/assets/projects/mobile/pixidium/IMG_0016.PNG'
+          ],
           [
             'To implement CI/CD pipelins for Pull Request automated Android/iOS builds',
             'To implement new features according to technical specs and business requirements',
@@ -302,31 +446,41 @@ const DUMMY_DATA = {
             'git',
             'github',
             'jira',
-            'cicd'
+            'cicd',
+            'firebase',
+            'push-notifications'
           ])
         )
       ]
     ),
     new WorkHistoryItemEntry(
-      'Mar',
+      'May',
       2023,
-      null,
-      null,
+      'Dec',
+      2023,
       'Tech Lead (Angular, React Native, NestJs)',
       'Remote Part-Time',
-      'Contract',
+      'Freelance',
       'Conceptdigital',
       'https://www.conceptdigital.com/',
       [
         new ProjectItemEntry(
           ['forbes-mobile-app', 'bmg-mobile-app'],
           `
-          I'm tech leading 2 teams of 3 Junior/Middle React Native developers per each team. We're building Android/iOS mobile apps from scratch,
+          I'm leading 2 teams of 3 Junior/Middle React Native developers per each team. We're building Android/iOS mobile apps from scratch,
           for 2 biggest local internet magazines, Forbes georgia and BMG (Business Media Georgia). Due to these mobile apps consist of quite many screens and components, 
           I made technical decision to start coding from shared component libraries, I've created project architecture using NX (https://nx.dev) and added 2 shared libraries: core and platform, 
           core contains trivial components like: buttons, inputs, labels, etc. but platform contains bigger specific components, which are build from core components. 
           These libraries can be build as npm package later as well. I also implemented CI using github action and expo.dev and we have Android .apk and iOS simulator builds per each pull request.
           `,
+          [
+            '/assets/projects/mobile/bmg/Landing.png',
+            '/assets/projects/mobile/bmg/Main.png',
+            '/assets/projects/mobile/bmg/Article.png',
+            '/assets/projects/mobile/bmg/Tag.png',
+            '/assets/projects/mobile/bmg/Search.png',
+            '/assets/projects/mobile/bmg/Stocks.png'
+          ],
           [
             'To setup github repositories and application architecture uising NX',
             'To setup and configure CI/CD on expo.dev',
@@ -357,6 +511,7 @@ const DUMMY_DATA = {
           The projects I'm leading are various, web projects are based on Angular, Mobile projects are based on React Native.
           All of them are being developed from scratch
           `,
+          [],
           [
             'To setup github repositories and application architecture',
             'To setup and configure CI/CD on Netlify',
@@ -400,6 +555,7 @@ const DUMMY_DATA = {
           SimpliField is leading the retail digital transformation as the first fully integrated mobile platform for retail operations, 
           internal communications and advanced performance analytics.
           `,
+          [],
           [
             `To implement new frontend features using Angular.js or React, following the design spec from Figma`,
             `To implement new mobile features using Ionic + Angular.js, following the design spec from Figma`,
@@ -438,6 +594,7 @@ const DUMMY_DATA = {
         new ProjectItemEntry(
           ['Foxtrail: Integration Test Environment Setup on NX monorepo'],
           null,
+          [],
           [
             'To setup Jest integration tests for NX monorepo',
             'To write script for E2E automation on Typescript',
@@ -454,6 +611,7 @@ const DUMMY_DATA = {
           I've implemented Auth microservice and integrated it with Angular and React UI apps. As a Database I used PostgreSQL and Mikro-ORM as a data access layer.
           The brief functionality of the microservice is Authorization / Authentication using JWT, Role Management, Permission Management, User Management APIs.
           `,
+          [],
           [
             'To implement NestJs microservice for auth',
             'To implement JWT authentication using HTTP Api',
@@ -492,6 +650,7 @@ const DUMMY_DATA = {
         new ProjectItemEntry(
           ['StudyTube/ultra', 'StudyTube/LMS'],
           'Online education platform developing customized educational content to fit the needs of individual students.',
+          [],
           [
             'To implement separated reusable components in ultra library according to new design. Ultra library is private component library, based on angular',
             'To re-implement LMS ui using new ultra library components. LMS is Learning Management System, web platform for online learning materials, like videos, documents etc.',
@@ -513,6 +672,7 @@ const DUMMY_DATA = {
           The @fundamental-ngx (core / platform) library is a set of Angular components built using Fundamental Library Styles.
           The Fundamental Library Styles is a design system and HTML/CSS component library used to build modern product user experiences with the SAP look and feel.\
           `,
+          [],
           [
             'To Implement new features into Fundamental NGX / Styles library',
             'To collaborate with external teams and fix defects they require',
@@ -537,17 +697,20 @@ const DUMMY_DATA = {
         new ProjectItemEntry(
           ['Kayako Classic'],
           'Kayako Classic is self-hosted service desk software, which helps companies and their customers to deal with support tickets.',
+          [],
           [
             'To Do the defect RCA (Root Cause Analysis)',
             'To Implement the fix of defects using PHP 7, MySQL',
             'To implement the fix of frontend defects using React, Javascript',
             'To write automated E2E test for the fix using Gherkin'
           ],
+
           SkillSet(['react', 'php', 'mysql', 'docker', 'docker-compose'])
         ),
         new ProjectItemEntry(
           ['CX Monitor'],
           'CX Monitor is enterprise software which delivers the system monitoring, root-cause analysis, and issue identification tools you need to run your business in real time.',
+          [],
           [
             'To update legacy software UI components from Adobe Flash to Javascript / React',
             'To update legacy software UI charts from Adobe Flash to Fusion Charts (Js)',
@@ -559,6 +722,7 @@ const DUMMY_DATA = {
         new ProjectItemEntry(
           ['Acorn PA5G/AAA'],
           'Acorn is Time-Driven Activity-Based-Costing (TDABC) platform that distills and attributes costs of delivering products and services by building business-specific models which take into account nuances of account processes.',
+          [],
           [
             'To update legacy software UI from Microsoft Silverlight to Angular 8 / Material / Scss / NGXS',
             'To update legacy software UI complex grid components from Silverlight to Ag-Grid',
@@ -571,6 +735,7 @@ const DUMMY_DATA = {
         new ProjectItemEntry(
           ['AES CIS'],
           "AES CIS (Aurea Energy Solutions Customer Information System) is a web-based billing, invoicing, payment, and Customer service & management system designed for use by suppliers. The product is part of Aurea's Revenue Lifecycle Management and it's used by top US energy provider companies.",
+          [],
           [
             'To update legacy software UI from CSS to SCSS',
             'To update legacy software UI from HTML to HTML 5',
@@ -581,6 +746,7 @@ const DUMMY_DATA = {
         new ProjectItemEntry(
           ['Volt Delta'],
           'Volt Delta is multi-channel contact center solutions, smart automation and data-driven contact management in the cloud and within the company to optimize customer journeys. The product consists of many various modules, written on various technologiesm like: C++, C#, Node.js, Javascript.',
+          [],
           [
             'To migrate code from Dimmension to GitHub repositories',
             'To prepare Development Environment on local machine & Build',
@@ -599,6 +765,7 @@ const DUMMY_DATA = {
         new ProjectItemEntry(
           ['Mobilogy'],
           'Mobilogy is an advanced mobile lifecycle solutions that enable operators, retailers, buyback vendors and enterprises to provide enhanced customer experience, increase revenue, improve productivity, enhance security and reduce cost.',
+          [],
           [
             'To inspect and investigate UI of the incoming projects',
             'To prepare Development Environment on local machine & Build',
@@ -629,6 +796,7 @@ const DUMMY_DATA = {
           Lyris Technologies – now Aurea Email Marketing – is a leading digital messaging platform. 
           Lyris delivers mature, field-tested email marketing capabilities, as an industry leading cloud-based or on-premise solution that lets customers easily, segment, target, and measure the effectiveness of email campaigns on every device.
           `,
+          [],
           [
             'To investigate legacy application and expose necessary Api endpoints',
             'To reskin legacy Lyris application UI using Angular 5',
@@ -654,6 +822,7 @@ const DUMMY_DATA = {
           CRM is a Customer Relationship Management system provided by Aurea, 
           the goal of this product is to manage every lead, opportunity, and interaction with all of your prospects and customers – quickly, easily, and effectively.
           `,
+          [],
           [
             'To investigate legacy application and expose necessary Api endpoints',
             'To reskin legacy CRM application UI using Angular 4',
@@ -693,6 +862,7 @@ const DUMMY_DATA = {
           PSP Gateway stands for Payment Service Provider Gateway, and it is responsible for processing Visa, MasterCard, Diners Club, SEPA, etc. online transactions.
           The product provides the pure API only for the E-commerce customers who has PCI-DSS license and Payment Page for the rest of other clients. Payment Page can be embedded into the E-commerce website.
           `,
+          [],
           [
             'To maintain legacy PSP application using PHP 7 & MySQL',
             'To develop internal softwares using .Net Core & Angular 2',
@@ -729,6 +899,7 @@ const DUMMY_DATA = {
           Admin (based on .NET, SignalR, Ext.js / angular.js, which is responsible for managing everything for the Sporttsbook: Risk management, Monitoring, Acceptance, Live event management, Resulting, Event / Market / Odd management, Reporting, etc).
           The Sportsbook itself was using N-Tier architecture from the beginning, later we decided to redesign the architecture and split it as microservices to overcome the issues we faced, and we implemented RabbitMQ for communication between microservices, Redis for data caching and protobuf.
           `,
+          [],
           [
             "To create Sportsbook Administrative Tool's UI using AngularJs, later Angular 2",
             'To implement Presentation Layer of Back-End using ASP.NET MVC',
@@ -768,6 +939,7 @@ const DUMMY_DATA = {
         new ProjectItemEntry(
           ['Website Development'],
           null,
+          [],
           [
             'To create Web Site Markup using HTML 5 & CSS 3',
             'To create Web Site Front-End using Javascript, jQuery',
