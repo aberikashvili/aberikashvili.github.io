@@ -232,7 +232,7 @@ const DUMMY_DATA = {
   },
   summary: [
     'I have been involved in Software Development since 2011, with excellent knowledge of software development methodologies, frameworks, design patterns and SOLID principles, that include all phase of systems analysis and understanding of client business technologies and processes.',
-    'I have developed and maintained software for Healthcare, Fin-Tech, Energy Solutions, Betting Solutions, Educational, Data Analysis, SaaS industries.',
+    'I have developed and maintained software for Healthcare, Fin-Tech, Crypto/Blockchain, Energy Solutions, Betting Solutions, Educational, Data Analysis, SaaS industries.',
     'I also posses excellent verbal and written communication skills and the ability to interact professionally with a diverse group, executives, managers, and subject matter experts. I communicate with clarity, verbally and in one-on-one or group situations.'
   ],
   workHistory: [
@@ -293,6 +293,31 @@ const DUMMY_DATA = {
             'apple-test-flight',
             'apple-app-store',
             'google-play-store'
+          ])
+        ),
+        new ProjectItemEntry(
+          ['PalPayments'],
+          `PalPayments is the first self-custody digital payments solution for Merchants, allowing to accept all funds directly into wallets with no extra fee or security liability. PalPayments provides one unique hub to process all digital payments, increasing funds control, reducing fraud, money laundering risks and improving efficiency.`,
+          [],
+          [
+            'To lead mobile app development team',
+            'To collaborate with backend team',
+            'To perform code reviews and keep codebase healthy',
+            'To participate in implementation of new features',
+            'To investigate issues and apply hotfixes',
+            'To run retrospective meetings with team members',
+            'To do regular Defect Hunting and Exploratory Testing'
+          ],
+          SkillSet([
+            'react',
+            'typescript',
+            'firebase',
+            'crypto',
+            'blockchain',
+            'nft',
+            'trust-wallet-core',
+            'wallet-connect',
+            'circleci'
           ])
         )
       ]
