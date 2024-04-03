@@ -152,7 +152,8 @@ const skillsMap: SkillMap = {
   blockchain: new SkillItemEntry('fa fa-hashtag', 'Blockchain'),
   nft: new SkillItemEntry('fa fa-hashtag', 'NFT'),
   'trust-wallet-core': new SkillItemEntry('fa fa-hashtag', 'Trust Wallet Core'),
-  'wallet-connect': new SkillItemEntry('fa fa-hashtag', 'Wallet Connect')
+  'wallet-connect': new SkillItemEntry('fa fa-hashtag', 'Wallet Connect'),
+  'everstake-sdk': new SkillItemEntry('fa fa-hashtag', 'EverStake SDK')
   // Crypto, Blockchain, NFT
 };
 

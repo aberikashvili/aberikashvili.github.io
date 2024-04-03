@@ -152,6 +152,7 @@ type SkillMap = {
   nft: SkillItemEntry;
   'trust-wallet-core': SkillItemEntry;
   'wallet-connect': SkillItemEntry;
+  'everstake-sdk': SkillItemEntry;
   // Crypto, Blockchain, NFT
 };
 
