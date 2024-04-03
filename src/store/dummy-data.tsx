@@ -279,6 +279,11 @@ const DUMMY_DATA = {
           SkillSet([
             'react-native',
             'typescript',
+            'csharp',
+            'dotnet-5-plus',
+            'mssqlserver',
+            'kafka',
+            'redis',
             'firebase',
             'xcode',
             'android-studio',

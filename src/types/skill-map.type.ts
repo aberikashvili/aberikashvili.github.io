@@ -144,6 +144,7 @@ type SkillMap = {
   mongodb: SkillItemEntry;
   python: SkillItemEntry;
   django: SkillItemEntry;
+  kafka: SkillItemEntry;
   // Back-End
 
   // Crypto, Blockchain, NFT

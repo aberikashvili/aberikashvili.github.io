@@ -145,6 +145,7 @@ const skillsMap: SkillMap = {
   mongodb: new SkillItemEntry('fa fa-database', 'MongoDB'),
   python: new SkillItemEntry('fab fa-python', 'Python'),
   django: new SkillItemEntry('fab fa-django', 'Django'),
+  kafka: new SkillItemEntry('fa fa-hashtag', 'Kafka'),
   // Back-End
 
   // Crypto, Blockchain, NFT
