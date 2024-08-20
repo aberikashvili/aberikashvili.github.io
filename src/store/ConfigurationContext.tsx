@@ -15,6 +15,7 @@ export type ConfigContextState = {
   osSkills: boolean;
   certification: boolean;
   certificateImages: boolean;
+  projectImages: boolean;
   publications: boolean;
   visibleWorkHistory: LabelValue[];
 };
@@ -32,6 +33,7 @@ export type ConfigurationContextFunctions = ConfigContextState & {
   setOsSkills: (value: boolean) => void;
   setCertification: (value: boolean) => void;
   setCertificateImages: (value: boolean) => void;
+  setProjectImages: (value: boolean) => void;
   setPublications: (value: boolean) => void;
   setVisibleWorkHistory: (items: LabelValue[]) => void;
 };
@@ -54,6 +56,7 @@ export const ConfigurationContextProvider = ({ children }: { children: any }) =>
     osSkills: true,
     certification: true,
     certificateImages: false,
+    projectImages: true,
     publications: true,
     visibleWorkHistory: []
   });
@@ -92,6 +95,8 @@ export const ConfigurationContextProvider = ({ children }: { children: any }) =>
     setCertification: (certification: boolean) => updateState({ certification }),
     certificateImages: config.certificateImages,
     setCertificateImages: (certificateImages: boolean) => updateState({ certificateImages }),
+    projectImages: config.projectImages,
+    setProjectImages: (projectImages: boolean) => updateState({ projectImages }),
     publications: config.publications,
     setPublications: (publications: boolean) => updateState({ publications }),
     visibleWorkHistory: config.visibleWorkHistory,

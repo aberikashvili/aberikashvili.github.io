@@ -61,6 +61,10 @@ const Configuration = () => {
     configCtx.setProjectDescription(e.target.checked);
   };
 
+  const toggleProjectImages = (e: CheckboxChangeEvent) => {
+    configCtx.setProjectImages(e.target.checked);
+  };
+
   const toggleToolsAndTech = (e: CheckboxChangeEvent) => {
     configCtx.setToolsAndTech(e.target.checked);
   };
@@ -157,6 +161,10 @@ const Configuration = () => {
               onChange={toggleProjectDescription}
               defaultChecked={configCtx.projectDescription}>
               Project Description
+            </Checkbox>
+
+            <Checkbox onChange={toggleProjectImages} defaultChecked={configCtx.projectImages}>
+              Project Images
             </Checkbox>
           </div>
           <div className="configuration-column">

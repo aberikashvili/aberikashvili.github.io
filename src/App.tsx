@@ -9,6 +9,12 @@ const App = () => {
   return (
     <>
       <Navbar />
+      <div
+        id="top-divider"
+        style={{
+          height: '10px',
+          backgroundColor: '#333'
+        }}></div>
       <div className="App">
         <LeftColumn />
         <RightColumn />
