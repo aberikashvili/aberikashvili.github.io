@@ -161,6 +161,13 @@ const DUMMY_DATA = {
     languages: ['English', 'Georgian', 'Russian'],
     trainings: [
       new TrainCertEntry(
+        'Certified',
+        'Build a Blockchain and a Cryptocurrency from Scratch',
+        'Online',
+        'fab fa-bitcoin',
+        '/assets/certificates/UC-d58af113-917e-4362-94f3-46467a19986e.jpg'
+      ),
+      new TrainCertEntry(
         'Preparing',
         'AWS Certified Solutions Architect Associate (SAA-C03)',
         'Online',
@@ -274,7 +281,8 @@ const DUMMY_DATA = {
             'To participate in implementation of new features',
             'To investigate issues and apply hot fixes',
             'To run retrospective meetings with team members',
-            'To do regular Defect Hunting and Exploratory Testing'
+            'To do regular Defect Hunting and Exploratory Testing',
+            'To research and implement POC requests'
           ],
           SkillSet([
             'react-native',
