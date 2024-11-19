@@ -161,6 +161,12 @@ const DUMMY_DATA = {
     languages: ['English', 'Georgian', 'Russian'],
     trainings: [
       new TrainCertEntry(
+        'Preparing',
+        `Ethereum and Solidity: The Complete Developer's Guide`,
+        'Online',
+        'fab fa-ethereum'
+      ),
+      new TrainCertEntry(
         'Certified',
         'Build a Blockchain and a Cryptocurrency from Scratch',
         'Online',

@@ -21,10 +21,12 @@ const Configuration = () => {
 
   const showDrawer = () => {
     setOpen(true);
+    document.body.style.overflow = 'hidden';
   };
 
   const onClose = () => {
     setOpen(false);
+    document.body.style.overflow = 'scroll';
   };
 
   const onChange = (e: RadioChangeEvent) => {
