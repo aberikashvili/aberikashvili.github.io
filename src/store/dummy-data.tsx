@@ -168,6 +168,13 @@ const DUMMY_DATA = {
       ),
       new TrainCertEntry(
         'Certified',
+        '.NET Microservices: CQRS & Event Sourcing with Kafka',
+        'Online',
+        'fab fa-windows',
+        '/assets/certificates/UC-2c91acca-ea6c-4a6a-babf-14959a76273b.jpg'
+      ),
+      new TrainCertEntry(
+        'Certified',
         'Build a Blockchain and a Cryptocurrency from Scratch',
         'Online',
         'fab fa-bitcoin',
@@ -252,14 +259,26 @@ const DUMMY_DATA = {
     new WorkHistoryItemEntry(
       'Feb',
       2024,
-      null,
-      null,
+      'Jan',
+      2026,
       'Senior Full-Stack React Native Developer / Team Lead',
       'Remote',
       'Contract',
       'PalWallet',
       'https://palwallet.com/',
       [
+        // new ProjectItemEntry(
+        //   ['PalWallet App: BaaS'],
+        //   `PalWallet BaaS (Banking as a Service) is a module in the app, that allows users to work with fiat money as they work with crypto from the app.
+        //   Users can generate PalCard (virtual card) and PalCash account (IBAN) and use them for payments in online shopping or POS terminals`,
+        //   [],
+        //   [
+        //     'To implement new features according to new design from scratch',
+        //     'To integrate fiat banking services',
+        //     'To work with new comers in the team',
+        //     'To make a refactoring decisions in order new module worked well with the current Crypto one'
+        //   ]
+        // ),
         new ProjectItemEntry(
           ['PalWallet App'],
           `PalWallet is a crypto assets management platform founded by blockchain industry experts with over a decade of experience.`,
@@ -316,7 +335,7 @@ const DUMMY_DATA = {
           ])
         ),
         new ProjectItemEntry(
-          ['PalPayments'],
+          ['PalPayments', 'Crypto Trading Platform'],
           `PalPayments is the first self-custody digital payments solution for Merchants, allowing to accept all funds directly into wallets with no extra fee or security liability. PalPayments provides one unique hub to process all digital payments, increasing funds control, reducing fraud, money laundering risks and improving efficiency.`,
           [],
           [

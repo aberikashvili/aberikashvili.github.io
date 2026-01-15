@@ -174,7 +174,11 @@ const Configuration = () => {
       </div>
       <div className="configuration-modes-wrapper">
         {configCtx.mode === 'custom' && (
-          <Button type="default" shape="default" icon={<SettingOutlined />} onClick={showDrawer}>
+          <Button
+            type="default"
+            shape="default"
+            icon={<SettingOutlined {...({} as any)} />}
+            onClick={showDrawer}>
             Configure
           </Button>
         )}
