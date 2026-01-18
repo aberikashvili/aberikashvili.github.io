@@ -1,7 +1,9 @@
 import { useCallback, useContext, useEffect, useState } from 'react';
 
-import { Checkbox, Segmented, Select, SelectProps } from 'antd';
+import { Button, Checkbox, Divider, Drawer, Segmented, Select, SelectProps } from 'antd';
+import { SettingOutlined } from '@ant-design/icons';
 import { SegmentedValue } from 'antd/es/segmented';
+import type { DrawerProps, RadioChangeEvent } from 'antd';
 import type { CheckboxChangeEvent } from 'antd/es/checkbox';
 
 import ResumeContext from '../../../store/ResumeContext';
@@ -14,6 +16,22 @@ const Configuration = () => {
   const configCtx = useContext(ConfigurationContext);
   const resumeCtx = useContext(ResumeContext);
   const [workItemValue, setWorkItemValue] = useState<string[]>([]);
+  const [open, setOpen] = useState<boolean>(false);
+  const [placement, setPlacement] = useState<DrawerProps['placement']>('right');
+
+  const showDrawer = () => {
+    setOpen(true);
+    document.body.style.overflow = 'hidden';
+  };
+
+  const onClose = () => {
+    setOpen(false);
+    document.body.style.overflow = 'scroll';
+  };
+
+  const onChange = (e: RadioChangeEvent) => {
+    setPlacement(e.target.value);
+  };
 
   useEffect(() => {
     setWorkItemValue(resumeCtx.getWorkHistoryIdList());
@@ -154,9 +172,40 @@ const Configuration = () => {
           onChange={modeChanged}
         />
       </div>
+      <div className="configuration-modes-wrapper">
+        {configCtx.mode === 'custom' && (
+          <Button
+            type="default"
+            shape="default"
+            icon={<SettingOutlined {...({} as any)} />}
+            onClick={showDrawer}>
+            Configure
+          </Button>
+        )}
+      </div>
       {configCtx.mode === 'custom' && (
-        <div className="configuration-custom-mode-wrapper">
-          <div className="configuration-column">
+        <Drawer
+          title="Confirguration"
+          placement={placement}
+          closable={false}
+          onClose={onClose}
+          open={open}
+          key={placement}
+          getContainer={false}
+          width={550}>
+          <div
+            style={{
+              padding: '0 0 20px 0'
+            }}>
+            <Divider orientation="left">Work History</Divider>
+            <Select {...selectProps} />
+          </div>
+
+          <div
+            style={{
+              padding: '0 5px'
+            }}>
+            <Divider orientation="left">Projects</Divider>
             <Checkbox
               onChange={toggleProjectDescription}
               defaultChecked={configCtx.projectDescription}>
@@ -166,51 +215,44 @@ const Configuration = () => {
             <Checkbox onChange={toggleProjectImages} defaultChecked={configCtx.projectImages}>
               Project Images
             </Checkbox>
-          </div>
-          <div className="configuration-column">
+
             <Checkbox onChange={toggleToolsAndTech} defaultChecked={configCtx.toolsAndTech}>
               Project Tools & Tech
             </Checkbox>
-          </div>
-          {/* <div className="configuration-column">
-            <Select {...selectSkillProps} />
-          </div> */}
-          <div className="configuration-column">
+
+            <Divider orientation="left">Skills</Divider>
             <Checkbox onChange={toggleSoftSkills} defaultChecked={configCtx.softSkills}>
               Soft Skills
             </Checkbox>
-          </div>
-          <div className="configuration-column">
+
             <Checkbox onChange={toggleCloudSkills} defaultChecked={configCtx.cloudSkills}>
               Cloud Skills
             </Checkbox>
-          </div>
-          <div className="configuration-column">
+
             <Checkbox onChange={toggleFrontEndSkills} defaultChecked={configCtx.frontEndSkills}>
               Frontend Skills
             </Checkbox>
-          </div>
-          <div className="configuration-column">
+
             <Checkbox onChange={toggleBackEndSkills} defaultChecked={configCtx.backEndSkills}>
               Backend Skills
             </Checkbox>
-          </div>
-          <div className="configuration-column">
+
             <Checkbox onChange={toggleDevOpsSkills} defaultChecked={configCtx.devOpsSkills}>
               DevOps Skills
             </Checkbox>
-          </div>
-          <div className="configuration-column">
+
+            <Divider orientation="left">Tools</Divider>
+
             <Checkbox onChange={toggleToolsSkills} defaultChecked={configCtx.toolsSkills}>
               Tools Skills
             </Checkbox>
-          </div>
-          <div className="configuration-column">
+
             <Checkbox onChange={toggleOsSkills} defaultChecked={configCtx.osSkills}>
               OS Skills
             </Checkbox>
-          </div>
-          <div className="configuration-column">
+
+            <Divider orientation="left">Education & Certificates</Divider>
+
             <Checkbox onChange={toggleCertifications} defaultChecked={configCtx.certification}>
               Certificastion
             </Checkbox>
@@ -219,16 +261,14 @@ const Configuration = () => {
               defaultChecked={configCtx.certificateImages}>
               Certificate Images
             </Checkbox>
-          </div>
-          <div className="configuration-column">
+
+            <Divider orientation="left">Other</Divider>
+
             <Checkbox onChange={togglePublications} defaultChecked={configCtx.publications}>
               Publications
             </Checkbox>
           </div>
-          <div className="configuration-column">
-            <Select {...selectProps} />
-          </div>
-        </div>
+        </Drawer>
       )}
     </div>
   );
